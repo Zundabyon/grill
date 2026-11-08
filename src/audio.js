@@ -1,14 +1,33 @@
 import {SampleBass} from './sampler.js';
+import {Accompaniment} from './accompaniment.js';
 export class Player {
   constructor(onBeat,onStop) {this.onBeat=onBeat;this.onStop=onStop;this.active=false;this.timer=null;this.voices=new Set();}
-  async play(notes,options) {
+  setupMixer(){
+    if(this.channels)return;
+    this.channels={};
+    for(const name of ['bass','piano','drums']){
+      const gain=this.ctx.createGain();gain.connect(this.ctx.destination);this.channels[name]=gain;
+    }
+    this.band=new Accompaniment(this.ctx,this.channels.piano,this.channels.drums);
+  }
+  updateMix(opts){
+    if(!this.channels)return;
+    for(const name of ['bass','piano','drums']){
+      const level=Number(opts[name+'Volume']??(name==='bass'?.8:.45));
+      const gain=opts[name]?Math.max(0,Math.min(1,Number.isFinite(level)?level:0)):0;
+      this.channels[name].gain.setTargetAtTime(gain,this.ctx.currentTime,.008);
+    }
+  }
+  async play(notes,options,bars=[]) {
     this.stop();
     const epoch=this.epoch;
     this.ctx ||= new AudioContext();
     await this.ctx.resume();
-    this.sampler ||=new SampleBass(this.ctx);
+    this.setupMixer();
+    this.sampler ||=new SampleBass(this.ctx,this.channels.bass);
     await this.sampler.prepare();
     if(!notes.length || epoch!==this.epoch) return false;
+    this.chords=bars.flat();this.updateMix(options());
     this.active=true;this.finishing=false;this.notes=notes;this.options=options;this.index=options().countIn?-4:0;
     this.nextTime=this.ctx.currentTime+.08;this.epoch=(this.epoch||0)+1;
     this.schedule();this.timer=setInterval(()=>this.schedule(),25);
@@ -18,6 +37,12 @@ export class Player {
     while(this.active && !this.finishing && this.nextTime<this.ctx.currentTime+.12){
       const i=this.index,opts=this.options(),time=this.nextTime,step=60/opts.bpm;
       if(i>=this.notes.length){if(!opts.loop){this.finishing=true;clearInterval(this.timer);this.finishTimer=setTimeout(()=>this.stop(),Math.max(0,(time-this.ctx.currentTime)*1000));return;}this.index=0;continue;}
+      this.updateMix(opts);
+      if(i>=0){
+        const chord=this.chords[i],previous=this.chords[i-1];
+        if(opts.piano && chord && (i%2===0 || chord.symbol!==previous?.symbol))this.band.chord(time,chord,step*.82);
+        if(opts.drums)this.band.beat(time,i%4,step);
+      }
       if(i<0 || opts.click)this.click(time,i%4===0);
       if(i>=0 && opts.bass && !this.notes[i].rest)this.bass(time,this.notes[i].midi,step*.94,i%4===0?1:.94);
       const epoch=this.epoch;
@@ -33,6 +58,6 @@ export class Player {
   }
   bass(time,midi,duration,accent=1){this.sampler.play(time,midi,duration,accent);}
   click(time,accent){this.voice(time,accent?1400:1000,.045,'sine',accent?.1:.055);}
-  async preview(midi){const epoch=this.epoch;this.ctx ||=new AudioContext();await this.ctx.resume();this.sampler ||=new SampleBass(this.ctx);await this.sampler.prepare();if(epoch===this.epoch)this.bass(this.ctx.currentTime+.01,midi,.7);}
-  stop(){this.active=false;this.epoch=(this.epoch||0)+1;clearInterval(this.timer);clearTimeout(this.finishTimer);this.uiTimers?.forEach(clearTimeout);this.uiTimers?.clear();for(const v of this.voices){try{v.stop();}catch{}}this.voices.clear();this.sampler?.stop();this.onStop();}
+  async preview(midi){const epoch=this.epoch;this.ctx ||=new AudioContext();await this.ctx.resume();this.setupMixer();this.updateMix({bass:true,bassVolume:.8});this.sampler ||=new SampleBass(this.ctx,this.channels.bass);await this.sampler.prepare();if(epoch===this.epoch)this.bass(this.ctx.currentTime+.01,midi,.7);}
+  stop(){this.active=false;this.epoch=(this.epoch||0)+1;clearInterval(this.timer);clearTimeout(this.finishTimer);this.uiTimers?.forEach(clearTimeout);this.uiTimers?.clear();for(const v of this.voices){try{v.stop();}catch{}}this.voices.clear();this.sampler?.stop();this.band?.stop();this.onStop();}
 }

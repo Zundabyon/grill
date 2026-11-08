@@ -20,7 +20,7 @@ const player=new Player(i=>{
   }
   $('play-state').textContent=`${state.offset+Math.floor(i/4)+1} : ${i%4+1}`;
 },()=>{$('play').textContent='▶';$('play').setAttribute('aria-label','再生');$('play-state').textContent='READY';document.querySelectorAll('.playing').forEach(e=>e.classList.remove('playing'));});
-function audioOptions(){return {bpm:Number($('bpm').value),loop:$('loop').checked,bass:$('bass').checked,click:$('click').checked,countIn:$('count-in').checked};}
+function audioOptions(){return {bpm:Number($('bpm').value),loop:$('loop').checked,bass:$('bass').checked,click:$('click').checked,countIn:$('count-in').checked,piano:$('piano').checked,drums:$('drums').checked,bassVolume:Number($('bass-volume').value)/100,pianoVolume:Number($('piano-volume').value)/100,drumsVolume:Number($('drums-volume').value)/100};}
 function readSettings(){
   const full=$('bar-count').value==='all';
   const min=Number($('min-fret').value),max=Number($('max-fret').value),start=full?1:Number($('start-bar').value);
@@ -110,13 +110,17 @@ $('play').onclick=async()=>{
   const button=$('play');button.disabled=true;
   try{
     updateTempo($('bpm').value);
-    const startup=player.play(clone(state.notes),audioOptions);
+    const startup=player.play(clone(state.notes),audioOptions,clone(state.bars));
     button.textContent='…';button.setAttribute('aria-label','音源を準備中');$('play-state').textContent='音源を準備中';
     const started=await startup;
     if(started){button.textContent='■';button.setAttribute('aria-label','停止');$('play-state').textContent='PLAYING';}
   }catch(e){player.stop();error(new Error('ベース音源を再生できませんでした。再読み込みしてお試しください。'));}
   finally{button.disabled=false;}
 };
+for(const name of ['bass','piano','drums']){
+  $(name).addEventListener('change',()=>player.updateMix(audioOptions()));
+  $(name+'-volume').addEventListener('input',()=>{player.updateMix(audioOptions());$(name+'-volume-value').textContent=$(name+'-volume').value+'%';});
+}
 $('bpm').onchange=e=>updateTempo(e.target.value);$('tempo-slider').oninput=e=>updateTempo(e.target.value);
 $('save').onclick=()=>{try{if(state.dirty||!$('error').hidden)throw new Error('入力内容を確認し、ラインを生成してから保存してください。');const s=snapshot();if(JSON.stringify(s).length>300000)throw new Error('保存する練習が大きすぎます。');const list=saved();if(list.length>=50)throw new Error('保存は50件までです。不要な練習を書き出して削除してください。');writeSaved([s,...list]);toast('このブラウザに練習を保存しました');}catch(e){error(e);}};
 $('library-open').onclick=()=>{showSaved();$('library-dialog').showModal();};

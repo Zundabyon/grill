@@ -9,14 +9,14 @@ export function nearestSample(midi) {
 
 // The recordings keep the pluck/transient; only leading silence and note-off are trimmed.
 export class SampleBass {
-  constructor(ctx) {
+  constructor(ctx,destination=ctx.destination) {
     this.ctx=ctx;this.buffers=new Map();this.voices=new Set();
     this.low=ctx.createBiquadFilter();this.low.type='highpass';this.low.frequency.value=27;
     this.tone=ctx.createBiquadFilter();this.tone.type='lowpass';this.tone.frequency.value=5200;this.tone.Q.value=.5;
     this.body=ctx.createBiquadFilter();this.body.type='lowshelf';this.body.frequency.value=150;this.body.gain.value=2;
     this.compressor=ctx.createDynamicsCompressor();this.compressor.threshold.value=-13;this.compressor.knee.value=12;this.compressor.ratio.value=3;this.compressor.attack.value=.004;this.compressor.release.value=.12;
     this.output=ctx.createGain();this.output.gain.value=.75;
-    this.low.connect(this.tone).connect(this.body).connect(this.compressor).connect(this.output).connect(ctx.destination);
+    this.low.connect(this.tone).connect(this.body).connect(this.compressor).connect(this.output).connect(destination);
   }
   async prepare() {
     if(this.buffers.size===BASS_SAMPLES.length)return;
