@@ -12,7 +12,7 @@ export function pianoVoicing(chord) {
 
 // All sounds are synthesized locally; no additional recordings or downloads.
 export class Accompaniment {
-  constructor(ctx,piano,drums){this.ctx=ctx;this.piano=piano;this.drums=drums;this.voices=new Set();}
+  constructor(ctx,piano,drums,melody){this.ctx=ctx;this.piano=piano;this.drums=drums;this.melodyOutput=melody;this.voices=new Set();}
   tone(time,freq,duration,volume,destination,type='sine'){
     const source=this.ctx.createOscillator(),gain=this.ctx.createGain();
     source.type=type;source.frequency.value=freq;
@@ -31,6 +31,22 @@ export class Accompaniment {
       // Decaying fundamental and upper partials give a soft electric-piano timbre.
       for(const [ratio,level,decay] of [[1,.11,1],[2,.035,.65],[3,.014,.35]])this.tone(time,f*ratio,duration*decay,level,this.piano);
     }
+  }
+  melody(time,note){
+    if(note && this.lead && !note.onset && this.lead.midi===note.midi)return;
+    if(this.lead){
+      const {source,gain}=this.lead;
+      gain.gain.cancelAndHoldAtTime(time);gain.gain.linearRampToValueAtTime(0,time+.012);
+      source.stop(time+.015);this.lead=null;
+    }
+    if(!note)return;
+    const source=this.ctx.createOscillator(),gain=this.ctx.createGain();
+    source.type='triangle';source.frequency.value=440*2**((note.midi-69)/12);
+    gain.gain.setValueAtTime(0,time);gain.gain.linearRampToValueAtTime(.15,time+.012);
+    gain.gain.setTargetAtTime(.09,time+.025,.08);
+    source.connect(gain).connect(this.melodyOutput);source.start(time);
+    this.voices.add(source);this.lead={source,gain,midi:note.midi};
+    source.onended=()=>{this.voices.delete(source);source.disconnect();gain.disconnect();};
   }
   noise(time,duration,volume,cutoff){
     this.noiseBuffer ||= (()=>{
@@ -53,5 +69,5 @@ export class Accompaniment {
       this.noise(time+step*2/3,Math.min(.075,step*.25),.045,6500);
     }
   }
-  stop(){for(const source of this.voices){try{source.stop();}catch{}}this.voices.clear();}
+  stop(){for(const source of this.voices){try{source.stop();}catch{}}this.voices.clear();this.lead=null;}
 }

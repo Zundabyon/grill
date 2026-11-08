@@ -43,7 +43,8 @@
             <div class="mixer-part"><span>ベース</span><input id="bass-volume" aria-label="ベース音量" type="range" min="0" max="100" value="80"><output id="bass-volume-value" for="bass-volume">80%</output></div>
             <div class="mixer-part"><label><input id="piano" type="checkbox" checked>ピアノ</label><input id="piano-volume" aria-label="ピアノ音量" type="range" min="0" max="100" value="45"><output id="piano-volume-value" for="piano-volume">45%</output></div>
             <div class="mixer-part"><label><input id="drums" type="checkbox" checked>ドラム</label><input id="drums-volume" aria-label="ドラム音量" type="range" min="0" max="100" value="45"><output id="drums-volume-value" for="drums-volume">45%</output></div>
-          </div><p class="band-hint">ベースをオフにすると、ピアノとドラムをバックに練習できます。</p>
+            <div class="mixer-part"><label><input id="melody" aria-describedby="melody-help" type="checkbox" checked disabled>メロディ</label><input id="melody-volume" aria-label="メロディ音量" type="range" min="0" max="100" value="45" disabled><output id="melody-volume-value" for="melody-volume">45%</output></div>
+          </div><p id="melody-help" class="band-hint"></p><p class="band-hint">ベースをオフにすると、ピアノとドラムをバックに練習できます。</p>
           <p class="sound-credit">エレキベース録音音源 · <a href="./assets/bass-electric/NOTICE.md" target="_blank">Karoryfer / tonejs-instruments · CC BY 3.0</a></p>
           <div id="score" class="tab-score" aria-label="ベースTAB譜"></div>
           <div class="score-footer"><span><i class="legend-dot"></i> 音を選ぶと、押さえる場所と理由がわかります</span><button id="restore" class="text-button" hidden>お手本に戻す</button></div>

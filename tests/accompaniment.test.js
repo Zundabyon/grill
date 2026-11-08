@@ -15,7 +15,7 @@ function transport(chords,opts={}){
   const events=[],mix={};
   const p=new Player(()=>{},()=>{});
   p.ctx={currentTime:0};
-  p.channels=Object.fromEntries(['bass','piano','drums'].map(name=>[name,{gain:{setTargetAtTime(value){mix[name]=value;}}}]));
+  p.channels=Object.fromEntries(['bass','piano','drums','melody'].map(name=>[name,{gain:{setTargetAtTime(value){mix[name]=value;}}}]));
   p.band={chord:(t,c)=>events.push(['piano',t,c.symbol]),beat:(t,b)=>events.push(['drums',t,b]),stop(){}};
   p.sampler={stop(){}};
   p.bass=(t,m)=>events.push(['bass',t,m]);p.click=(t)=>events.push(['click',t]);
@@ -41,7 +41,8 @@ test('chord changes, N.C., count-in and loop share the beat clock',()=>{
 test('live mix mutes channels and tempo changes affect the next scheduled interval',()=>{
   const opts={bass:false,bpm:120}, {p,events,mix}=transport(parseProgression('C7').flat(),opts);
   p.schedule();assert.equal(mix.bass,0);assert.equal(events.some(e=>e[0]==='bass'),false);
+  p.ctx.currentTime=.25;p.schedule();
   opts.piano=false;opts.drumsVolume=.2;opts.bpm=60;p.ctx.currentTime=.5;p.schedule();
-  assert.equal(mix.piano,0);assert.equal(mix.drums,.2);assert.equal(p.nextTime,1.5);
+  assert.equal(mix.piano,0);assert.equal(mix.drums,.2);assert.equal(p.nextTime,1);
   p.stop();assert.equal(p.active,false);assert.equal(p.uiTimers.size,0);
 });
