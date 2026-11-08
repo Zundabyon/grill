@@ -6,10 +6,12 @@
   <meta name="description" content="お手本から、あなたのラインへ。ウォーキングベースを自分でつなげるための練習室。">
   <title>Grill — Walking Bass Workshop</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23b54b32'/%3E%3Cpath d='M16 22h32M16 32h32M16 42h32M24 14v36M40 14v36' stroke='%23fff8ed' stroke-width='3'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/src/style.css"><script type="module" src="/src/app.js"></script>
+  <link rel="stylesheet" href="./src/style.css"><script type="module" src="./src/app.js"></script>
 </head>
 <body>
-  <header class="topbar"><a class="brand" href="/" aria-label="Grill ホーム"><span class="brand-mark">▦</span>Grill<span class="brand-dot">.</span></a><span class="top-caption">WALKING BASS WORKSHOP</span><span class="tuning-badge"><i></i>4 STRING · E A D G</span></header>
+  <div id="file-open-hint" class="file-open-hint" hidden role="alert"><strong>Grillを起動してから開いてください。</strong>このフォルダの「Grillを起動.command」をダブルクリックすると、練習用のURLが開きます。HTMLを直接開いた状態では、再生や曲の読み込みは動きません。</div>
+  <script>if(location.protocol==='file:')document.getElementById('file-open-hint').hidden=false;</script>
+  <header class="topbar"><a class="brand" href="./" aria-label="Grill ホーム"><span class="brand-mark">▦</span>Grill<span class="brand-dot">.</span></a><span class="top-caption">WALKING BASS WORKSHOP</span><span class="tuning-badge"><i></i>4 STRING · E A D G</span></header>
   <main>
     <section class="intro"><div><p class="eyebrow">YOUR DAILY PRACTICE ROOM</p><h1>お手本から、<em>あなたのラインへ。</em></h1><p class="intro-text">聴く。弾く。ひとつ変えてみる。次のコードへの道を、自分のものに。</p></div><div class="intro-aside"><span class="staff-icon">♩</span><span>ONE NOTE AT A TIME<br><b>今日は、4小節から。</b></span></div></section>
     <div class="workspace">
@@ -44,7 +46,7 @@
         <section class="practice-bottom"><div class="practice-tip"><span>✳</span><p><b>ひとつ変えると、聴こえ方が変わる。</b><br>お手本は答えのひとつ。好きなつながりを探してみましょう。</p></div><div class="save-actions"><button id="save" class="secondary">練習を保存</button><button id="library-open" class="secondary">保存した練習 <span id="saved-count">0</span></button></div></section>
       </div>
     </div>
-    <footer><span class="footer-brand">Grill.</span><p>Contains information from the <a href="https://jazzomat.hfm-weimar.de/" target="_blank" rel="noreferrer">Weimar Jazz Database</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noreferrer">ODbL 1.0</a> / <a href="https://opendatacommons.org/licenses/dbcl/1-0/" target="_blank" rel="noreferrer">DbCL 1.0</a><br><a href="/data/weimar.json" download>収録コードデータ</a> · <a href="/data/NOTICE.md" target="_blank">出典・加工内容</a> · 保存先はこのブラウザ内</p><span class="footer-note">PRACTICE. LISTEN. MAKE IT YOURS.</span></footer>
+    <footer><span class="footer-brand">Grill.</span><p>Contains information from the <a href="https://jazzomat.hfm-weimar.de/" target="_blank" rel="noreferrer">Weimar Jazz Database</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noreferrer">ODbL 1.0</a> / <a href="https://opendatacommons.org/licenses/dbcl/1-0/" target="_blank" rel="noreferrer">DbCL 1.0</a><br><a href="./data/weimar.json" download>収録コードデータ</a> · <a href="./data/NOTICE.md" target="_blank">出典・加工内容</a> · 保存先はこのブラウザ内</p><span class="footer-note">PRACTICE. LISTEN. MAKE IT YOURS.</span></footer>
   </main>
   <dialog id="import-dialog"><div class="dialog-heading"><h2>コード進行を取り込む</h2><button class="dialog-close" aria-label="閉じる">×</button></div><p>iReal ProのMusicXML（.xml / .musicxml）、Grill形式JSON、コードを書いたテキストに対応しています。</p><label class="upload-zone" for="import-file">ファイルを選ぶ<input id="import-file" type="file" accept=".xml,.musicxml,.json,.txt"></label><p class="hint">MusicXMLは非圧縮形式を使用してください。圧縮MXL・PDF・iReal独自HTMLは未対応です。データは端末内で処理します。</p><p id="import-error" class="error" role="alert" hidden></p></dialog>
   <dialog id="library-dialog"><div class="dialog-heading"><h2>保存した練習</h2><button class="dialog-close" aria-label="閉じる">×</button></div><div id="saved-list"></div></dialog>

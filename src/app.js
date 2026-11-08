@@ -126,4 +126,4 @@ window.addEventListener('keydown',e=>{if(e.code==='Space'&&!['INPUT','TEXTAREA',
 document.addEventListener('visibilitychange',()=>{if(document.hidden)player.stop();});
 $('saved-count').textContent=saved().length;
 generate({keepSeed:true});
-try{const res=await fetch('/data/weimar.json');if(!res.ok)throw new Error();const data=await res.json();state.songs=data.songs;state.standards=standardSongs(state.songs);renderSongs();}catch{$('source-note').textContent='曲データを読み込めませんでした。手入力とファイル取り込みは利用できます。';$('song-results').textContent='曲データの読み込みに失敗しました';}
+try{const res=await fetch(new URL('../data/weimar.json',import.meta.url));if(!res.ok)throw new Error();const data=await res.json();state.songs=data.songs;state.standards=standardSongs(state.songs);renderSongs();}catch{$('source-note').textContent='曲データを読み込めませんでした。手入力とファイル取り込みは利用できます。';$('song-results').textContent='曲データの読み込みに失敗しました';}
