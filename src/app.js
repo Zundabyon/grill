@@ -97,7 +97,18 @@ $('model-mode').onclick=()=>setMode('model');$('edit-mode').onclick=()=>setMode(
 $('score').onclick=e=>{const b=e.target.closest('[data-note]');if(!b)return;state.selected=Number(b.dataset.note);document.querySelectorAll('[data-note]').forEach(n=>{const selected=Number(n.dataset.note)===state.selected;n.classList.toggle('selected',selected);n.setAttribute('aria-pressed',String(selected));});renderFretboard();};
 $('fretboard').onclick=async e=>{const cell=e.target.closest('[data-fret]');if(!cell||state.mode!=='edit'||cell.disabled)return;player.stop();const string=Number(cell.dataset.string),fret=Number(cell.dataset.fret),midi=TUNING[string]+fret;state.notes[state.selected]={...state.notes[state.selected],rest:false,string,fret,midi};render();try{await player.preview(midi);}catch{toast('音声を再生できませんでした。ブラウザの音声設定を確認してください。');}};
 $('restore').onclick=()=>{player.stop();state.notes=clone(state.model);render();toast('お手本に戻しました');};
-$('play').onclick=async()=>{if(player.active){player.stop();return;}try{updateTempo($('bpm').value);await player.play(clone(state.notes),audioOptions);$('play').textContent='■';$('play').setAttribute('aria-label','停止');}catch(e){error(new Error('再生を開始できませんでした。ブラウザの音声設定を確認してください。'));}};
+$('play').onclick=async()=>{
+  if(player.active){player.stop();return;}
+  const button=$('play');button.disabled=true;
+  try{
+    updateTempo($('bpm').value);
+    const startup=player.play(clone(state.notes),audioOptions);
+    button.textContent='…';button.setAttribute('aria-label','音源を準備中');$('play-state').textContent='音源を準備中';
+    const started=await startup;
+    if(started){button.textContent='■';button.setAttribute('aria-label','停止');$('play-state').textContent='PLAYING';}
+  }catch(e){player.stop();error(new Error('ベース音源を再生できませんでした。再読み込みしてお試しください。'));}
+  finally{button.disabled=false;}
+};
 $('bpm').onchange=e=>updateTempo(e.target.value);$('tempo-slider').oninput=e=>updateTempo(e.target.value);
 $('save').onclick=()=>{try{if(state.dirty||!$('error').hidden)throw new Error('入力内容を確認し、ラインを生成してから保存してください。');const s=snapshot();if(JSON.stringify(s).length>300000)throw new Error('保存する練習が大きすぎます。');const list=saved();if(list.length>=50)throw new Error('保存は50件までです。不要な練習を書き出して削除してください。');writeSaved([s,...list]);toast('このブラウザに練習を保存しました');}catch(e){error(e);}};
 $('library-open').onclick=()=>{showSaved();$('library-dialog').showModal();};
