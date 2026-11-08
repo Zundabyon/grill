@@ -12,34 +12,41 @@ const clone=x=>structuredClone(x);
 const player=new Player(i=>{
   document.querySelectorAll('.tab-note.playing').forEach(e=>e.classList.remove('playing'));
   if(i<0){$('play-state').textContent=`COUNT ${i+5} / 4`;return;}
-  document.querySelector(`[data-note="${i}"]`)?.classList.add('playing');
+  const playing=document.querySelector(`[data-note="${i}"]`);
+  playing?.classList.add('playing');
+  if(playing){
+    const score=$('score'),row=playing.closest('.measure').getBoundingClientRect(),view=score.getBoundingClientRect();
+    if(row.top<view.top+8 || row.bottom>view.bottom-8)score.scrollBy({top:row.top-view.top-24,behavior:'smooth'});
+  }
   $('play-state').textContent=`${state.offset+Math.floor(i/4)+1} : ${i%4+1}`;
 },()=>{$('play').textContent='▶';$('play').setAttribute('aria-label','再生');$('play-state').textContent='READY';document.querySelectorAll('.playing').forEach(e=>e.classList.remove('playing'));});
 function audioOptions(){return {bpm:Number($('bpm').value),loop:$('loop').checked,bass:$('bass').checked,click:$('click').checked,countIn:$('count-in').checked};}
 function readSettings(){
-  const min=Number($('min-fret').value),max=Number($('max-fret').value),start=Number($('start-bar').value);
+  const full=$('bar-count').value==='all';
+  const min=Number($('min-fret').value),max=Number($('max-fret').value),start=full?1:Number($('start-bar').value);
   if(!Number.isInteger(start)||start<1)throw new Error('開始小節は1以上の整数にしてください。');
   if($('min-fret').value===''||$('max-fret').value==='')throw new Error('フレット範囲を入力してください。');
-  return {min,max,start,difficulty:state.level,seed:state.seed};
+  return {min,max,start,full,difficulty:state.level,seed:state.seed};
 }
+function syncLengthMode(){const full=$('bar-count').value==='all';$('start-bar').disabled=full;if(full)$('start-bar').value=1;}
 function generate({keepSeed=false}={}) {
   try{
     const settings=readSettings();
     let bars=parseProgression($('chords').value);
     bars=transposeBars(bars,mod(pitchClass($('target-key').value)-pitchClass($('source-key').value)));
     if(settings.start>bars.length)throw new Error(`コード進行は${bars.length}小節です。開始小節を変更してください。`);
-    const selected=bars.slice(settings.start-1,settings.start-1+Number($('bar-count').value));
+    const selected=settings.full?bars:bars.slice(settings.start-1,settings.start-1+Number($('bar-count').value));
     if(!keepSeed)state.seed++;
     const notes=generateLine(selected,{...settings,seed:state.seed});
     player.stop();state.bars=selected;state.notes=notes;state.model=clone(notes);state.selected=0;state.offset=settings.start-1;
-    state.applied={min:settings.min,max:settings.max,level:state.level,key:$('target-key').value};state.dirty=false;
-    $('error').hidden=true;render();
+    state.applied={min:settings.min,max:settings.max,level:state.level,key:$('target-key').value,full:settings.full};state.dirty=false;
+    $('error').hidden=true;render();$('score').scrollTop=0;
   }catch(e){error(e);}
 }
 function render(){
   $('practice-title').textContent=state.title;
   const levels={easy:'簡単',normal:'普通',hard:'難しめ'};
-  $('score-subtitle').textContent=`${state.offset+1}–${state.offset+state.bars.length}小節 / KEY ${state.applied.key} / ${levels[state.applied.level]} / ${state.applied.min}–${state.applied.max}フレット`;
+  $('score-subtitle').textContent=`${state.applied.full?'1曲まるごと · ':''}${state.offset+1}–${state.offset+state.bars.length}小節 / KEY ${state.applied.key} / ${levels[state.applied.level]} / ${state.applied.min}–${state.applied.max}フレット`;
   const changed=state.notes.some((n,i)=>n.midi!==state.model[i]?.midi||n.string!==state.model[i]?.string||n.fret!==state.model[i]?.fret);
   $('edit-badge').hidden=!changed;$('restore').hidden=!changed;
   $('score').innerHTML=state.bars.map((bar,b)=>{
@@ -77,8 +84,8 @@ function loadPractice(s){
   const min=Number(s.applied?.min),max=Number(s.applied?.max);
   if(!Number.isInteger(min)||!Number.isInteger(max)||min<0||max>20||max<min||!['easy','normal','hard'].includes(s.level)||!Number.isInteger(s.start)||s.start<1)throw new Error('保存データの設定が不正です。');
   if(![...$('source-key').options].some(o=>o.value===s.sourceKey)||![...$('target-key').options].some(o=>o.value===s.targetKey))throw new Error('保存データのキーが不正です。');
-  player.stop();state.title=String(s.title);state.source=String(s.source||'取り込んだ練習');state.provenance=s.provenance||null;state.notes=clone(s.notes);state.model=clone(s.model);state.bars=parsed;state.applied={min,max,level:s.level,key:s.targetKey};state.offset=s.start-1;state.selected=0;state.dirty=false;
-  $('chords').value=s.chords;$('source-key').value=s.sourceKey;$('target-key').value=s.targetKey;$('min-fret').value=min;$('max-fret').value=max;$('start-bar').value=s.start;$('bar-count').value=s.count;$('song-select').value='';$('source-note').textContent=state.source;setLevel(s.level);updateTempo(s.bpm);$('error').hidden=true;render();
+  player.stop();state.title=String(s.title);state.source=String(s.source||'取り込んだ練習');state.provenance=s.provenance||null;state.notes=clone(s.notes);state.model=clone(s.model);state.bars=parsed;state.applied={min,max,level:s.level,key:s.targetKey,full:s.count==='all'};state.offset=s.start-1;state.selected=0;state.dirty=false;
+  $('chords').value=s.chords;$('source-key').value=s.sourceKey;$('target-key').value=s.targetKey;$('min-fret').value=min;$('max-fret').value=max;$('start-bar').value=s.start;$('bar-count').value=s.count;syncLengthMode();$('song-select').value='';$('source-note').textContent=state.source;setLevel(s.level);updateTempo(s.bpm);$('error').hidden=true;render();
 }
 function renderSongs(query=''){
   const selected=$('song-select').value;
@@ -116,7 +123,7 @@ $('library-open').onclick=()=>{showSaved();$('library-dialog').showModal();};
 $('saved-list').onclick=e=>{try{const load=e.target.closest('[data-load]'),del=e.target.closest('[data-delete]'),exp=e.target.closest('[data-export]');if(load){loadPractice(saved().find(s=>s.id===load.dataset.load));$('library-dialog').close();}if(del){writeSaved(saved().filter(s=>s.id!==del.dataset.delete));showSaved();}if(exp){const s=saved().find(s=>s.id===exp.dataset.export),a=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify(s,null,2)],{type:'application/json'}));a.href=url;a.download='grill-practice.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}}catch(e){error(e);}};
 $('song-search').oninput=e=>renderSongs(e.target.value);
 for(const [id,collection] of [['standard-songs','standards'],['all-songs','all']])$(id).onclick=()=>{state.collection=collection;for(const [button,value] of [['standard-songs','standards'],['all-songs','all']]){$(button).classList.toggle('active',value===collection);$(button).setAttribute('aria-pressed',String(value===collection));}renderSongs($('song-search').value);};
-$('song-select').onchange=()=>{state.dirty=true;const s=state.songs.find(s=>String(s.id)===$('song-select').value);if(!s)return;player.stop();state.title=s.title;state.provenance=s.provenance||null;state.source=s.provenance?`${s.provenance.dataset} / ${s.provenance.license} / 非商用の練習用`:`Weimar Jazz Database / ${s.performer} / 資料ID ${s.id}`;$('source-note').textContent=state.source;$('chords').value=s.chords;$('start-bar').value=1;const key=s.key.split('-')[0];const equivalent={ 'C#':'Db','D#':'Eb','F#':'Gb','G#':'Ab','A#':'Bb','Cb':'B' };$('source-key').value=equivalent[key]||key||'C';$('target-key').value=$('source-key').value;if(!s.supported){error(new Error('この資料には初版未対応の拍子・コード表記があります。進行を編集するか別の曲を選んでください。'));return;}generate();};
+$('song-select').onchange=()=>{state.dirty=true;const s=state.songs.find(s=>String(s.id)===$('song-select').value);if(!s)return;player.stop();state.title=s.title;state.provenance=s.provenance||null;state.source=s.provenance?`${s.provenance.dataset} / ${s.provenance.license} / 非商用の練習用`:`Weimar Jazz Database / ${s.performer} / 資料ID ${s.id}`;$('source-note').textContent=state.source;$('chords').value=s.chords;$('start-bar').value=1;$('bar-count').value='all';syncLengthMode();const key=s.key.split('-')[0];const equivalent={ 'C#':'Db','D#':'Eb','F#':'Gb','G#':'Ab','A#':'Bb','Cb':'B' };$('source-key').value=equivalent[key]||key||'C';$('target-key').value=$('source-key').value;if(!s.supported){error(new Error('この資料には初版未対応の拍子・コード表記があります。進行を編集するか別の曲を選んでください。'));return;}generate();};
 $('chords').oninput=()=>{state.dirty=true;player.stop();state.title='手入力の練習';state.source=state.provenance?`${state.provenance.dataset}から編集 / ${state.provenance.license}`:'手入力のコード進行';$('song-select').value='';$('source-note').textContent=state.source;};
 for(const id of ['source-key','target-key','min-fret','max-fret','start-bar','bar-count'])$(id).addEventListener('change',()=>{state.dirty=true;player.stop();});
 $('import-open').onclick=()=>$('import-dialog').showModal();
@@ -133,10 +140,12 @@ $('import-file').onchange=async e=>{
     $('import-error').hidden=true;$('import-dialog').close();toast('取り込みました。入力と練習するキーを確認してください。');
   }catch(err){$('import-error').textContent=err.message;$('import-error').hidden=false;}finally{e.target.value='';}
 };
-function applyImport(data){player.stop();state.title=String(data.title||'取り込んだ練習');state.provenance=data.provenance||null;state.source=state.provenance?`${state.provenance.dataset} / ${state.provenance.license}`:'端末内で取り込んだコード進行';$('chords').value=data.chords;$('source-note').textContent=state.source;$('start-bar').value=1;$('song-select').value='';const key=data.key||'C';const equivalent={'C#':'Db','D#':'Eb','F#':'Gb','G#':'Ab','A#':'Bb'};$('source-key').value=equivalent[key]||key;$('target-key').value=$('source-key').value;generate();}
+function applyImport(data){player.stop();state.title=String(data.title||'取り込んだ練習');state.provenance=data.provenance||null;state.source=state.provenance?`${state.provenance.dataset} / ${state.provenance.license}`:'端末内で取り込んだコード進行';$('chords').value=data.chords;$('source-note').textContent=state.source;$('start-bar').value=1;$('bar-count').value='all';syncLengthMode();$('song-select').value='';const key=data.key||'C';const equivalent={'C#':'Db','D#':'Eb','F#':'Gb','G#':'Ab','A#':'Bb'};$('source-key').value=equivalent[key]||key;$('target-key').value=$('source-key').value;generate();}
 window.addEventListener('keydown',e=>{if(e.code==='Space'&&!['INPUT','TEXTAREA','SELECT','BUTTON'].includes(document.activeElement.tagName)&&!document.querySelector('dialog[open]')){e.preventDefault();$('play').click();}});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)player.stop();});
 $('saved-count').textContent=saved().length;
+$('bar-count').addEventListener('change',syncLengthMode);
+syncLengthMode();
 generate({keepSeed:true});
 try{
   const responses=await Promise.all(['weimar.json','jht-standards.json'].map(path=>fetch(new URL('../data/'+path,import.meta.url))));

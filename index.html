@@ -13,7 +13,7 @@
   <script>if(location.protocol==='file:')document.getElementById('file-open-hint').hidden=false;</script>
   <header class="topbar"><a class="brand" href="./" aria-label="Grill ホーム"><span class="brand-mark">▦</span>Grill<span class="brand-dot">.</span></a><span class="top-caption">WALKING BASS WORKSHOP</span><span class="tuning-badge"><i></i>4 STRING · E A D G</span></header>
   <main>
-    <section class="intro"><div><p class="eyebrow">YOUR DAILY PRACTICE ROOM</p><h1>お手本から、<em>あなたのラインへ。</em></h1><p class="intro-text">聴く。弾く。ひとつ変えてみる。次のコードへの道を、自分のものに。</p></div><div class="intro-aside"><span class="staff-icon">♩</span><span>ONE NOTE AT A TIME<br><b>今日は、4小節から。</b></span></div></section>
+    <section class="intro"><div><p class="eyebrow">YOUR DAILY PRACTICE ROOM</p><h1>お手本から、<em>あなたのラインへ。</em></h1><p class="intro-text">聴く。弾く。ひとつ変えてみる。次のコードへの道を、自分のものに。</p></div><div class="intro-aside"><span class="staff-icon">♩</span><span>ONE NOTE AT A TIME<br><b>今日は、1曲通して。</b></span></div></section>
     <div class="workspace">
       <aside class="setup panel">
         <div class="panel-title"><span class="step-no">01</span><h2>練習をつくる</h2></div>
@@ -30,7 +30,7 @@
         <div class="two-fields"><div><label class="field-label" for="source-key">入力のキー</label><select id="source-key"></select></div><div><label class="field-label" for="target-key">練習するキー</label><select id="target-key"></select></div></div>
         <fieldset class="difficulty"><legend class="field-label">難易度</legend><div class="segments"><button data-level="easy" class="active" aria-pressed="true">簡単</button><button data-level="normal" aria-pressed="false">普通</button><button data-level="hard" aria-pressed="false">難しめ</button></div><p class="hint" id="difficulty-hint">近いポジションを中心に、構成音とつなぎを練習。</p></fieldset>
         <div class="two-fields"><div><label class="field-label" for="min-fret">フレット下限</label><input id="min-fret" type="number" min="0" max="20" value="0"></div><div><label class="field-label" for="max-fret">フレット上限</label><input id="max-fret" type="number" min="0" max="20" value="5"></div></div>
-        <div class="two-fields"><div><label class="field-label" for="start-bar">開始小節</label><input id="start-bar" type="number" min="1" value="1"></div><div><label class="field-label" for="bar-count">練習する長さ</label><select id="bar-count"><option value="4">4小節</option><option value="8">8小節</option><option value="16">16小節</option></select></div></div>
+        <div class="two-fields"><div><label class="field-label" for="start-bar">開始小節</label><input id="start-bar" type="number" min="1" value="1"></div><div><label class="field-label" for="bar-count">練習する長さ</label><select id="bar-count"><option value="all" selected>1曲まるごと</option><option value="4">4小節</option><option value="8">8小節</option><option value="16">16小節</option></select></div></div>
         <button id="generate" class="primary full">ラインをつくる <span>↗</span></button>
         <p id="error" class="error" role="alert" hidden></p>
       </aside>
@@ -38,10 +38,11 @@
         <section class="score panel">
           <div class="score-header"><div><p class="eyebrow">02 / PLAY & EXPLORE</p><h2 id="practice-title">今日のウォーキング</h2><p class="score-subtitle" id="score-subtitle"></p></div><button id="regenerate" class="secondary">⟳ 別のお手本</button></div>
           <div class="learning-tabs" role="group" aria-label="練習モード"><button id="model-mode" class="active" aria-pressed="true">01 お手本を弾く</button><button id="edit-mode" aria-pressed="false">02 自分で変える</button><span id="edit-badge" hidden>アレンジ中</span></div>
-          <div id="score" class="tab-score" aria-label="ベースTAB譜"></div>
-          <div class="score-footer"><span><i class="legend-dot"></i> 音を選ぶと、押さえる場所と理由がわかります</span><button id="restore" class="text-button" hidden>お手本に戻す</button></div>
           <div class="transport"><button id="play" class="play-button" aria-label="再生">▶</button><div class="tempo"><label for="bpm">TEMPO</label><div><input id="bpm" type="number" min="30" max="240" value="90"><span>BPM</span></div></div><input id="tempo-slider" aria-label="テンポ" type="range" min="30" max="240" value="90"><div class="transport-options"><label><input type="checkbox" id="loop" checked>ループ</label><label><input type="checkbox" id="bass" checked>ベース</label><label><input type="checkbox" id="click" checked>クリック</label><label><input type="checkbox" id="count-in" checked>カウントイン</label></div><span id="play-state" aria-live="polite">READY</span></div>
           <p class="sound-credit">エレキベース録音音源 · <a href="./assets/bass-electric/NOTICE.md" target="_blank">Karoryfer / tonejs-instruments · CC BY 3.0</a></p>
+          <div id="score" class="tab-score" aria-label="ベースTAB譜"></div>
+          <div class="score-footer"><span><i class="legend-dot"></i> 音を選ぶと、押さえる場所と理由がわかります</span><button id="restore" class="text-button" hidden>お手本に戻す</button></div>
+
         </section>
         <section class="explore panel"><div class="explore-heading"><div class="panel-title"><span class="step-no">03</span><h2>この音を、自分のものに</h2></div><span id="selected-position" class="position-label"></span></div><div class="fretboard-wrap"><div id="fretboard" class="fretboard" aria-label="ベース指板"></div></div><div class="note-explanation"><div class="note-bubble" id="selected-note">D<span>ROOT</span></div><div><span id="note-role" class="role-label">ルート</span><p id="note-reason"></p><p id="edit-help" class="hint">「自分で変える」に切り替えると、指板をクリックして音を変更できます。</p></div></div></section>
         <section class="practice-bottom"><div class="practice-tip"><span>✳</span><p><b>ひとつ変えると、聴こえ方が変わる。</b><br>お手本は答えのひとつ。好きなつながりを探してみましょう。</p></div><div class="save-actions"><button id="save" class="secondary">練習を保存</button><button id="library-open" class="secondary">保存した練習 <span id="saved-count">0</span></button></div></section>

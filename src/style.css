@@ -6,3 +6,6 @@
 .file-open-hint{padding:16px 28px;background:#f4dfce;color:#823c28;font-size:13px;line-height:1.9;border-bottom:1px solid #d9b8a2}.file-open-hint strong{display:block}
 
 .sound-credit{margin:0;padding:9px 24px;background:#efeee6;color:var(--muted);font-size:8px;line-height:1.7}.sound-credit a{color:inherit;text-underline-offset:2px}
+
+.score{overflow:clip}.transport{position:sticky;top:0;z-index:3;border-bottom:1px solid var(--line);box-shadow:0 2px 5px #292b2608}#start-bar:disabled{background:#f0ede6;color:#a3a094;cursor:not-allowed}
+.tab-score{max-height:520px;overflow-y:auto;align-content:start;scrollbar-width:thin;scrollbar-color:#c7bba8 transparent}

@@ -16,11 +16,9 @@ test('33 distinct standards are playable through the entire chart at all three l
     const bars=parseProgression(song.chords);
     assert.ok(bars.length>=12,`${song.title} must not be a fragment`);
     for(const [difficulty,max] of [['easy',5],['normal',9],['hard',12]]){
-      for(let start=0;start<bars.length;start+=4){
-        const section=bars.slice(start,start+4);
-        const notes=generateLine(section,{difficulty,min:0,max,seed:1});
-        assert.equal(notes.length,section.length*4,`${song.title}, bar ${start+1}, ${difficulty}`);
-      }
+      const notes=generateLine(bars,{difficulty,min:0,max,seed:1});
+      assert.equal(notes.length,bars.length*4,`${song.title}, whole song, ${difficulty}`);
+      assert.equal(notes.at(-1).bar,bars.length-1);
     }
   }
 });
