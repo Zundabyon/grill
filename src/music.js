@@ -26,7 +26,9 @@ export function parseChord(text) {
   if (/^o7/.test(quality)) intervals.push(9);
   else if (/6|69/.test(quality) && !/b6/.test(quality)) intervals.push(9);
   else if (/\^/.test(quality)) intervals.push(11);
-  else if (/[791]|13/.test(quality)) intervals.push(10);
+  else if (quality.startsWith('h') || (quality !== 'add9' && /[791]|13/.test(quality))) intervals.push(10);
+  // Include the added ninth in the shared harmony used by generation and UI.
+  if (quality === 'add9') intervals.push(2);
   return {symbol,root,quality,intervals,pcs:intervals.map(i=>mod(root+i)),bass:m[4] ? pitchClass(m[4]) : root};
 }
 export function parseProgression(input) {
@@ -47,6 +49,7 @@ export function parseProgression(input) {
   });
 }
 export function transposeBars(bars, semitones) {
+  if (mod(semitones) === 0) return bars.map(bar=>bar.map(c=>({...c})));
   return bars.map(bar=>bar.map(c=>c.rest ? c : {...c,root:mod(c.root+semitones),bass:mod(c.bass+semitones),pcs:c.pcs.map(p=>mod(p+semitones)),symbol:noteName(c.root+semitones)+c.quality+(c.bass !== c.root ? '/'+noteName(c.bass+semitones) : '')}));
 }
 export function positions(min=0,max=5) {
@@ -88,17 +91,34 @@ export function generateLine(bars,{min=0,max=5,difficulty='easy',seed=1}={}) {
   });
   return beam[0].notes.map(({local,...n})=>n);
 }
+// Degree and spelling follow chord function, independently of sounding octave.
+export function chordTone(chord, midi) {
+  if (chord.rest || !chord.pcs.includes(mod(midi))) return null;
+  const interval=mod(midi-chord.root);
+  const diminishedSeventh=interval===9 && /^o7/.test(chord.quality);
+  const ninth=interval===2 && chord.quality==='add9';
+  const degrees={0:0,2:1,3:2,4:2,5:3,6:4,7:4,8:4,9:5,10:6,11:6};
+  const roles={0:'ルート',2:'2度',3:'短3度',4:'長3度',5:'4度',6:'減5度',7:'5度',8:'増5度',9:'6度',10:'短7度',11:'長7度'};
+  const rootLetter=chord.symbol[0], letters='CDEFGAB';
+  const letter=letters[(letters.indexOf(rootLetter)+(diminishedSeventh?6:degrees[interval]))%7];
+  const natural={C:0,D:2,E:4,F:5,G:7,A:9,B:11}[letter];
+  let alteration=mod(midi-natural);
+  if(alteration>6) alteration-=12;
+  const name=letter+(alteration<0?'b'.repeat(-alteration):'#'.repeat(alteration));
+  return {name,role:diminishedSeventh?'減7度':ninth?'9度':roles[interval]};
+}
+export const chordNoteName = (midi,chord) => chordTone(chord,midi)?.name || noteName(midi);
 export function explainNote(note,index,notes,bars) {
   if(note.rest) return {role:'休符',text:'N.C. の区間です。ベースは休み、クリックで拍を追います。'};
   const chord=bars.flat()[index],next=notes[(index+1)%notes.length];
-  const interval=mod(note.midi-chord.root);
-  const roles={0:'ルート',2:'2度',3:'短3度',4:'長3度',5:'4度',6:'減5度',7:'5度',8:'増5度',9:'6度',10:'短7度',11:'長7度'};
-  const isChord=chord.pcs.includes(mod(note.midi));
-  const role=isChord ? roles[interval]||'コードの構成音' : 'つなぎの音';
-  let text=isChord?`${noteName(note.midi)}は${chord.symbol}の${role}。コードの響きを示す音として使えます。`:`${noteName(note.midi)}は${chord.symbol}の基本的な構成音の外にある音です。前後の流れを聴いて選んでみましょう。`;
+  const tone=chordTone(chord,note.midi);
+  const role=tone?.role || 'つなぎの音';
+  const spelling=tone?.name || noteName(note.midi);
+  const alias=spelling.includes('bb') || spelling.includes('##') ? `（実音は${noteName(note.midi)}と同じ）` : '';
+  let text=tone?`${spelling}${alias}は${chord.symbol}の${role}。コードの響きを示す音として使えます。`:`${spelling}は${chord.symbol}の基本的な構成音の外にある音です。前後の流れを聴いて選んでみましょう。`;
   if(next && !next.rest && (index%4===3 || bars.flat()[(index+1)%notes.length].symbol!==chord.symbol)) {
     const d=Math.abs(note.midi-next.midi);
-    text+=d===1?` 次の${noteName(next.midi)}へ半音でつながります。`:d===2?` 次の${noteName(next.midi)}へ全音でつながります。`:` 次の${noteName(next.midi)}との動きを聴き比べてみましょう。`;
+    text+=d===1?` 次の${chordNoteName(next.midi,bars.flat()[(index+1)%notes.length])}へ半音でつながります。`:d===2?` 次の${chordNoteName(next.midi,bars.flat()[(index+1)%notes.length])}へ全音でつながります。`:` 次の${chordNoteName(next.midi,bars.flat()[(index+1)%notes.length])}との動きを聴き比べてみましょう。`;
   }
   return {role,text};
 }

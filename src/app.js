@@ -1,4 +1,4 @@
-import {TUNING,STRINGS,mod,noteName,pitchClass,parseProgression,transposeBars,generateLine,explainNote} from './music.js';
+import {TUNING,STRINGS,mod,noteName,chordNoteName,pitchClass,parseProgression,transposeBars,generateLine,explainNote} from './music.js';
 import {musicXMLToProgression} from './import.js';
 import {Player} from './audio.js';
 import {standardSongs,filterSongs} from './catalog.js';
@@ -51,7 +51,7 @@ function render(){
   $('edit-badge').hidden=!changed;$('restore').hidden=!changed;
   $('score').innerHTML=state.bars.map((bar,b)=>{
     const cs=bar.map((c,i)=>i===0||bar[i-1].symbol!==c.symbol?`<span style="grid-column:${i+1}/span ${(()=>{let n=1;while(i+n<4&&bar[i+n].symbol===c.symbol)n++;return n;})()}">${escape(c.symbol)}</span>`:'').join('');
-    return `<div class="measure"><div class="measure-head"><span class="measure-num">${String(state.offset+b+1).padStart(2,'0')}</span></div><div class="measure-chords">${cs}</div><div class="tab-staff">${state.notes.slice(b*4,b*4+4).map((n,j)=>{const i=b*4+j,info=explainNote(n,i,state.notes,state.bars);return `<button class="tab-note ${i===state.selected?'selected':''} ${n.midi!==state.model[i]?.midi||n.string!==state.model[i]?.string?'edited':''}" data-note="${i}" aria-label="${state.offset+b+1}小節 ${j+1}拍 ${n.rest?'休符':STRINGS[n.string]+'弦 '+n.fret+'フレット '+noteName(n.midi)+' '+info.role}" aria-pressed="${i===state.selected}"><span class="fret-number" style="--string:${n.rest?1:n.string}">${n.rest?'−':n.fret}</span></button>`;}).join('')}</div><div class="beat-numbers"><span>1</span><span>2</span><span>3</span><span>4</span></div>${b%4===0?'<div class="string-labels"><span>G</span><span>D</span><span>A</span><span>E</span></div>':''}</div>`;
+    return `<div class="measure"><div class="measure-head"><span class="measure-num">${String(state.offset+b+1).padStart(2,'0')}</span></div><div class="measure-chords">${cs}</div><div class="tab-staff">${state.notes.slice(b*4,b*4+4).map((n,j)=>{const i=b*4+j,info=explainNote(n,i,state.notes,state.bars);return `<button class="tab-note ${i===state.selected?'selected':''} ${n.midi!==state.model[i]?.midi||n.string!==state.model[i]?.string?'edited':''}" data-note="${i}" aria-label="${state.offset+b+1}小節 ${j+1}拍 ${n.rest?'休符':STRINGS[n.string]+'弦 '+n.fret+'フレット '+chordNoteName(n.midi,state.bars[b][j])+' '+info.role}" aria-pressed="${i===state.selected}"><span class="fret-number" style="--string:${n.rest?1:n.string}">${n.rest?'−':n.fret}</span></button>`;}).join('')}</div><div class="beat-numbers"><span>1</span><span>2</span><span>3</span><span>4</span></div>${b%4===0?'<div class="string-labels"><span>G</span><span>D</span><span>A</span><span>E</span></div>':''}</div>`;
   }).join('');
   renderFretboard();
 }
@@ -60,12 +60,12 @@ function renderFretboard(){
   const chord=state.bars.flat()[state.selected],info=explainNote(n,state.selected,state.notes,state.bars),{min,max}=state.applied;
   const count=max-min+1;
   $('selected-position').textContent=`${state.offset+Math.floor(state.selected/4)+1}小節 · ${state.selected%4+1}拍${n.rest?'':` / ${STRINGS[n.string]}弦 ${n.fret}フレット`}`;
-  $('selected-note').innerHTML=n.rest?'−<span>REST</span>':`${escape(noteName(n.midi))}<span>${n.midi===state.model[state.selected]?.midi?'MODEL':'YOUR NOTE'}</span>`;
+  $('selected-note').innerHTML=n.rest?'−<span>REST</span>':`${escape(chordNoteName(n.midi,chord))}<span>${n.midi===state.model[state.selected]?.midi?'MODEL':'YOUR NOTE'}</span>`;
   $('note-role').textContent=info.role;$('note-reason').textContent=info.text;
   $('edit-help').textContent=state.mode==='edit'?'指板の好きな位置をクリック。選んだ音を聴いて、前後のつながりを試しましょう。':'「自分で変える」に切り替えると、指板をクリックして音を変更できます。';
   $('fretboard').classList.toggle('editable',state.mode==='edit');
   $('fretboard').style.gridTemplateColumns=`30px repeat(${count},minmax(34px,1fr))`;
-  $('fretboard').innerHTML='<div class="fret-head"></div>'+Array.from({length:count},(_,i)=>`<div class="fret-head">${i+min===0?'OPEN':i+min}</div>`).join('')+TUNING.map((open,s)=>`<div class="string-name">${STRINGS[s]}</div>`+Array.from({length:count},(_,i)=>{const fret=i+min,midi=open+fret,current=!n.rest&&n.string===s&&n.fret===fret;return `<button ${state.mode==='edit'&&!chord.rest?'':'disabled'} data-string="${s}" data-fret="${fret}" class="fret-cell ${chord.pcs.includes(mod(midi))?'chord-tone':''} ${current?'current':''}" style="--thickness:${1+s*.45}px" aria-label="${STRINGS[s]}弦 ${fret}フレット ${noteName(midi)}"><span>${escape(noteName(midi))}</span></button>`;}).join('')).join('');
+  $('fretboard').innerHTML='<div class="fret-head"></div>'+Array.from({length:count},(_,i)=>`<div class="fret-head">${i+min===0?'OPEN':i+min}</div>`).join('')+TUNING.map((open,s)=>`<div class="string-name">${STRINGS[s]}</div>`+Array.from({length:count},(_,i)=>{const fret=i+min,midi=open+fret,current=!n.rest&&n.string===s&&n.fret===fret;return `<button ${state.mode==='edit'&&!chord.rest?'':'disabled'} data-string="${s}" data-fret="${fret}" class="fret-cell ${chord.pcs.includes(mod(midi))?'chord-tone':''} ${current?'current':''}" style="--thickness:${1+s*.45}px" aria-label="${STRINGS[s]}弦 ${fret}フレット ${chordNoteName(midi,chord)}"><span>${escape(chordNoteName(midi,chord))}</span></button>`;}).join('')).join('');
 }
 function setMode(mode){state.mode=mode;for(const m of ['model','edit']){$(m+'-mode').classList.toggle('active',m===mode);$(m+'-mode').setAttribute('aria-pressed',String(m===mode));}renderFretboard();}
 function setLevel(level){state.level=level;document.querySelectorAll('[data-level]').forEach(b=>{b.classList.toggle('active',b.dataset.level===level);b.setAttribute('aria-pressed',String(b.dataset.level===level));});$('difficulty-hint').textContent={easy:'近いポジションを中心に、構成音とつなぎを練習。',normal:'移動の制約をゆるめ、つなぎ方の選択肢を増やします。',hard:'広い動きも候補に。テンポはゆっくりでも大丈夫。'}[level];}
