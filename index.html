@@ -17,8 +17,8 @@
     <div class="workspace">
       <aside class="setup panel">
         <div class="panel-title"><span class="step-no">01</span><h2>練習をつくる</h2></div>
-        <label class="field-label" for="song-search">曲を探す <span>ワイマール収録曲</span></label>
-        <div class="segments collection-switch" role="group" aria-label="曲のコレクション"><button id="standard-songs" class="active" aria-pressed="true">スタンダード30曲</button><button id="all-songs" aria-pressed="false">全資料</button></div>
+        <label class="field-label" for="song-search">曲を探す <span>コード進行ライブラリ</span></label>
+        <div class="segments collection-switch" role="group" aria-label="曲のコレクション"><button id="standard-songs" class="active" aria-pressed="true">スタンダード33曲</button><button id="all-songs" aria-pressed="false">全資料</button></div>
         <input type="search" id="song-search" placeholder="曲名・演奏者で検索" autocomplete="off">
         <label class="sr-only" for="song-select">曲の選択</label><select id="song-select"><option value="">手入力の練習用進行</option></select>
         <p id="song-results" class="hint" role="status">曲データを読み込み中…</p>
@@ -26,7 +26,7 @@
         <div class="field-heading"><label for="chords" class="field-label">コード進行</label><button id="import-open" class="text-button">ファイルを取り込む ↗</button></div>
         <textarea id="chords" rows="4" spellcheck="false" aria-describedby="chord-help">Dm7 | G7 | Cmaj7 | A7</textarea>
         <p id="chord-help" class="hint">「 | 」で小節を区切る · 1小節に1・2・4コード<br>4/4拍子・1拍に1音で練習します。</p>
-        <details class="import-help"><summary>Autumn Leavesで練習するには</summary><p>今回のワイマール配布版には未収録です。お手元のコード進行を入力するか、iReal Proから書き出したMusicXMLを取り込んでください。独自HTML形式には未対応です。</p></details>
+        <details class="import-help"><summary>Autumn Leavesで練習するには</summary><p>曲の一覧から「Autumn Leaves — JHT収録版」を選べます。「枯葉」でも検索できます。JHTの追加曲は非商用の練習用データです。手元の別バージョンはMusicXMLでも取り込めます。</p></details>
         <div class="two-fields"><div><label class="field-label" for="source-key">入力のキー</label><select id="source-key"></select></div><div><label class="field-label" for="target-key">練習するキー</label><select id="target-key"></select></div></div>
         <fieldset class="difficulty"><legend class="field-label">難易度</legend><div class="segments"><button data-level="easy" class="active" aria-pressed="true">簡単</button><button data-level="normal" aria-pressed="false">普通</button><button data-level="hard" aria-pressed="false">難しめ</button></div><p class="hint" id="difficulty-hint">近いポジションを中心に、構成音とつなぎを練習。</p></fieldset>
         <div class="two-fields"><div><label class="field-label" for="min-fret">フレット下限</label><input id="min-fret" type="number" min="0" max="20" value="0"></div><div><label class="field-label" for="max-fret">フレット上限</label><input id="max-fret" type="number" min="0" max="20" value="5"></div></div>
@@ -47,7 +47,7 @@
         <section class="practice-bottom"><div class="practice-tip"><span>✳</span><p><b>ひとつ変えると、聴こえ方が変わる。</b><br>お手本は答えのひとつ。好きなつながりを探してみましょう。</p></div><div class="save-actions"><button id="save" class="secondary">練習を保存</button><button id="library-open" class="secondary">保存した練習 <span id="saved-count">0</span></button></div></section>
       </div>
     </div>
-    <footer><span class="footer-brand">Grill.</span><p>Contains information from the <a href="https://jazzomat.hfm-weimar.de/" target="_blank" rel="noreferrer">Weimar Jazz Database</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noreferrer">ODbL 1.0</a> / <a href="https://opendatacommons.org/licenses/dbcl/1-0/" target="_blank" rel="noreferrer">DbCL 1.0</a><br><a href="./data/weimar.json" download>収録コードデータ</a> · <a href="./data/NOTICE.md" target="_blank">出典・加工内容</a> · 保存先はこのブラウザ内</p><span class="footer-note">PRACTICE. LISTEN. MAKE IT YOURS.</span></footer>
+    <footer><span class="footer-brand">Grill.</span><p>Contains information from the <a href="https://jazzomat.hfm-weimar.de/" target="_blank" rel="noreferrer">Weimar Jazz Database</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noreferrer">ODbL 1.0</a> / <a href="https://opendatacommons.org/licenses/dbcl/1-0/" target="_blank" rel="noreferrer">DbCL 1.0</a><br><a href="./data/weimar.json" download>収録コードデータ</a> · <a href="./data/NOTICE.md" target="_blank">出典・加工内容</a> · 保存先はこのブラウザ内<br>追加3曲：<a href="./data/JHT-NOTICE.md" target="_blank">Jazz Harmony Treebank · CC BY-NC-SA 4.0（非商用）</a> · <a href="./data/jht-standards.json" download>追加曲データ</a></p><span class="footer-note">PRACTICE. LISTEN. MAKE IT YOURS.</span></footer>
   </main>
   <dialog id="import-dialog"><div class="dialog-heading"><h2>コード進行を取り込む</h2><button class="dialog-close" aria-label="閉じる">×</button></div><p>iReal ProのMusicXML（.xml / .musicxml）、Grill形式JSON、コードを書いたテキストに対応しています。</p><label class="upload-zone" for="import-file">ファイルを選ぶ<input id="import-file" type="file" accept=".xml,.musicxml,.json,.txt"></label><p class="hint">MusicXMLは非圧縮形式を使用してください。圧縮MXL・PDF・iReal独自HTMLは未対応です。データは端末内で処理します。</p><p id="import-error" class="error" role="alert" hidden></p></dialog>
   <dialog id="library-dialog"><div class="dialog-heading"><h2>保存した練習</h2><button class="dialog-close" aria-label="閉じる">×</button></div><div id="saved-list"></div></dialog>

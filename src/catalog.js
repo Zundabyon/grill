@@ -1,6 +1,9 @@
-// One playable WJazzD chart per tune. Source IDs are retained for attribution.
-// These are arrangements from specific performances, not a canonical lead sheet.
+// One playable chart per tune. WJazzD recordings and JHT charts remain separate sources.
+// Source IDs are retained for attribution; no chart is treated as the canonical version.
 export const STANDARD_CHARTS = [
+  {id:'jht:fly-me-to-the-moon',title:'Fly Me To The Moon'},
+  {id:'jht:autumn-leaves',title:'Autumn Leaves'},
+  {id:'jht:blue-bossa',title:'Blue Bossa'},
   {id:266,title:'All the Things You Are'},
   {id:329,title:"Bag's Groove"},
   {id:52,title:"Billie's Bounce"},
@@ -42,5 +45,9 @@ export function standardSongs(songs) {
 }
 export function filterSongs(songs,query='') {
   const normalized=query.normalize('NFKC').trim().toLowerCase().replace(/[’‘]/g,"'");
-  return songs.filter(song=>(song.title+' '+song.performer).normalize('NFKC').toLowerCase().replace(/[’‘]/g,"'").includes(normalized));
+  const compact=s=>s.replace(/[\s'.-]/g,'');
+  return songs.filter(song=>{
+    const text=[song.title,song.performer,...(song.aliases||[])].join(' ').normalize('NFKC').toLowerCase().replace(/[’‘]/g,"'");
+    return text.includes(normalized) || compact(text).includes(compact(normalized));
+  });
 }
