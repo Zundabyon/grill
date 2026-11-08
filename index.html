@@ -11,7 +11,7 @@
 <body>
   <div id="file-open-hint" class="file-open-hint" hidden role="alert"><strong>Grillを起動してから開いてください。</strong>このフォルダの「Grillを起動.command」をダブルクリックすると、練習用のURLが開きます。HTMLを直接開いた状態では、再生や曲の読み込みは動きません。</div>
   <script>if(location.protocol==='file:')document.getElementById('file-open-hint').hidden=false;</script>
-  <header class="topbar"><a class="brand" href="./" aria-label="Grill ホーム"><span class="brand-mark">▦</span>Grill<span class="brand-dot">.</span></a><span class="top-caption">WALKING BASS WORKSHOP</span><span class="tuning-badge"><i></i>4 STRING · E A D G</span></header>
+  <header class="topbar"><a class="brand" href="./" aria-label="Grill ホーム"><span class="brand-mark">▦</span>Grill<span class="brand-dot">.</span></a><span class="top-caption">WALKING BASS WORKSHOP</span><span class="tuning-badge"><i></i>4 STRING · E A D G</span><button id="tips-open" class="tips-toggle" aria-label="ウォーキングベースの基本とTipsを開く" aria-haspopup="dialog" aria-controls="tips-dialog" aria-expanded="false"><span class="hamburger" aria-hidden="true"><i></i><i></i><i></i></span><span>Tips</span></button></header>
   <main>
     <section class="intro"><div><p class="eyebrow">YOUR DAILY PRACTICE ROOM</p><h1>お手本から、<em>あなたのラインへ。</em></h1><p class="intro-text">聴く。弾く。ひとつ変えてみる。次のコードへの道を、自分のものに。</p></div><div class="intro-aside"><span class="staff-icon">♩</span><span>ONE NOTE AT A TIME<br><b>今日は、1曲通して。</b></span></div></section>
     <div class="workspace">
@@ -50,6 +50,16 @@
     </div>
     <footer><span class="footer-brand">Grill.</span><p>Contains information from the <a href="https://jazzomat.hfm-weimar.de/" target="_blank" rel="noreferrer">Weimar Jazz Database</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noreferrer">ODbL 1.0</a> / <a href="https://opendatacommons.org/licenses/dbcl/1-0/" target="_blank" rel="noreferrer">DbCL 1.0</a><br><a href="./data/weimar.json" download>収録コードデータ</a> · <a href="./data/NOTICE.md" target="_blank">出典・加工内容</a> · 保存先はこのブラウザ内<br>追加3曲：<a href="./data/JHT-NOTICE.md" target="_blank">Jazz Harmony Treebank · CC BY-NC-SA 4.0（非商用）</a> · <a href="./data/jht-standards.json" download>追加曲データ</a></p><span class="footer-note">PRACTICE. LISTEN. MAKE IT YOURS.</span></footer>
   </main>
+  <dialog id="tips-dialog" class="tips-drawer" aria-labelledby="tips-title">
+    <div class="dialog-heading"><div><p class="eyebrow">WALKING BASS / FIELD NOTES</p><h2 id="tips-title">ウォーキングベースの基本とTips</h2></div><button class="dialog-close" aria-label="Tipsを閉じる" autofocus>×</button></div>
+    <p class="tips-lead">次のコードへ、1音ずつ。<br>まずは短い区間で、音のつながりを聴いてみましょう。</p>
+    <nav class="tips-nav" aria-label="Tipsの目次"><a href="#tips-basics">基本</a><a href="#tips-tones">音選び</a><a href="#tips-approach">つなぎ方</a><a href="#tips-practice">練習のコツ</a></nav>
+    <section id="tips-basics" class="tips-section"><span class="eyebrow">01 / THE PULSE</span><h3>ウォーキングベースって？</h3><p>拍を刻みながらコードの響きを伝え、次のコードへ進むベースラインです。Grillでは4/4拍子で、1拍に1音の4分音符を並べて練習します。</p><p class="tips-callout">音を増やす前に、一定のテンポで。ゆっくり弾いても、4つの拍が続く感覚を大切に。</p></section>
+    <section id="tips-tones" class="tips-section"><span class="eyebrow">02 / CHORD TONES</span><h3>まずはルートと構成音</h3><p>ルートはコード名の基準になる音。Dm7ならDです。コードが変わる拍をルートで弾くところから始めると、進行をつかみやすくなります。</p><div class="tips-example"><b>Dm7</b><span>D · F · A · C</span><small>ルート · 短3度 · 5度 · 短7度</small></div><p>慣れたら構成音を加えましょう。TABの音を選ぶと、指板とその音の役割を確認できます。ルート以外に着地する演奏もありますが、最初はルートを目印にすると練習しやすくなります。</p></section>
+    <section id="tips-approach" class="tips-section"><span class="eyebrow">03 / THE NEXT NOTE</span><h3>次の音から、ひとつ手前を考える</h3><p>次のコードで弾く音を決め、その半音上・下や全音上・下から近づく方法があります。コードの外の音も、こうした「つなぎの音」として使えます。</p><div class="tips-example"><b>G7 → Cmaj7</b><span>B1 → C2</span><small>次のルートCへ、半音上がって着地</small></div><p>音名だけでなく、実際の高さにも注目。B1からC2は半音ですが、B1からC3は大きな跳躍です。ループでは最後の音から最初の音へのつながりも聴いてみましょう。</p></section>
+    <section id="tips-practice" class="tips-section"><span class="eyebrow">04 / TRY IT</span><h3>今日の小さな練習</h3><ol><li><b>4小節だけ、ゆっくり。</b>難易度を「簡単」にして、無理なく弾けるテンポでループ。</li><li><b>コードが変わる音を確認。</b>ルートの場所と響きを覚えてから、残りの拍を弾きます。</li><li><b>ひとつだけ変えて聴く。</b>「自分で変える」で4拍目を選び、次の音へのつながりを比べます。</li><li><b>クリックだけで弾く。</b>「ベース」をオフにして、自分の音で拍をつなぎます。</li></ol><p class="tips-callout">お手本は答えのひとつ。弦を大きくまたぐ、手が届きにくいと感じたら、音や運指、テンポを変えてみましょう。</p></section>
+    <button id="tips-done" class="primary full">練習に戻る <span aria-hidden="true">↗</span></button>
+  </dialog>
   <dialog id="import-dialog"><div class="dialog-heading"><h2>コード進行を取り込む</h2><button class="dialog-close" aria-label="閉じる">×</button></div><p>iReal ProのMusicXML（.xml / .musicxml）、Grill形式JSON、コードを書いたテキストに対応しています。</p><label class="upload-zone" for="import-file">ファイルを選ぶ<input id="import-file" type="file" accept=".xml,.musicxml,.json,.txt"></label><p class="hint">MusicXMLは非圧縮形式を使用してください。圧縮MXL・PDF・iReal独自HTMLは未対応です。データは端末内で処理します。</p><p id="import-error" class="error" role="alert" hidden></p></dialog>
   <dialog id="library-dialog"><div class="dialog-heading"><h2>保存した練習</h2><button class="dialog-close" aria-label="閉じる">×</button></div><div id="saved-list"></div></dialog>
   <div id="toast" role="status" hidden></div>

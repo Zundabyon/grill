@@ -126,6 +126,19 @@ for(const [id,collection] of [['standard-songs','standards'],['all-songs','all']
 $('song-select').onchange=()=>{state.dirty=true;const s=state.songs.find(s=>String(s.id)===$('song-select').value);if(!s)return;player.stop();state.title=s.title;state.provenance=s.provenance||null;state.source=s.provenance?`${s.provenance.dataset} / ${s.provenance.license} / 非商用の練習用`:`Weimar Jazz Database / ${s.performer} / 資料ID ${s.id}`;$('source-note').textContent=state.source;$('chords').value=s.chords;$('start-bar').value=1;$('bar-count').value='all';syncLengthMode();const key=s.key.split('-')[0];const equivalent={ 'C#':'Db','D#':'Eb','F#':'Gb','G#':'Ab','A#':'Bb','Cb':'B' };$('source-key').value=equivalent[key]||key||'C';$('target-key').value=$('source-key').value;if(!s.supported){error(new Error('この資料には初版未対応の拍子・コード表記があります。進行を編集するか別の曲を選んでください。'));return;}generate();};
 $('chords').oninput=()=>{state.dirty=true;player.stop();state.title='手入力の練習';state.source=state.provenance?`${state.provenance.dataset}から編集 / ${state.provenance.license}`:'手入力のコード進行';$('song-select').value='';$('source-note').textContent=state.source;};
 for(const id of ['source-key','target-key','min-fret','max-fret','start-bar','bar-count'])$(id).addEventListener('change',()=>{state.dirty=true;player.stop();});
+$('tips-open').onclick=()=>{
+  player.stop();
+  $('tips-dialog').showModal();
+  $('tips-dialog').scrollTop=0;
+  $('tips-open').setAttribute('aria-expanded','true');
+};
+$('tips-dialog').addEventListener('close',()=>$('tips-open').setAttribute('aria-expanded','false'));
+$('tips-dialog').addEventListener('click',e=>{
+  if(e.target!==$('tips-dialog'))return;
+  const r=e.target.getBoundingClientRect();
+  if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();
+});
+$('tips-done').onclick=()=>$('tips-dialog').close();
 $('import-open').onclick=()=>$('import-dialog').showModal();
 document.querySelectorAll('.dialog-close').forEach(b=>b.onclick=()=>b.closest('dialog').close());
 $('import-file').onchange=async e=>{
