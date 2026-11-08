@@ -1,0 +1,4122 @@
+{
+  "source": "https://jazzomat.hfm-weimar.de/download/downloads/wjazzd.db",
+  "source_sha256": "af6a0d9debf042c3581565bd75baad591d32e166cd2ec7298519883de614bf12",
+  "database": {
+    "name": "Weimar Jazz Database (WJazzD)",
+    "creator": "The Jazzomat Research Project (c) 2012-2017",
+    "major": 2,
+    "minor": 2,
+    "release": "2.1",
+    "created": "2018-01-07T17:58:09.319568",
+    "license": "The Weimar Jazz Database is made available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/. Any rights in individual contents of the database are licensed under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/ - See more at: http://opendatacommons.org/licenses/odbl/#sthash.u61y95w0.dpuf",
+    "status": "FINAL"
+  },
+  "license": "ODbL-1.0",
+  "contents_license": "DbCL-1.0",
+  "songs": [
+    {
+      "id": 153,
+      "title": "245",
+      "performer": "Eric Dolphy",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F#-7 B7 |Bb7   |Bo   |E79# A7913b |A-7 Ab-7 |G-7   |Db-7 F#7 |B+7   |B+7   ||",
+      "supported": true
+    },
+    {
+      "id": 165,
+      "title": "245",
+      "performer": "Freddie Hubbard",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F#- B7 |Bb7   |Bo   |E79# Ab7913b |A-7 Ab-7 |G-7   |C#- F#7 |B+7   |B+7   ||",
+      "supported": true
+    },
+    {
+      "id": 215,
+      "title": "26-2",
+      "performer": "John Coltrane",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 87,
+      "title": "A Night in Tunisia",
+      "performer": "Clifford Brown",
+      "key": "D-min",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |D-6   |Eb7   |D-6   |Eb7   |D-6   |Em7b5 A7 |D-6   ||\nA2: ||Eb7   |D-6   |Eb7   |D-6   |Eb7   |D-6   |Em7b5 A7 |D-6   ||\nB1: ||Am7b5   |D79b   |G-7   |G-7   |Cm7b5   |C79b   |Fj7   |Em7b5 A7 ||\nA3: ||Eb7   |D-6   |Eb7   |D-6   |Eb7   |D-6   |Em7b5 A7 |D-6   ||",
+      "supported": true
+    },
+    {
+      "id": 354,
+      "title": "A Night in Tunisia",
+      "performer": "Pepper Adams",
+      "key": "D-min",
+      "signature": "4/4",
+      "chords": "A1: ||D-6   |Eb7   |D-6   |Eb7   |D-6   |Em7b5 A7 |D-6   ||\nA2: ||Eb7   |D-6   |Eb7   |D-6   |Eb7   |D-6   |Em7b5 A7 |D-6   ||\nB1: ||Am7b5   |D79b   |G-6   |G-7 C7 |Gm7b5   |C79b   |F6   |Em7b5 A7 ||\nA3: ||Eb7   |D-6   |Eb7   |D-6   |Eb7   |D-6   |Em7b5 A7 |D-6   ||",
+      "supported": true
+    },
+    {
+      "id": 426,
+      "title": "Adam's Apple",
+      "performer": "Wayne Shorter",
+      "key": "Ab-mix",
+      "signature": "4/4",
+      "chords": "A1: ||Ab7   |Ab7   |Ab7   |Ab7   |Ab7   |Ab7   |Ab7   |Ab7   |Gb7   |Gb7   |Gb7   |Gb7   |Ab7   |Ab7   |Ab7   |Ab7   |Ab-7   |Db7913   |Bb-7   |Eb7   |Ab-   |Ab-   |Bb-7/Eb   |Bb-7/Eb   ||",
+      "supported": true
+    },
+    {
+      "id": 44,
+      "title": "After Theatre Jump",
+      "performer": "Buck Clayton",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Db Bb7 |Eb-7 Ab7 |Db Bb-7 |Eb-7 Ab7 |Db Db7 |Gb7 Gb- |Db Bb-7 |Eb-7 Ab7 ||\nA2: ||Db Bb7 |Eb-7 Ab7 |Db Bb-7 |Eb-7 Ab7 |Db Db7 |Gb Gb- |Db Bb-7 |Eb-7 Ab7 ||\nB1: ||C7   |C7   |F7   |F7   |Bb7   |Bb7   |Eb7   |Ab7   ||\nA3: ||Db Bb7 |Eb-7 Ab7 |Db Bb-7 |Eb-7 Ab7 |Db Db7 |Gb Gb- |Db Bb-7 |Eb-7 Ab7 ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 127,
+      "title": "After Theatre Jump",
+      "performer": "Dickie Wells",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Db Bb7 |Eb-7 Ab7 |F-7 Bb-7 |Eb-7 Ab7 |Ab-7 Db7 |Gb7 B7 |F-7 Bb-7 |Eb-7 Ab7 ||\nA2: ||Db Bb7 |Eb-7 Ab7 |F-7 Bb-7 |Eb-7 Ab7 |Ab-7 Db7 |Gb7 B7 |F-7 Bb-7 |Eb7 Ab7 ||\nB1: ||C7   |C7   |F7   |F7   |Bb7   |Bb7   |Eb7   |Ab7   ||\nA3: ||Db Bb7 |Eb-7 Ab7 |F-7 Bb-7 |Eb-7 Ab7 |Ab-7 Db7 |Gb7 B7 |F-7 Bb-7 |Eb-7 Ab7 ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 278,
+      "title": "After Theatre Jump",
+      "performer": "Lester Young",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Db Bb7 |Eb-7 Ab7 |F-7 Bb-7 |Eb-7 Ab7 |Ab-7 Db7 |Gb7 B7 |F-7 Bb-7 |Eb-7 Ab7 ||\nA2: ||Db Bb7 |Eb-7 Ab7 |F-7 Bb-7 |Eb-7 Ab7 |Ab-7 Db7 |Gb7 B7 |F-7 Bb-7 |Eb7 Ab7 ||\nB1: ||C7   |C7   |F7   |F7   |Bb7   |Bb7   |Eb7   |Ab7   ||\nA3: ||Db Bb7 |Eb-7 Ab7 |F-7 Bb-7 |Eb-7 Ab7 |Ab-7 Db7 |Gb7 B7 |F-7 Bb-7 |Eb-7 Ab7 ||",
+      "supported": true
+    },
+    {
+      "id": 184,
+      "title": "Agitation",
+      "performer": "Herbie Hancock",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   ||\nB1: ||Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   |Db/Ab   ||",
+      "supported": true
+    },
+    {
+      "id": 309,
+      "title": "Agitation",
+      "performer": "Miles Davis",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||Gsus   |Gsus   |Gsus   |Gsus   |Gsus   |Gsus   |Gsus   |Gsus   |Gsus   |Gsus   ||\nB1: ||Ab   |Db Ab |Ab Db |Ab   |Db Ab |Db   |Ab Db |Db Csus |Gsus   ||",
+      "supported": true
+    },
+    {
+      "id": 310,
+      "title": "Airegin",
+      "performer": "Miles Davis",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F-7   |C79#   |F-7   |F79b   |Bb-7   |F79#   |Bb-7   |Bb-7   ||\nB1: ||Dbj7   |D-7 G7 |Cj7   |C#-7 F#7 |Bj7   |C-7 F7 |Bbj7   |Bbj7   |Bb-7   |Eb7   |Abj7   |Gm7b5 C7 ||\nA2: ||F-7   |C79#   |F-7   |F79b   |Bb-7   |F79#   |Bb-7   |Bb-7   ||\nB2: ||Dbj7   |Dm7b5 G7 |Cm7b5 Gb7 |F7 B7 |Bb-7   |Eb7   |Ab6   |Gm7b5 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 378,
+      "title": "Airegin",
+      "performer": "Sonny Rollins",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F-7   |C79#   |F-7   |F79b   |Bb-7   |F79#   |Bb-7   |Bb-7   ||\nB1: ||Dbj7   |D-7 G7 |Cj7   |Db-7 Gb7 |Bj7   |C-7 F7 |Bbj7   |Bbj7   |Bb-7   |Eb7   |Abj7   |Gm7b5 C7 ||\nA2: ||F-7   |C79#   |F-7   |F79b   |Bb-7   |F79#   |Bb-7   |Bb-7   ||\nB2: ||Dbj7   |Dm7b5 G7 |Cm7b5 Gb7 |F7 B7 |Bb-7   |Eb7   |Ab6   |Gm7b5 C79b ||",
+      "supported": true
+    },
+    {
+      "id": 154,
+      "title": "Aisha",
+      "performer": "Eric Dolphy",
+      "key": "A-min",
+      "signature": "4/4",
+      "chords": "A1: ||A-79   |G-79   |A-79   |F-79   |F-7 Bb7 |G-7 C79b |A-7 D79b |G-7C7F-7E7||\nA2: ||A-79   |G-79   ||",
+      "supported": true
+    },
+    {
+      "id": 346,
+      "title": "Alianca",
+      "performer": "Paul Desmond",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb   |Bb   |A-7   |D7   |G-   |G-   |G-7   |C7   |C-7   |F7   |D-   |G-   |E-7   |E-7   |D   |F7   |F7   |F7   |A-7   |D7   |G-   |G-   |G-7   |C7   |C-   |F7   |D-   |G7   |C-7   |F7   |Bb   |C-7   ||",
+      "supported": true
+    },
+    {
+      "id": 347,
+      "title": "Alianca",
+      "performer": "Paul Desmond",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb   |Bb   |A-7   |D7   |G-   |G-   |G-7   |C7   |C-7   |F7   |D-   |G-   |E-7   |A7   |D   |F7   ||\nA2: ||Bb   |Bb   |A-7   |D7   |G-   |G-   |G-7   |C7   |C-   |F7   |D-   |G7   |C-7   |F7   |Bb   |C-7 F7 ||",
+      "supported": true
+    },
+    {
+      "id": 266,
+      "title": "All the Things You Are",
+      "performer": "Lee Konitz",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F-7   |Bb-7   |Eb7   |Abj7   |Dbj7   |G7   |Cj7   |Cj7   ||\nA2: ||C-7   |F-7   |Bb7   |Ebj7   |Abj7   |D7   |Gj7   |Gj7   ||\nB1: ||A-7   |D7   |Gj7   |Gj7   |F#-7   |B7   |Ej7   |C+7   ||\nC1: ||F-7   |Bb-7   |Eb7   |Abj7   |Dbj7   |Db-7   |C-7   |Bo7   |Bb-7   |Eb7   |Abj7   |G7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 328,
+      "title": "All the Things You Are",
+      "performer": "Milt Jackson",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F-7   |Bb-7   |Eb7   |Abj7   |Dbj7   |G7   |Cj7   |Cj7   ||\nA2: ||C-7   |F-7   |Bb7   |Ebj7   |Abj7   |A-7 D7 |Gj7   |Gj7   ||\nB1: ||A-7   |D79#   |Gj7   |Gj7   |F#-7   |B7   |Ej7   |C+7   ||\nC1: ||F-7   |Bb-7   |Eb7   |Abj7   |Dbj7   |Db-7   |C-7   |Bo   |Bb-7   |Eb7   |Abj7   |G7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 342,
+      "title": "All the Things You Are",
+      "performer": "Pat Metheny",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F-7   |Bb-7   |Eb7   |Abj7   |Dbj7   |G7   |Cj7   |Cj7   |C-7   |F-7   |Bb7   |Ebj7   |Abj7   |D7   |Gj7   |Gj7   ||\nB1: ||A-7   |D7   |Gj7   |Gj7   |F#-7   |B7   |Ej7   |C+7   ||\nC1: ||F-7   |Bb-7   |Eb7   |Abj7   |Dbj7   |Db-7   |C-7   |Bo7   |Bb-7   |Eb7   |Abj7   |G7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 451,
+      "title": "All the Things You Are",
+      "performer": "Zoot Sims",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F-7   |Bb-7   |Eb7   |Abj7   |Dbj7   |D-7 G7 |Cj7   |Cj7   ||\nB1: ||C-7   |F-7   |Bb7   |Ebj7   |Abj7   |A-7 D7 |Gj7   |Gj7   ||\nC1: ||A-7   |D7   |Gj7   |Gj7   |F#-7 NC |B7   |Ej7   |C+7   ||\nD1: ||F-7   |Bb-7   |Eb7   |Abj7   |Dbj7   |Db-7   |C-7   |Bo7   |Bb-7   |Eb7   |Abj7   |Abj7   ||\nI1: ||F-7   |F-7   ||",
+      "supported": true
+    },
+    {
+      "id": 348,
+      "title": "Alone Together",
+      "performer": "Paul Desmond",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-6   |Dm7b5 G79b |C-6   |Dm7b5 G79b |C-6   |Gm7b5 C79b |F-7   |F-7   |A-7 D7 |F-7 Bb7 |Ebj7   |Dm7b5 G7 |Cj7   |Dm7b5 G7 ||\nA2: ||C-6   |Dm7b5 G79b |C-6   |Dm7b5 G79b |C-6   |Gm7b5 C79b |F-7   |F-7   |A-7 D7 |F-7 Bb7 |Ebj7   |Dm7b5 G7 |Cj7   |Cj7   ||\nB1: ||Gm7b5   |C79b   |F-6   |F-6   |Fm7b5   |Bb79b   |Ebj7   |Dm7b5 G79b ||\nA3: ||C-6   |Dm7b5 G79b |C-6   |Dm7b5 G79b |C-6   |Ab7 G7 |C-6   |Dm7b5 G7 ||",
+      "supported": true
+    },
+    {
+      "id": 413,
+      "title": "Alone Together",
+      "performer": "Steve Lacy",
+      "key": "D-maj",
+      "signature": "4/4",
+      "chords": "A1: ||D-6   |Em7b5 A79b |D-6   |Em7b5 A79b |D-6   |Am7b5 D79b |G-7   |G-7   |B-7 E7 |G-7 C7 |Fj7   |Em7b5 A7 |Dj7   |Em7b5 A7 ||\nA2: ||D-6   |Em7b5 A79b |D-6   |Em7b5 A79b |D-6   |Am7b5 D79b |G-7   |G-7   |B-7 E7 |G-7 C7 |Fj7   |Em7b5 A7 |Dj7   |Dj7   ||\nB1: ||Am7b5   |D79b   |G-6   |G-6   |Gm7b5   |C79b   |Fj7   |Em7b5 A79b ||\nA3: ||D-6   |Em7b5 A79b |D-6   |Em7b5 A79b |D-6   |Bb7 A7 |D-6   |Em7b5 A7 ||",
+      "supported": true
+    },
+    {
+      "id": 341,
+      "title": "Along Came Betty",
+      "performer": "Pat Martino",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb-7   |B-7 E7 |Bb-7   |B-7 E7 |Aj7   |Ab7   |Gj7   |Gb7   ||\nA2: ||Gb-7   |G-7 C7 |Gb-7   |G-7 C7 |Fj7   |A7   |D-7   |G7   ||\nB1: ||C-7   |F7   |Am7b5 D7 |G-7   |Em7b5   |A7   |F-7   |Bb7   ||\nC1: ||Bb-7   |B-7 E7 |Bb-7   |B-7 E7 |Cm7b5   |F7   |Bbm7b5   |Eb7   |Abj7   |B-7 E7 ||",
+      "supported": true
+    },
+    {
+      "id": 31,
+      "title": "Angles",
+      "performer": "Bob Berg",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Abj7   |Abj7   |Abj7   |Abj7   |C-7   |C-7   |C-7   |C-7   |Db7   |Db7   |Db7   |Db7   |Eb7   |Eb7   |Eb7   |Eb7   ||\nA2: ||Abj7   |Abj7   |Abj7   |Abj7   |C-7   |C-7   |C-7   |C-7   |Db7   |Db7   |Db7   |Db7   |Eb7   |Eb7   |Eb7   |Eb7   ||\nB1: ||F-7   |F-7   |F-7   |F-7   |Db7911#   |Db7911#   |Db7911#   |Db7911#   |G79#   |G79#   |G79#   |G79#   |D7alt   |D7alt   |D7alt   |D7alt   ||",
+      "supported": true
+    },
+    {
+      "id": 1,
+      "title": "Anthropology",
+      "performer": "Art Pepper",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb6 G7 |C-7 F7 |Bb G-7 |C-7 F7 |F-7 Bb7 |Eb7 Ab7 |D-7 G7 |C-7 F7 ||\nA2: ||Bb6 G7 |C-7 F7 |Bb G-7 |C-7 F7 |F-7 Bb7 |Eb7 Ab7 |C-7 F7 |Bb6   ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bb G7 |C-7 F7 |Bb G-7 |C-7 F7 |F-7 Bb7 |Eb7 Ab7 |C-7 F7 |Bb6   ||",
+      "supported": true
+    },
+    {
+      "id": 78,
+      "title": "Anthropology",
+      "performer": "Chris Potter",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb6 G7 |C-7 F7 |Bb6 G-7 |C-7 F7 |F-7 Bb7 |Eb7 Ab7 |D-7 G7 |C-7 F7 ||\nA2: ||Bb6 G7 |C-7 F7 |Bb6 G-7 |C-7 F7 |F-7 Bb7 |Eb7 Ab7 |C-7 F7 |Bb6   ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bb6 G7 |C-7 F7 |Bb6 G-7 |C-7 F7 |F-7 Bb7 |Eb7 Ab7 |C-7 F7 |Bb6   ||",
+      "supported": true
+    },
+    {
+      "id": 133,
+      "title": "Anthropology",
+      "performer": "Dizzy Gillespie",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb6 G7 |C-7 F7 |Bb6 G-7 |C7 F7 |Bb7   |Eb6 Eb-6 |D-7 G7 |C-7 F7 ||\nA2: ||Bb6 G7 |C-7 F7 |Bb6 G-7 |C7 F7 |Bb7   |Eb6 Eb-6 |D-7 G7 |C-7F7Bb6 ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bb6 G7 |C-7 F7 |Bb6 G-7 |C7 F7 |Bb7   |Eb6 Eb-6 |D-7 G7 |C-7 F7 ||\nI1: ||Bb6   ||",
+      "supported": false
+    },
+    {
+      "id": 159,
+      "title": "Anthropology",
+      "performer": "Fats Navarro",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7 G7 |C-7 F7 |D-7 G7 |C-7 F7 |F-7 Bb7 |Eb7 Eb-7 |D-7 G7 |C-7 F7 ||\nA2: ||Bbj7 G7 |C-7 F7 |D-7 G7 |C-7 F7 |F-7 Bb7 |Eb7 Eb-7 |C-7 F7 |Bb6   ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bbj7 G7 |C-7 F7 |D-7 G7 |C-7 F7 |F-7 Bb7 |Eb7 Eb-7 |C-7 F7 |Bb6   ||",
+      "supported": true
+    },
+    {
+      "id": 444,
+      "title": "April in Paris",
+      "performer": "Wynton Marsalis",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Dm7b5 Db7 |Cj7   |Dm7b5 Ab7 |G7   |Cj7   |Cj7   |G-7   |C7   ||\nB1: ||Fj7   |Fj7   |Bm7b5 E7 |A-7 A-/G |F#m7b5   |B79b   |B-7 E7 |Em7b5 A79b ||\nC1: ||F#m7b5 Fo7 |C/E Ebo |Dm7b5 G7 |C6   |Bm7b5 E7 |A-7 A-/G |F#m7b5 B79b |Ej7 D-7G7||\nD1: ||Dm7b5 G7 |Cj7   |Em7b5   |A7alt   |D79   |Dm7b5 G7 |C6   |C6   ||",
+      "supported": false
+    },
+    {
+      "id": 79,
+      "title": "Arjuna",
+      "performer": "Chris Potter",
+      "key": "D-chrom",
+      "signature": "4/4",
+      "chords": "A1: ||D   ||",
+      "supported": true
+    },
+    {
+      "id": 115,
+      "title": "Ask Me Now",
+      "performer": "David Murray",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb-7   |Ab   |Dbj7   |F-7 E-7 |Eb-7   |Ab7   |Dbj7   |Dbj7   |Bb-7   |Eb7   |Eb7   |Bb-7   |Eb-7   |Ab7   |Db-7   |Gb7   ||\nB1: ||G-7 C7 |F#-7 B7 |F-7 Bb7 |E-7 A7 |Eb-7   |Ab7   |B7alt   |Bb7   |Eb7   |D7   |Dbj7   |Eb7   |Eb-7   |Ab7   |Db   |Db   ||",
+      "supported": true
+    },
+    {
+      "id": 414,
+      "title": "Ask Me Now",
+      "performer": "Steve Lacy",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G-7C7F#-7B7|F-7Bb7E-7A7|Eb-7 Ab7 |B7 Bb7 |Eb7 D7 |Dbj7 Eb7 |Eb-7 Ab7 |F-7E7Eb-7D7||\nA2: ||G-7C7F#-7B7|F-7Bb7E-7A7|Eb-7 Ab7 |B7 Bb7 |Eb7 D7 |Dbj7 Eb7 |Eb-7 Ab7 |Db   ||\nB1: ||Eb-7 Ab |Dbj7  E-7|Eb-7 Ab7 |Dbj7   |Bb-7 Eb7 |Eb7 Bb-7 |Eb-7 Ab7 |Db-7 Gb7 ||\nA3: ||G-7C7F#-7B7|F-7Bb7E-7A7|Eb-7 Ab7 |B7 Bb7 |Eb7 D7 |Dbj7 Eb7 |Eb-7 Ab7 |Db   ||",
+      "supported": true
+    },
+    {
+      "id": 14,
+      "title": "Avalon",
+      "performer": "Benny Goodman",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Bb7   |Bb7   |Bb7   |Eb   |Eb   |Eb   |Eb   |Bb7   |Bb7   |Bb7   |Bb7   |Eb   |Eb   |Eb   |Eb   ||\nB1: ||C7   |C7   |C7   |C7   |F-7   |F-7   |Ab-7   |Ab-7   |Eb   |Eb   |C7   |C7   |F-7   |Bb7   |Eb   |Eb   ||",
+      "supported": true
+    },
+    {
+      "id": 285,
+      "title": "Avalon",
+      "performer": "Lionel Hampton",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ab7   |Ab7   |Ab7   |Ab7   |Eb6   |Eb6   |Eb6   |Eb6   |Ab7   |Ab7   |Ab7   |Ab7   |Eb6   |Eb6   |Eb6   |Eb6   ||\nB1: ||C7   |C7   |C7   |C7   |F-7   |F-7   |Ab-7   |Db7   |Eb6   |Eb6   |C7   |C7   |F-7   |B7   |Eb6   |Eb6   ||\nI1: ||Ab7   ||",
+      "supported": true
+    },
+    {
+      "id": 183,
+      "title": "Baby Won't You Please Come Home",
+      "performer": "Henry Allen",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb D7 |G7   |C7   |C7   |F7 F#o |G-   |C7   |F7   ||\nB1: ||Bb D7 |G7   |C- Eb |D7   |Eb Eo |Bb G7 |C7 F7 |Bb G7 |C- F7 |Bb   ||",
+      "supported": true
+    },
+    {
+      "id": 189,
+      "title": "Baby Won't You Please Come Home",
+      "performer": "J.C. Higginbotham",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb D7 |G7   |C7   |C7   |F7 F#o |G-   |C7   |F7   ||\nB1: ||Bb D7 |G7   |C- Eb |D7   |Eb Eo |Bb G7 |C7 F7 |Bb G7 |C- F7 |Bb   ||",
+      "supported": true
+    },
+    {
+      "id": 373,
+      "title": "Baby Won't You Please Come Home",
+      "performer": "Sidney Bechet",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb D7 |G7   |C7   |C7   |F7 F#o |G-   |C7   |F7   ||\nB1: ||Bb D7 |G7   |C- Eb |D7   |Eb Eo |Bb G7 |C7 F7 |Bb G7 |C7 F7 |Bb   ||\nI1: ||Bb   ||",
+      "supported": true
+    },
+    {
+      "id": 329,
+      "title": "Bag's Groove",
+      "performer": "Milt Jackson",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |F7   |G-7   |C7   |F7   |C7   ||",
+      "supported": true
+    },
+    {
+      "id": 291,
+      "title": "Basin Street Blues",
+      "performer": "Louis Armstrong",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb   |D7   |G7   |G7   |C7   |F7   |Bb Bbo |C-7 F7 ||",
+      "supported": true
+    },
+    {
+      "id": 359,
+      "title": "Be My Love",
+      "performer": "Phil Woods",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fj7   |Fj7   |Em7b5   |A79b   |D-7   |Bm7b5   |E7   |A7   ||\nB1: ||D7   |G-7   |Abo7   |A-7   |D-7   |G7   |G-7   |C7   ||\nA2: ||Fj7   |Fj7   |Em7b5   |A79b   |D-7   |Bm7b5   |E7   |A7   ||\nB2: ||D7   |G-7   |Abo7 A-7 |D-7   |G-7   |C7   |Eb7   |D7   |G-7   |C7   |Fj7   |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 134,
+      "title": "Be-Bop",
+      "performer": "Dizzy Gillespie",
+      "key": "F-min",
+      "signature": "4/4",
+      "chords": "A1: ||F- Gm7b5 |F- Bb-6 |F-   |Gm7b5 C79b |F- Gm7b5 |F- Bb-6 |F-   |C7 F- ||\nA2: ||F- Gm7b5 |F- Bb-6 |F-   |Gm7b5 C79b |F- Gm7b5 |F- Bb-6 |F-   |C7 F- ||\nB1: ||F-7   |Bb79#   |Ebj7   |Ebj7   |Eb-7   |Ab79#   |Dbj7   |Gm7b5 C79# ||\nA3: ||F- Gm7b5 |F- Bb-6 |F-   |Gm7b5 C79b |F- Gm7b5 |F- Bb-6 |F-   |C7 F- ||",
+      "supported": true
+    },
+    {
+      "id": 139,
+      "title": "Be-Bop",
+      "performer": "Don Byas",
+      "key": "F-min",
+      "signature": "4/4",
+      "chords": "A1: ||F- Gm7b5 |F-/Ab Bb-6 |F-/C   |Gm7b5 C7 |F- Gm7b5 |F-/Ab Bb-6 |F-/C   |Gm7b5 F- ||\nA2: ||F-7 Gm7b5 |F-/Ab Bb-6 |F-/C   |Gm7b5 C7 |F- Gm7b5 |F-/Ab Bb-6 |F-/C   |Gm7b5 F- ||\nB1: ||F-7   |Bb79#   |Ebj7   |Ebj7   |Eb-7   |Ab79#   |Dbj7   |Gm7b5 C79b ||\nA3: ||F-7 Gm7b5 |F-/Ab Bb-6 |F-/C   |Gm7b5 C7 |F- Gm7b5 |F-/Ab Bb-6 |F-/C   |C7 F- ||",
+      "supported": true
+    },
+    {
+      "id": 104,
+      "title": "Begin the Beguine",
+      "performer": "David Liebman",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gbj79   |Abj79   |Bbj79   |Bbj79   |Gbj79   |Abj79   |Bbj79   |Bbj79   |Gbj79   |Abj79   |Bbj79   |Bbj79   |Gbj79   |Abj79   |Bbj79   |Bbj79   |Gbj79   |Abj79   |Bbj79   |Bbj79   |Gbj79   |Abj79   |Bbj79   |Bbj79   |Gbj79   |Abj79   |Bbj79   |Bbj79   |Gbj79   |Abj79   |Bbj79   |Bbj79   |Gbj79   |Abj79   ||",
+      "supported": true
+    },
+    {
+      "id": 330,
+      "title": "Bemsha Swing",
+      "performer": "Milt Jackson",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Cj7 A-7 |Abj7 Db7 |Cj7 Eb7 |D7 Db7 |Cj7 A-7 |Abj7 Db7 |Cj7 Bb7 |Ab7 Gb7 ||\nB1: ||Fj7 D-7 |Dbj7 Gb7 |Fj7 Ab7 |G7 Db7 |Cj7 A-7 |Abj7 Db7 |Cj7 Bb7 |Ab7 G7 ||",
+      "supported": true
+    },
+    {
+      "id": 216,
+      "title": "Bessie's Blues",
+      "performer": "John Coltrane",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Ab7   |Eb7   |Eb7   |Ab7   |Ab7   |Eb7   |Eb7   |Bb7   |Ab7   |Eb7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 292,
+      "title": "Big Butter and Egg Man",
+      "performer": "Louis Armstrong",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G   |G   |A7   |A7   |D7   |D7   |G   |G  D7||\nA2: ||G   |Go   |A-   |D7   |D7   |D7   |G   |G   ||\nB1: ||G7   |G7   |C   |C   |E7   |E7   |A7   |D7   ||\nC1: ||G   |G   |A7   |A7   |A-7   |D7   |G   |G   ||\nI1: ||G   |G   ||",
+      "supported": true
+    },
+    {
+      "id": 52,
+      "title": "Billie's Bounce",
+      "performer": "Charlie Parker",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |A-7 D7 |G-   |C7   |F7   |C7   ||",
+      "supported": true
+    },
+    {
+      "id": 336,
+      "title": "Bird Food",
+      "performer": "Ornette Coleman",
+      "key": "",
+      "signature": "",
+      "chords": "A1: ||NC   ||",
+      "supported": false
+    },
+    {
+      "id": 311,
+      "title": "Bitches Brew",
+      "performer": "Miles Davis",
+      "key": "C-chrom",
+      "signature": "4/4",
+      "chords": "A1: ||Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus ||",
+      "supported": true
+    },
+    {
+      "id": 312,
+      "title": "Bitches Brew",
+      "performer": "Miles Davis",
+      "key": "C-chrom",
+      "signature": "4/4",
+      "chords": "A1: ||Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus |Bbsus Bsus |Csus Bsus ||",
+      "supported": true
+    },
+    {
+      "id": 135,
+      "title": "Blue 'n Boogie",
+      "performer": "Dizzy Gillespie",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |C-7   |F7   |Bb7   |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 190,
+      "title": "Blue Mode",
+      "performer": "J.J. Johnson",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7 Em7b5 |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |D-7 G7 |C-7   |F7   |Bb7 F7 |Bb7G7C-7F7||\nB1: ||Bb7   |A-7 D7 |G-7   |F-7 Bb7 |Eb7   |Eb7   |Eb-7 D7 |Db7 G7 |C-7   |C7 F7 |Bb7 G7 |C-7 F7 ||\nI1: ||Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 391,
+      "title": "Blue Mode",
+      "performer": "Sonny Stitt",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7 Em7b5 |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7 G7 |C-7   |F7   |Bb7 F7 |B7G7C-7F7||\nA2: ||Bb7   |A-7 D-7 |G-7   |F7   |Eb7   |Eb7   |F7   |Eb7 G7 |C-7   |C-7 F7 |Bb7   |Bb7   |NC   ||",
+      "supported": true
+    },
+    {
+      "id": 349,
+      "title": "Blue Rondo a la Turk",
+      "performer": "Paul Desmond",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |A-7 D7 |G-7   |C7   |F7 D7 |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 379,
+      "title": "Blue Seven",
+      "performer": "Sonny Rollins",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |F7   |Eb7   |Bb7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 380,
+      "title": "Blue Seven",
+      "performer": "Sonny Rollins",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |C-7   |F7   |Bb7   |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 381,
+      "title": "Blue Seven",
+      "performer": "Sonny Rollins",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |D-7 G7 |C-7   |F7   |Bb7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 102,
+      "title": "Blue Train",
+      "performer": "Curtis Fuller",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7NC  |Ab7   |Eb7   |Eb7   |Ab7   |Ab7   |Eb7   |G-7 C7 |F-7   |Bb7   |Eb7   |F-7 Bb7 ||",
+      "supported": false
+    },
+    {
+      "id": 218,
+      "title": "Blue Train",
+      "performer": "John Coltrane",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Ab7   |Eb7   |Eb7   |Ab7   |Ab7   |Eb7   |C7   |F-7   |Bb7   |Eb7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 274,
+      "title": "Blue Train",
+      "performer": "Lee Morgan",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |Eb7   |C-7   |F-7   |Bb7   |Eb7   |Bb7   ||\nA2: ||Eb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |Eb7   |C-7   |F-7   |Bb7   |Eb7   |Bb7   ||\nA3: ||Eb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |Eb7   |C-7   |F-7   |Bb7   |Eb7   |Bb7   ||\nA4: ||Eb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |Eb7   |C-7   |F-7   |Bb7   |Eb7   |Bb7   ||\nA5: ||Eb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |Eb7   |C-7   |F-7   |Bb7   |Eb7   |Bb7   ||\nA6: ||A6   |A6   ||",
+      "supported": true
+    },
+    {
+      "id": 217,
+      "title": "Blues by Five",
+      "performer": "John Coltrane",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |C-7   |F7   |Bb7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 313,
+      "title": "Blues by Five",
+      "performer": "Miles Davis",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |F-7 Bb7 |Eb7   |Eb7   |Bb7   |G7   |C-7   |F7   |Bb7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 53,
+      "title": "Blues for Alice",
+      "performer": "Charlie Parker",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fj7   |Em7b5 A79b |D-7 G7 |C-7 F7 |Bb7   |Bb-7 Eb7 |A-7 D7 |Ab-7 Db7 |G-7   |C7   |Fj7 D-7 |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 32,
+      "title": "Blues for Bela",
+      "performer": "Bob Berg",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |C-7   |C-7   |C-7   |F-7   |F-7   |C-7   |C-7   |Ab7   |G7   |C-7   |G7   ||",
+      "supported": true
+    },
+    {
+      "id": 2,
+      "title": "Blues for Blanche",
+      "performer": "Art Pepper",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Ab7   |Eb7   |Eb7   |Ab7   |Ab7   |Eb7   |Eb7   |F-7   |Bb7   |Eb7   |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 116,
+      "title": "Blues for Two",
+      "performer": "David Murray",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7    |Eb7   |Eb7   |Bb7   |Bb7   |C7   |F7   |Bb7   |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 117,
+      "title": "Blues for Two",
+      "performer": "David Murray",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |D-7 G7 |C7   |F7   |Bb7   |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 249,
+      "title": "Blues in Be-Bop",
+      "performer": "Kenny Dorham",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Eb7   |Eb7   |Eb7   |Ab7   |Ab7   |Eb7   |Eb7   |Bb7   |Ab7   |Eb7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 392,
+      "title": "Blues in Be-Bop",
+      "performer": "Sonny Stitt",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Ab7   |Eb7   |Eb7   |Ab7   |Ab7   |Eb7   |Bb-7 A7 |Ab7   |Bb7   |Eb7   |Eb7 Bb7 ||",
+      "supported": true
+    },
+    {
+      "id": 191,
+      "title": "Blues in the Closet",
+      "performer": "J.J. Johnson",
+      "key": "Bb-blues",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |G7   |C-7   |F7   |Bb7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 397,
+      "title": "Blues in the Closet",
+      "performer": "Stan Getz",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |C-7   |F7   |Bb7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 243,
+      "title": "Blues on Sunday",
+      "performer": "Joshua Redman",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Ab7   |Eb7   |Eb7   |Ab7   |Ab7   |Eb7   |C7   |F-7   |Bb7   |Eb7   |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 85,
+      "title": "Body and Soul",
+      "performer": "Chu Berry",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||D-7 A79b |D-7 Db7 |Cj7 F7 |E-7 Ebo7 |D-7   |Bm7b5 E7 |A-7D7D-7G7|C6 A7 ||\nA2: ||D-7 A79b |D-7 Db7 |Cj7 F7 |E-7 Ebo7 |D-7   |Bm7b5 E7 |A-7D7D-7G7|C Ab7 ||\nB1: ||Dbj7 Eb-7 |Db/F Gb-7B7|F-7Bb-7Eb-7Ab7|Dbj7   |Db-7 Gb7 |Bj7 D- |Db-7 Gb7 |B7Bb7A7 ||\nA3: ||D-7 A79b |D-7 Db7 |Cj7 F7 |E-7 Ebo7 |D-7   |Bm7b5 E7 |A-7D7D-7G7|C6 NC ||",
+      "supported": false
+    },
+    {
+      "id": 86,
+      "title": "Body and Soul",
+      "performer": "Chu Berry",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "B1: ||Dj7 E-7 |D/F# G-7C7|F#-7B-7E-7A7|Dj7   |D-7 G7 |Cj7 Eb- |D-7 G7 |C7B7Bb7 ||\nA3: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Em7b5 |Eb-7   |Ab F7 |Bb-7   ||",
+      "supported": false
+    },
+    {
+      "id": 96,
+      "title": "Body and Soul",
+      "performer": "Coleman Hawkins",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb- D+7 |Eb-7 D7 |Dbj7 Eb-7 |F-7 Eo |Eb-7   |Cm7b5 B7 |Bb-7 Eb-7Ab7|Dbj7 Fm7b5Bb79b||\nA2: ||Eb- D+7 |Eb-7 D7 |Db-7 Eb-7 |F-7 Eo |Eb-7   |Cm7b5 B7 |Bb-7 Eb-7Ab7|Db E-7A7||\nB1: ||Dj7 E-7 |B-7F#G-7C7|F#-7B-7E-7A7|Dj7 F#-7E-7|D-7 G7 |Cj7 Ebo |D-7 G7 |C7B7Bbsus7Bb7||\nA3: ||Eb- B+7 |Eb-7 Ab7 |Dbj7 Gb7 |F-7 Eo |Eb-7   |Ab7 Ao |Ao Eb-7Ab+7|Ab+7 Fm7b5Bb7||",
+      "supported": false
+    },
+    {
+      "id": 118,
+      "title": "Body and Soul",
+      "performer": "David Murray",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db6 Bb7 ||\nA2: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db6 E-7A7||\nB1: ||Dj7 E-7 |F#-7 G-7C7|F#-7B-7E-7A7|Dj7   |D-7 G7 |Cj7 Ebo |D-7 G7 |C7B7Bb7 ||\nA3: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db6Gb7Fm7b5Bb7||\nI1: ||Eb-7 Bb7 ||",
+      "supported": false
+    },
+    {
+      "id": 119,
+      "title": "Body and Soul",
+      "performer": "David Murray",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb-7 Bb7 ||",
+      "supported": true
+    },
+    {
+      "id": 140,
+      "title": "Body and Soul",
+      "performer": "Don Byas",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db6 Bb7 ||\nA2: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db A7 ||\nB1: ||Dj7 E-7 |D G-7C7|F#-7B-7E-7A7|Dj7   |D-7 G7 |Cj7 Ebo |D-7 G7 |C7B7Bb7 ||\nA3: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db6 Bb7 ||",
+      "supported": false
+    },
+    {
+      "id": 206,
+      "title": "Body and Soul",
+      "performer": "Joe Lovano",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb-7 B79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db6 Bb7 ||\nA2: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db A7 ||\nB1: ||Dj7 E-7 |D/F# G-7C7|F#-7B7E-7A7|Dj7   |D-7 G7 |Cj7 Ebo |D-7 G7 |C7B7Bb7 ||\nA3: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db6 Bb7 ||",
+      "supported": false
+    },
+    {
+      "id": 207,
+      "title": "Body and Soul",
+      "performer": "Joe Lovano",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "B1: ||Dj7 E-7 |D/F# G-7C7|F#-7B-7E-7A7|Dj7   |D-7 G7 |Cj7 Ebo |D-7 G7 |C7B7Bb7 ||\nA3: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db6 Bb7 ||\nI1: ||NC   |NC   |NC   |NC   |NC   |NC   ||",
+      "supported": false
+    },
+    {
+      "id": 219,
+      "title": "Body and Soul",
+      "performer": "John Coltrane",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb- Eb-j7Eb-7|Ab7   |Eb- Eb-j7Eb-7|Ab7   |Db/Ab   |F+/Ab G+/Ab |F-7/Ab   |E-7 A7 |Absus   |Absus   |Ab7   |B7911#   |F+/Ab G+/Ab |F+/Ab G+/Ab |F+/Ab Ab79b |Db F79b13bBb+7||\nA2: ||Eb- Eb-j7Eb-7|Ab7   |Eb- Eb-j7Eb-7|Ab7   |Db/Ab   |F+/Ab G+/Ab |F-7/Ab   |E-7 A7 |Absus   |Absus   |Ab7   |B7911#   |F+/Ab G+/Ab |F+/Ab G+/Ab |F+/Ab Ab79b |Db E-7A7||\nB1: ||Dj7   |E-7   |D/F#   |G-7 C7 |Dj7 F7 |Bbj7 Db7 |Gbj7 A7 |Dj7   |Dm7b5   |G79b   |Cj7   |Eb7   |Ab7 B7 |Ej7 G7 |Cj7 B7 |Bbsus Bb7 ||",
+      "supported": false
+    },
+    {
+      "id": 220,
+      "title": "Body and Soul",
+      "performer": "John Coltrane",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb-/Ab Eb-79/Ab |Ab7   |Eb-/Ab   |Ab7   |Db79/Ab   |F+/Ab G+/Ab |F-7/Ab   |E-7 A7 |Absus   |Absus   |Ab7   |B7911#   |F+/Ab G+/Ab |F+/Ab G+/Ab |F+/Ab Ab7 |Db79 F79b13bBb+7||\nA2: ||Eb-/Ab Eb-79/Ab |Ab7   |Eb-/Ab Eb-79/Ab |Ab7   |Db79/Ab   |F+/Ab G+/Ab |F-7/Ab   |E-7 A7 |Absus   |Absus   |Ab7   |B7911#   |F+/Ab G+/Ab |F+/Ab G+/Ab |F+/Ab Ab7 |Db79 E-7A7||\nB1: ||D79   |E-7   |D/F#   |G-7 C7 |Dj7 F7 |Bbj7 Db7 |Gbj7 A7 |Dj7   |Dm7b5   |G79b   |C79   |Eb7   |Abj7 B7 |Ej7 G7 |Cj7 B7 |Bbsus Bb7913 ||\nA3: ||Eb-/Ab Eb-79/Ab |Ab7   |Eb-/Ab Eb-79/Ab |Ab7   |Db79/Ab   |F+/Ab G+/Ab |F-7/Ab   |E-7 A7 |Absus   |Absus   |Ab7   |B7911#   |F+/Ab G+/Ab |F+/Ab G+/Ab |F+/Ab Ab7 |Db79 F79b13bBb+7||",
+      "supported": false
+    },
+    {
+      "id": 279,
+      "title": "Body and Soul",
+      "performer": "Lester Young",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb- D7 |Fb-7 D7 |Dbj7 Eb-7 |F-7 Eo |Eb-7   |C-7 B7 |Bb-7 Eb-7Ab7|Dbj7 F-7Bb7||\nA2: ||Eb- D7E7|Eb-7 D7Eb|Dbj7 Eb-7 |F-7 Eo |Eb-7 D7 |C-7 B7 |Bb-7 Eb-7Ab7|Db E-7A7||\nB1: ||Dj7 E-7 |B-7 G-7 |F#-7 E-7 |Dj7   |D-7 G7 |Cj7 Ebo |D-7 G7 |C7B7Bb7 ||\nA3: ||Eb- D7 |Eb-7 Ab7 |Dbj7 Gb7 |F-7 Eo |Eo   |Ab7 Ao |Bb-7 Eb-7 |Db F-7Bb7||",
+      "supported": false
+    },
+    {
+      "id": 367,
+      "title": "Body and Soul",
+      "performer": "Roy Eldridge",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db6 Bb7 ||\nA2: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db A7 ||\nB1: ||Dj7 E-7 |D/F# G-7C7|F#-7B-7E-7A7|Dj7   |D-7 G7 |Cj7 Ebo |D-7 G7 |C7B7Bb7 ||\nA3: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db6   |Db6NC  ||",
+      "supported": false
+    },
+    {
+      "id": 393,
+      "title": "Body and Soul",
+      "performer": "Sonny Stitt",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb-7 Bb79b |Absus7 Ab7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 B7 |Bb-7Eb7Eb-7Ab7|Db6 Bb7 ||\nA2: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 B7 |Bb-7 D7 |Db6 E-7A7||\nB1: ||Dj7 E-7 |F#-7 G-7C7|F#-7B7E-7A7|Dj7   |D-7 G7 |Cj7 Ebo |D-7 G7 |C7B7Bb7 ||\nA3: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 B7911#F7|Bb-7NC  |NC   |NC   |NC   |Db6   ||",
+      "supported": false
+    },
+    {
+      "id": 398,
+      "title": "Body and Soul",
+      "performer": "Stan Getz",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7 Eb-7Ab7|Db6 Fm7b5Bb7||\nA2: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7 Eb-7Ab7|Db A7 ||\nB1: ||Dj7 E-7 |F#-7 G-7 |F#-7B-7E-7A7|Dj7   |D-7 G7 |Cj7 Ebo7 |D-7 G7 |C7 Bb7 ||\nA3: ||Eb-7 Bb79b |Eb-7 D7 |Dbj7 Gb7 |F-7 Eo7 |Eb-7   |Cm7b5 F7 |Bb-7Eb7Eb-7Ab7|Db6  A7||\nB2: ||Dj7 E-7 |F#-7 G-7 |F#-7B-7E-7A7|Dj7   |D-7 G7 |Cj7 Ebo7 |D-7 G7 |C7B7Bb7 ||",
+      "supported": false
+    },
+    {
+      "id": 334,
+      "title": "Bohemia After Dark",
+      "performer": "Nat Adderley",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||D79b   |D79b   ||\nA2: ||G-7   |Am7b5 D79b |G-7   |Am7b5 D79b |G-7   |Am7b5 D79b |G-7   |G-7   |G-7   |C7   |C7   |C7   |C7   |C7   |Am7b5   |D7   ||\nA3: ||G-7   |Am7b5 D79b |G-7   |Am7b5 D79b |G-7   |Am7b5 D79b |G-7   |G-7   ||",
+      "supported": true
+    },
+    {
+      "id": 267,
+      "title": "Bop Goes to Leesel",
+      "performer": "Lee Konitz",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |D-7 G7 |C7   |F7   |Bb7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 350,
+      "title": "Bossa Antigua",
+      "performer": "Paul Desmond",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Abj7   |Abj7   |Bb-7   |Eb7   |Abj7   |F-7   |Bb-7   |Eb7   |C-7   |F7   |Bb-7   |Eb7   |Abj7   |F-7   |Bb-7   |D-7 G7 ||\nB1: ||Cj7   |A-7   |D-7   |G7   |E-7   |A-7   |D-7   |G7   |C-7   |F7   |Bb-7   |Eb7   |Abj7   |F-7   |Bb-7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 256,
+      "title": "Brother Hubbard",
+      "performer": "Kenny Garrett",
+      "key": "D-min",
+      "signature": "4/4",
+      "chords": "A1: ||D-   |G-   |D-   |G-   |D-   |G-   |D-   |G-   |Abj7   |G-   |Abj7   |G- A7 |D-   |G-   |D-   |G-   ||\nA2: ||D-   |G-   |D-   |G-   |D-   |G-   |D-   |G-   |Abj7   |G-   |Abj7   |G- A7 |D-   |G-   |D-   |G-   ||\nB1: ||G- A7 |D-   |G- A7 |D-   |G- A7 |D-   |G-   |A7 Eb7 |D-   |A7 Eb7 ||\nA3: ||D-   |G-   |D-   |G-   |D-   |Bb-   |D-   |G-   ||",
+      "supported": true
+    },
+    {
+      "id": 257,
+      "title": "Brother Hubbard",
+      "performer": "Kenny Garrett",
+      "key": "D-min",
+      "signature": "4/4",
+      "chords": "A1: ||D-7911   |G-7   |D-7911   |G-7   |D-7911   |G-7   |D-7911   |G-7   |Abj7   |G-7   |Abj7   |E7 A7 |D-7911   |G-7   |D-7911   |G-7   ||\nA2: ||D-7911   |G-7   |D-7911   |G-7   |D-7911   |G-7   |D-7911   |G-7   |Abj7   |G-7   |Abj7   |E7 A7 |D-7911   |G-7   |D-7911   |G-7   ||\nB1: ||G-7 A-7 |D-7   |G-7 A-7 |D-7   |G-7 A-7 |D-7   |G-7   |A7 Bbj7 |Bbj7   |A7911#   |D-7911   |G-7   |D-7911   |G-7   |D-7911   |G-7   |D-7911   |G-7   ||",
+      "supported": true
+    },
+    {
+      "id": 172,
+      "title": "Bunny",
+      "performer": "Gerry Mulligan",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||A-7 D7 |G E7 |A-7 D7 |D-7 G-7 |C C-7F7|Bb Bb-7Eb7|A-7 D7 |G   ||\nA2: ||A-7 D7 |G E7 |A-7 D7 |D-7 G7 |C C-7F7|Bb Bb-7Eb7|A-7 D7 |G C ||\nB1: ||D-7 G7 |C A7 |D-7 G7 |C   |C-7 F7 |Bb   |A-7 D7 |B-7 E7 ||\nA3: ||A-7 D7 |G E7 |A-7 D7 |D-7 G-7 |C C-7F7|Bb Bb-7Eb7|A-7 D7 |G C ||\nI1: ||NC   ||",
+      "supported": false
+    },
+    {
+      "id": 241,
+      "title": "Bunny",
+      "performer": "Johnny Hodges",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||A-7 D7 |G E7 |A-7 D7 |D-7 G7 |C F7 |Bb Bb-7Eb7|A-7 D7 |G C ||\nA2: ||A-7 D7 |G E7 |A-7 D7 |D-7 G7 |Cj7 F7 |Bb Bb-7Eb7|A-7 D7 |G C ||\nB1: ||D-7 G7 |Cj7 A7 |D-7 G7 |Cj7   |C-7 F7 |Bb   |A-7 D7 |B-7 E7 ||\nA3: ||A-7 D7 |G E7 |A- D7 |D-7 G7 |C F7 |Bb Bb-7Eb7|A-7 D7 |G C ||\nI1: ||NC   ||",
+      "supported": false
+    },
+    {
+      "id": 21,
+      "title": "Bye Bye Blackbird",
+      "performer": "Ben Webster",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gj7   |Gj7   |Gj7   |Gj7   |Gj7   |Bbo   |A-7   |D7   |A-7   |D7   |A-7   |D7   |A-7   |D7   |Gj7   |Gj7   ||\nB1: ||G7   |G7   |Bm7b5   |E7   |A-7   |A-7   |C-7 F7 |A-7 D7 |Gj7   |Gj7   |Bm7b5   |E7   |A-7   |D7   |Gj7   |Gj7   ||",
+      "supported": true
+    },
+    {
+      "id": 299,
+      "title": "Cabin Fever",
+      "performer": "Michael Brecker",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |G7   |C-7   |F7   |Bb7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 343,
+      "title": "Cabin Fever",
+      "performer": "Pat Metheny",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7 NC |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |G7   |C-7   |F7   |Bb7   |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 445,
+      "title": "Caravan",
+      "performer": "Wynton Marsalis",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |F-   |F-   |F-   |F-   ||\nA2: ||C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |F-   |F-   |F-   |F-   ||\nB1: ||F7   |F7   |F7   |F7   |Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Eb7   |Eb79 Eb79b |Abj7   |Abj7   |G7   |Db7   ||\nA3: ||C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |C79b   |F-   |F-   |F-   |F-   ||",
+      "supported": true
+    },
+    {
+      "id": 208,
+      "title": "Central Park West",
+      "performer": "Joe Lovano",
+      "key": "B-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bj7 E-7A7|Dj7 Bb-7Eb7|Abj7 G-7C7|Fj7 C#-7F#7|Bj7 E-7A7|Dj7 C#-7F#7|Bj7   |C#-7 F#7 |Bj7   |C#-7 F#7 ||",
+      "supported": false
+    },
+    {
+      "id": 121,
+      "title": "Cheese Cake",
+      "performer": "Dexter Gordon",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-69   |Dm7b5 G+7 |C-69   |C7   |F-69   |C+7   |F-69   |F-69   |Dm7b5   |G+7   |F-7   |Bb7   |Eb-7 Ab7 |Dm7b5 G+7 |C-69   |Dm7b5 G7 ||\nA2: ||C-69   |Dm7b5 G+7 |C-69   |C7   |F-69   |C+7   |F-69   |F-69   |Dm7b5   |Dm7b5   |F-7   |Bb7   |Eb-7 Ab7 |Dm7b5 G+7 |C-69   |C-69   ||\nB1: ||G-7   |C7   |F-7   |Bb7   |Eb-7   |Ab7   |Dm7b5   |G+7   ||\nA3: ||C-69   |Dm7b5 G+7 |C-7   |C7   |F-69   |C+7   |F-69   |F-69   |Dm7b5   |G+7   |F-7   |Bb7   |Eb-7 Ab7 |Dm7b5 G+7 |C-69   |C-69   ||",
+      "supported": true
+    },
+    {
+      "id": 120,
+      "title": "Chelsea Bridge",
+      "performer": "David Murray",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Db7   |Eb7 Db7 |Bb7   |Eb-7   |Ab7   |Db6   |Db6C7B7Bb7||\nA2: ||Eb7   |Db7   |Eb7 Db7 |Bb7   |Eb-7   |Ab7   |Db6   |Db  B7||\nB1: ||F#-7 B7 |Ej7 G7 |F#-7 F7 |B-7 E7 |Aj7 A-7D7|Gj7   |G-7   |Db7C7B7Bb7||\nA3: ||Eb7   |Db7   |Eb7 Db7 |Bb7   |Eb-7   |Ab7   |Db6   |Db6   ||\nI1: ",
+      "supported": false
+    },
+    {
+      "id": 446,
+      "title": "Cherokee",
+      "performer": "Wynton Marsalis",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7   |Bbj7   |F-7   |Bb7   |Ebj7   |Ebj7   |Ab7   |Ab7   |Bbj7   |G-7   |C7   |C7   |C-7   |Bo   |C-7   |F+7   ||\nA2: ||Bbj7   |Bbj7   |F-7   |Bb7   |Ebj7   |Ebj7   |Ab7   |Ab7   |Bbj7   |G-7   |C7   |C7   |C-7   |F7   |Bb6   |Bb6   ||\nB1: ||C#-7   |F#7   |Bj7   |Bj7   |B-7   |E7   |Aj7   |Aj7   |A-7   |D7   |Gj7   |Gj7   |G-7   |C7   |C-7   |F+7   ||\nA3: ||Bbj7   |Bbj7   |F-7   |Bb7   |Ebj7   |Ebj7   |Ab7   |Ab7   |Bbj7   |G-7   |C7   |C7   |C-7   |F7   |Bb6   |Bb6   ||",
+      "supported": true
+    },
+    {
+      "id": 447,
+      "title": "Cherokee II",
+      "performer": "Wynton Marsalis",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7   |Bbj7   |F-7   |Bb7   |Ebj7   |Ebj7   |Ab7   |Ab7   |Bbj7   |G-7   |C7   |C7   |C-7   |Bo   |C-7   |F+7   ||\nA2: ||Bbj7   |Bbj7   |F-7   |Bb7   |Ebj7   |Ebj7   |Ab7   |Ab7   |Bbj7   |G-7   |C7   |C7   |C-7   |F7   |Bb6   |Bb6   ||\nB1: ||C#-7   |F#7   |Bj7   |Bj7   |B-7   |E7   |Aj7   |Aj7   |A-7   |D7   |Gj7   |Gj7   |G-7   |C7   |C-7   |F+7   ||\nA3: ||Bbj7   |Bbj7   |F-7   |Bb7   |Ebj7   |Ebj7   |Ab7   |Ab7   |Bbj7   |G-7   |C7   |C7   |C-7   |F7   |Bb6   |Bb6   ||",
+      "supported": true
+    },
+    {
+      "id": 337,
+      "title": "Chronology",
+      "performer": "Ornette Coleman",
+      "key": "",
+      "signature": "",
+      "chords": "A1: ||NC   ||",
+      "supported": false
+    },
+    {
+      "id": 136,
+      "title": "Cognac Blues",
+      "performer": "Dizzy Gillespie",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |F7   |G-7   |G-7   |F7 D-7 |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 141,
+      "title": "Cognac Blues",
+      "performer": "Don Byas",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |F7   |G-7   |C7   |F7 D-7 |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 209,
+      "title": "Con Alma",
+      "performer": "Joe Lovano",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ej7 G#7/D# |C#-7 B7 |Bb79b E7alt |Ebj7 Eb-7Ab7|Dbj7 F7/C |Bb-7 Ab7 |G7 Db7alt |Cj7 F#-7B7||\nA2: ||Ej7 G#7/D# |C#-7 B7 |Bb7 E7alt |Ebj7 Eb-7Ab7|Dbj7 F7/C |Bb-7 Ab7 |G7 Db7alt |Cj7   ||\nB1: ||Cm7b5   |F79b   |F#m7b5   |B79b   |Ej7   |Ej7   |F-7   |Bb7   ||\nA3: ||Ej7 G#7/D# |C#-7 B7 |Bb79b E7alt |Ebj7 Eb-7Ab7|Dbj7 F7/C |Bb-7 Ab7 |G7 Db7alt |Cj7 F#-7B7||",
+      "supported": false
+    },
+    {
+      "id": 300,
+      "title": "Confirmation",
+      "performer": "Michael Brecker",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fj7   |Em7b5 A7 |D-7 G7 |C-7 F7 |F-7 Bb7 |Am7b5 D7 |G7   |C7   ||\nA2: ||Fj7   |Em7b5 A7 |D-7 G7 |C-7 F7 |F-7 Bb7 |Am7b5 D7 |G-7 C7 |Fj7   ||\nB1: ||C-7   |F7   |Bbj7   |Bbj7   |Eb-7   |Ab7   |Dbj7   |G-7 C7 ||\nA3: ||Fj7   |Em7b5 A7 |D-7 G7 |C-7 F7 |F-7 Bb7 |Am7b5 D7 |G-7 C7 |Fj7   ||",
+      "supported": true
+    },
+    {
+      "id": 338,
+      "title": "Congeniality",
+      "performer": "Ornette Coleman",
+      "key": "",
+      "signature": "",
+      "chords": "A1: ||NC   ||",
+      "supported": false
+    },
+    {
+      "id": 293,
+      "title": "Cornet Chop Suey",
+      "performer": "Louis Armstrong",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F   |F   |F   |C7   |F   |Bb Bb- |F   |G7C7F |F   |F   |F   |C7   |F   |Bb Bb- |F   |G7C7F ||",
+      "supported": false
+    },
+    {
+      "id": 360,
+      "title": "Cotton Tail",
+      "performer": "Phil Woods",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7 G-7 |C-7 F7 |Bbj7 G-7 |C-7 F7 |Bbj7 Bb7 |Eb7 Ab7 |Bbj7 G-7 |C-7 F7 ||\nA2: ||Bbj7 G-7 |C-7 F7 |Bbj7 G-7 |C-7 F7 |Bbj7 Bb7 |Eb7 Ab7 |Bbj7   |C-7 F7 ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bbj7 G-7 |C-7 F7 |Bbj7 G-7 |C-7 F7 |Bbj7 Bb7 |Eb7 Ab7 |Bbj7 C-7F7|Bbj7   ||",
+      "supported": false
+    },
+    {
+      "id": 221,
+      "title": "Countdown",
+      "performer": "John Coltrane",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||E-7 F7 |Bbj7 Db7 |Gbj7 A7 |Dj7   |D-7 Eb7 |Abj7 B7 |Ej7 G7 |Cj7   |C-7 Db7 |Gbj7 A7 |Dj7 F7 |Bbj7   |E7   |F7   |Bbj7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 192,
+      "title": "Crazy Rhythm",
+      "performer": "J.J. Johnson",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fj7   |Fj7   |Fj7   |Fj7/A Abo7 |G-7   |C7   |F6   |G-7 C7 ||\nA2: ||Fj7   |Fj7   |Fj7   |Fj7/A Abo7 |G-7   |C7   |F6   |F6  C7||\nB1: ||C-7   |F7   |Bb F7 |Bb   |Bb-   |Eb79   |D7   |G7 C7 ||\nA3: ||Fj7   |Fj7   |G7   |G7   |C7   |C7   |F   |F   ||",
+      "supported": true
+    },
+    {
+      "id": 361,
+      "title": "Crazy Rhythm",
+      "performer": "Phil Woods",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fj7   |Fj7   |Fj7   |Fj7/A Abo7 |G-7   |C7   |F6 D7 |G-7 C7 ||\nA2: ||Fj7   |Fj7   |Fj7   |Fj7/A Abo7 |G-7   |C7   |F6   |F6   ||\nB1: ||C-7   |F7   |Bbj7   |Bbj7   |Bb-7   |Eb79   |D7   |G-7 C7 ||\nA3: ||Fj7   |Fj7   |G7   |G7   |G-7   |C7   |F6 D7 |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 399,
+      "title": "Crazy Rhythm",
+      "performer": "Stan Getz",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fj7   |Fj7   |Bb7   |A-7 Abo7 |G-7   |C7   |F6   |G-7 C7 ||\nA2: ||Fj7   |Fj7   |Bb7   |A-7 Abo7 |G-7   |C7   |F6   |F6   ||\nB1: ||C-7   |F7   |Bbj7   |Bbj7   |Bb-7   |Eb79   |D7   |G7 C7 ||\nA3: ||Fj7   |Fj7   |G7   |G7   |C7   |C7   |Fj7   |Fj7   ||",
+      "supported": true
+    },
+    {
+      "id": 403,
+      "title": "Cross-Fade",
+      "performer": "Steve Coleman",
+      "key": "",
+      "signature": "9/4",
+      "chords": "A1: ||NC   ||",
+      "supported": false
+    },
+    {
+      "id": 404,
+      "title": "Cross-Fade",
+      "performer": "Steve Coleman",
+      "key": "",
+      "signature": "9/4",
+      "chords": "A1: ||NC   ||",
+      "supported": false
+    },
+    {
+      "id": 268,
+      "title": "Crosscurrent",
+      "performer": "Lee Konitz",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fj7   |G-7 C7 |A-7   |G-7 C7 |F7   |Bbj7   |G-7 C7 |Fj7   ||\nA2: ||Fj7   |G-7 C7 |A-7   |G-7 C7 |F7   |Bbj7   |G-7 C7 |Fj7   ||\nB1: ||Bb-7   |Aj7   |Ab-7   |Gj7   |Gbj7   |F7 D7 |G-7   |C7   ||\nA3: ||Fj7   |G-7 C7 |A-7   |G-7 C7 |F7   |Bbj7   |G-7 C7 |Fj7   |Fj7   ||",
+      "supported": true
+    },
+    {
+      "id": 423,
+      "title": "Crosscurrent",
+      "performer": "Warne Marsh",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fj7   |G-7 C7 |A-7   |G-7 C7 |F7   |Bbj7   |G-7 C7 |Fj7   ||\nA2: ||Fj7   |G-7 C7 |A-7   |G-7 C7 |F7   |Bbj7   |G-7 C7 |Fj7   ||\nB1: ||Bb-7   |Aj7   |Ab-7   |Gj7   |Gbj7   |F7 D7 |G-7   |C7   ||\nA3: ||Fj7   |G-7 C7 |A-7   |G-7 C7 |F7   |Bbj7   |G-7 C7 |Fj7   |Fj7   ||",
+      "supported": true
+    },
+    {
+      "id": 280,
+      "title": "D.B. Blues",
+      "performer": "Lester Young",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |G7   |C-7   |F7   |Bb7   |F7   ||\nA2: ||Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |G7   |C-7   |F7   |Bb7   |Bb7   ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |G7   |C-7   |F7   |Bb7   ||\nI1: ",
+      "supported": true
+    },
+    {
+      "id": 88,
+      "title": "Daahoud",
+      "performer": "Clifford Brown",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb-7 Ab7 |Db-7 Gb7 |Bj7   |F-7 Bb7 |Eb-7   |B7 Bb7 |Ebj7   |Ebj7   ||\nA2: ||Eb-7 Ab7 |Db-7 Gb7 |Bj7   |F-7 Bb7 |Eb-7   |B7 Bb7 |Ebj7   |Ebj7   ||\nB1: ||Bb-7   |Eb7   |Abj7   |Abj7   |Ab-7   |Db7   |Gbj7   |F-7 Bb7 ||\nA3: ||Eb-7 Ab7 |Db-7 Gb7 |Bj7   |F-7 Bb7 |Eb-7   |B7 Bb7 |Ebj7   |Ebj7   ||",
+      "supported": true
+    },
+    {
+      "id": 155,
+      "title": "Dahomey Dance",
+      "performer": "Eric Dolphy",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G7   |G7   |G7   |G7913   |F7   |F7   |G7   |G7913   |Dsus7   |D7   |G7   |G7913   ||",
+      "supported": true
+    },
+    {
+      "id": 452,
+      "title": "Dancing in the Dark",
+      "performer": "Zoot Sims",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Abj7   |Abj7   |Abo7   |Abo7   |Bb-7   |Bb-7   |Bbm7b5   |Eb79b   |Abj7   |Ab-7   |C7alt   |F79b   |Bbm7b5   |Bbm7b5   |Bbm7b5   |Eb79b   ||\nB1: ||Abj7   |Abj7   |Abo7   |Abo7   |Bb-7   |Bb-7   |Bbm7b5   |Bbm7b5 Eb79b |Abj7   |Ab-7   |B7   |A7   |Ab6   |Bbm7b5 Eb7 |Ab6   |Bb-7 Eb7 ||",
+      "supported": true
+    },
+    {
+      "id": 453,
+      "title": "Dancing in the Dark",
+      "performer": "Zoot Sims",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Abj7   |Abj7   |Abo7   |Abo7   |Bb-7   |Bb-7   |Bbm7b5   |Eb79b   |Abj7   |Ab-7   |C7911#   |F79b   |Bbm7b5   |Bbm7b5   |Bbm7b5   |Eb79b   ||\nB1: ||Abj7   |Abj7   |Abo7   |Abo7   |Bb-7   |Bb-7   |Bbm7b5   |Bbm7b5 Eb79b |Abj7   |Ab-7   |B7   |A7   |Ab6   |Bbm7b5 Eb7 |Ab6   |Bb-7 Eb7 |Abj7   ||\nI1: ||Eb7   |Eb7   |Eb7   |Eb7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 419,
+      "title": "Dat Dere",
+      "performer": "Steve Turre",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C- Eb7 |Am7b5 Ab7 |C- Ab7 |Dm7b5 G7 |C- Eb7 |Am7b5 Ab7 |Dm7b5 G+7 |C- G+79 ||\nA2: ||C- Eb7 |Am7b5 Ab7 |C- Ab7 |Dm7b5 G7 |C- Eb7 |Am7b5 Ab7 |Dm7b5 G+7 |C-   ||\nB1: ||C-7G7C- |G-7D7G-7 |C-7 Ab7 |Dm7b5 G7 |C-7G7C- |G-7D7G-7 |Dm7b5 G79 |C- G79 ||",
+      "supported": false
+    },
+    {
+      "id": 436,
+      "title": "Dat Dere",
+      "performer": "Woody Shaw",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |Am7b5 Abj7 |Am7b5 D7 |Dm7b5 G7 |C-7   |Am7b5 Abj7 |Dm7b5 G+7 |C-7 G7 ||\nA2: ||C-7   |Am7b5 Abj7 |Am7b5 D7 |Dm7b5 G7 |C-7   |Am7b5 Abj7 |Dm7b5 G+7 |C-7   ||\nB1: ||Dm7b5G7C-7 |Am7b5D7G7C-7|Am7b5 D7 |Dm7b5 G7 |Dm7b5G7C-7 |Am7b5D7G+7Eb7|Dm7b5 G+7 |G7 G+7 ||\nA3: ||C-7   |Am7b5 Abj7 |Am7b5 D7 |Dm7b5 G7 |C-7   |Am7b5 Abj7 |Dm7b5 G+7 |C-7   ||",
+      "supported": false
+    },
+    {
+      "id": 105,
+      "title": "Day & Nite",
+      "performer": "David Liebman",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bj7911#   |Bb79b13b   |Ebj7911#   |Ebj7911#   |Bj7911#   |Bb79b13b   |Ebj7911#   |Ebj7911#   |Am7b5   |Ab-7   |G-7   |Gb-7   |F-7   |Ej7911#   |D/Eb   |D/Eb   ||\nA2: ||Bj7911#   |Bb79b13b   |Ebj7911#   |Ebj7911#   |Bj7911#   |Bb79b13b   |Bb79b13bEbj7911#  |Ebj7911#   |Am7b5   |Ab-7   |G-7   |Gb-7   |F-7   |Ebj7911#   |D/Eb   |D/Eb   ||\nB1: ||Db-7/Gb   |Db-7/Gb   |Bb-7/Eb   |Bb-7/Eb   |Db-7/Gb   |Db-7/Gb   |Bb-7/Eb   |Bb-7/Eb   |Am7b5   |Ab-7   |G-7   |Gb-7   |F-7   |Ej7911#   |D/Eb   |D/Eb   ||",
+      "supported": true
+    },
+    {
+      "id": 301,
+      "title": "Delta City Blues",
+      "performer": "Michael Brecker",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Eb7   |Eb7   |Bb7   |Bb7   |Bb7   |Bb7   |C-7   |C-7   |F7   |F7   |Bb7   |Bb7   |Bb7   |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 3,
+      "title": "Desafinado",
+      "performer": "Art Pepper",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fj7   |Fj7   |G7alt   |G7alt   |G-7   |C7   |Am7b5   |D79b   |G-7   |A79b   |D7   |D79b   |G79b   |G79b   |Gbj7   |Gbj7   ||\nA2: ||Fj7   |Fj7   |G7alt   |G7alt   |G-7   |C7   |Am7b5   |D79b   |G-7   |Bb-   |A-7   |Bm7b5 E79# ||\nB1: ||Aj7   |Bbo7   |B-7   |E7   |Aj7   |F#-7   |B-7   |E7   ||\nC1: ||Cj7   |C#o7   |D-7   |G7   |G-7   |Am7b5 D79b |G-7   |C7alt   ||",
+      "supported": true
+    },
+    {
+      "id": 45,
+      "title": "Destination K.C.",
+      "performer": "Buck Clayton",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C   |C   |G7   |C   |C   |C   |G7   |C   ||\nA2: ||C   |C   |G7   |C   |C   |C   |G7   |C   ||\nB1: ||C7   |C7   |F7   |F7   |Bb7   |Bb7   |Ab7   |G7   ||\nA3: ||C   |G7   |G7   |C   |C   |C   |G7   |C   ||",
+      "supported": true
+    },
+    {
+      "id": 128,
+      "title": "Destination K.C.",
+      "performer": "Dickie Wells",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C   |C   |G7   |C   |C   |C   |G7   |C   ||\nA2: ||C   |C   |G7   |C   |C   |C   |G7   |C   ||\nB1: ||C7   |C7   |F7   |F7   |Bb7   |Bb7   |Ab7   |G7   ||\nA3: ||C   |C   |G7   |C   |C   |C   |G7   |C   ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 281,
+      "title": "Destination K.C.",
+      "performer": "Lester Young",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C   |C   |G7   |C   |C   |C   |G7   |C   ||\nA2: ||C   |C   |G7   |C   |C   |C   |G7   |C   ||\nB1: ||C7   |C7   |F7   |F7   |Bb7   |Bb7   |Ab7   |G7   ||\nA3: ||C   |C   |G7   |C   |C   |C   |G7   |C   ||",
+      "supported": true
+    },
+    {
+      "id": 122,
+      "title": "Dextivity",
+      "performer": "Dexter Gordon",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C6   |D7911#   |D-7 G79b |C6Eb7D7Db7||\nA2: ||C6   |D7911#   |D-7 G79b |C6   ||\nB1: ||G-7 C79b |Fj7 B7 |E-7 A-7 |D-7 G7Db7||\nA3: ||C6   |D7911#   |D-7 G79b |C6   ||",
+      "supported": false
+    },
+    {
+      "id": 46,
+      "title": "Dickie's Dream",
+      "performer": "Buck Clayton",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 ||\nA2: ||C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 ||\nB1: ||C7   |C7   |F7   |F7   |Bb7   |Bb7   |Eb7   |D- G7 ||\nA3: ||C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 ||\nI1: ||C- C-/Bb |Ab G7 ||",
+      "supported": true
+    },
+    {
+      "id": 129,
+      "title": "Dickie's Dream",
+      "performer": "Dickie Wells",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 ||\nA2: ||C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 ||\nB1: ||C7   |C7   |F7   |F7   |Bb7   |Bb7   |Eb7   |D- G7 ||\nA3: ||C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 282,
+      "title": "Dickie's Dream",
+      "performer": "Lester Young",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 ||\nA2: ||C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 ||\nB1: ||C7   |C7   |F7   |F7   |Bb7   |Bb7   |Eb7   |D- G7 ||\nA3: ||C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 |C- C-/Bb |Ab G7 ||\nI1: ||C-   ||",
+      "supported": true
+    },
+    {
+      "id": 22,
+      "title": "Did You Call Her Today",
+      "performer": "Ben Webster",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Ab6   |Ab6   |Eb-7   |Ab7   |Db6   |Db6   |Db7   |Do   |Ab6   |F7   |Bb7   |Bb7   |Bb-7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 182,
+      "title": "Did You Call Her Today",
+      "performer": "Harry Edison",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Ab6   |Ab6   |Eb-7   |Ab7   |Db6   |Db6   ||\nB1: ||Db7   |Do   |Ab   |F7   |Bb7   |Bb7   |Bb-7   |Eb7   ||\nA'2: ||Bb7   |Eb7   |Ab6   |Ab6   |Eb-7   |Ab7   |Db6   |Db6   ||\nC1: ||Db7   |Do   |Ab   |F7   |Bb-7   |Eb7   |Ab   |Ab   ||",
+      "supported": false
+    },
+    {
+      "id": 286,
+      "title": "Dinah",
+      "performer": "Lionel Hampton",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ab   |Ab   |Ab   |F-7   |Bb-7   |Eb7   |Ab Eb7 |Ab   ||\nA2: ||Ab   |Ab   |Ab   |F-7   |Bb-7   |Eb7   |Ab Eb7 |Ab   ||\nB1: ||F-   |Ab+   |Ab   |F-6   |F-7 Ab+ |F-7 Bb7 |Bb-7   |Eb7   ||\nA3: ||Ab   |Ab   |Ab   |F-7   |Bb-7   |Eb7   |Ab Eb7 |Ab   ||",
+      "supported": true
+    },
+    {
+      "id": 185,
+      "title": "Dolores",
+      "performer": "Herbie Hancock",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   ||\nI1: ||D-   ||",
+      "supported": true
+    },
+    {
+      "id": 314,
+      "title": "Dolores",
+      "performer": "Miles Davis",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||D-   |F-7 Bb7 |Ebj7   |A-7 D7 |F-7911   |Am7b5 D7 |Dbsus7   |Dbsus7   ||\nB1: ||G-7   |D7   |G-7   |F-7   |E-7   |Eb   ||\nC1: ||G-7   |F-7 Bb7 |Ebj7   |A-7 D7 |F-7   |Am7b5 D7 |Dbsus7   |Dbsus7   ||",
+      "supported": true
+    },
+    {
+      "id": 427,
+      "title": "Dolores",
+      "performer": "Wayne Shorter",
+      "key": "Db-chrom",
+      "signature": "4/4",
+      "chords": "A1: ||D-7   |F-7 Bb7 |Ebj7   |A-7 D7 |F-7911   |Am7b5 D7 |Dbsus7   |Dbsus7   ||\nB1: ||G-7   |D7   |G-7   |F-79   |F-79   |Eb   ||\nC1: ||G-7   |F-7 Bb7 |Ebj7   |A-7 D7 |F-7911   |Am7b5 D7 |Dbsus7   |Dbsus7   ||",
+      "supported": true
+    },
+    {
+      "id": 166,
+      "title": "Dolphin Dance",
+      "performer": "Freddie Hubbard",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |Ab7911#   |C-7   |A-7 D7 |Gj7   |Ab-7   |F-7911   |F-7911   |C-7   |C-7   |A-7911   |D7913   ||\nB1: ||Gj7   |G7913   |A   |Ebm7b5   |F7913   |F79b13   |F7913   |E-79 A7913 |Eb7911#   |A-7 D7913 |B-7   |E7913 D-7 |C#-7   |F#7913   |D-7   |C-7   |D-7   |C-7   ||\nC1: ||Dbj7   |Bb79b13   |C79#   |G79#   ||",
+      "supported": false
+    },
+    {
+      "id": 54,
+      "title": "Don't Blame Me",
+      "performer": "Charlie Parker",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C6 F-7Bb7|E-7 A7 |D-7 G7 |Cj7 A-7 |D-7 G7 |Em7b5 A7 |D-7 G7 |C6A7D-7G7||\nA2: ||C6 F-7Bb7|E-7 A7 |D-7 G7 |Cj7 A-7 |D-7 G7 |Em7b5 A7 |D-7 G7 |C6 G-7C7||\nB1: ||Fj7   |E7   |A-7   |A-7   |D7   |D7   |D-7 Ab7 |G7   ||\nA3: ||C6 F-7Bb7|A7   |D-7 G7 |Cj7 A-7 |D-7 G7 |Em7b5 A7 |D-7 G7 |C6A7D-7G7||",
+      "supported": false
+    },
+    {
+      "id": 331,
+      "title": "Don't Get Around Much Anymore",
+      "performer": "Milt Jackson",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Cj7D-7D#oE-7|E-7   |A7   |A7   |D-7   |G7   |C   |G7   ||\nA2: ||Cj7D-7D#oE-7|E-7   |A7   |A7   |D-7   |G7   |C   |C7   ||\nB1: ||F   |F-   |E-7 C |C7   |F6   |F#m7b5 B79b |E-7 D7 |D-7   ||\nA3: ||Cj7D-7D#oE-7|E-7   |A7   |A7   |D-   |G7   |C   |C G7 ||\nI1: ||NC   |NC   ||",
+      "supported": true
+    },
+    {
+      "id": 55,
+      "title": "Donna Lee",
+      "performer": "Charlie Parker",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ab   |F7   |Bb7   |Bb7   |Bb-7   |Eb7   |Ab   |Eb-7 D7 |Db   |Db-7   |Ab   |F7   |Bb7   |Bb7   |Bb-7   |Eb7   ||\nB1: ||Ab   |F7   |Bb7   |Bb7   |C7   |C7   |F-   |C79#   |F-   |C7   |F-   |Abo   |Ab F7 |Bb-7 Eb7 |Ab   |Bb-7 Eb7NC||",
+      "supported": false
+    },
+    {
+      "id": 178,
+      "title": "Doodlin'",
+      "performer": "Hank Mobley",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Db7   |Gb7   |Db7   |Db7   |Gb7   |Gb7   |Db7   |Db7 Bb7 |Eb-7   |Ab79   |Db7   |Ab7   ||",
+      "supported": true
+    },
+    {
+      "id": 250,
+      "title": "Doodlin'",
+      "performer": "Kenny Dorham",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Db7   |Gb7   |Db7   |Db7   |Gb7   |Gb7   |Db7   |Db7 Bb7 |Eb-7   |Ab79   |Db7   |Ab7   ||",
+      "supported": true
+    },
+    {
+      "id": 160,
+      "title": "Double Talk",
+      "performer": "Fats Navarro",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F   |F   |F-7   |Bb7   |G-7   |C7913   |A-7 Abo |G-7 Gb7 ||\nA2: ||F   |F   |F-7   |Bb7   |G-7   |C7   |F-7 Bb-7 |Eb-7 Ab7/D ||\nB1: ||Db   |D-7   |Eb-7   |F-7 B7913 |F-7 Bb79#13 |Eb-7 Ab79# |Db   |C7alt   ||\nA3: ||F   |F   |F-7   |Bb7   |G-7   |C7913   |A-7 Abo |G-7 Gb7 ||",
+      "supported": false
+    },
+    {
+      "id": 258,
+      "title": "Double Vision",
+      "performer": "Kenny Wheeler",
+      "key": "D#-maj",
+      "signature": "4/4",
+      "chords": "A1: ||D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   |D#7   |E7   ||",
+      "supported": true
+    },
+    {
+      "id": 405,
+      "title": "Double Vision",
+      "performer": "Steve Coleman",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 103,
+      "title": "Down Under",
+      "performer": "Curtis Fuller",
+      "key": "F#-min",
+      "signature": "4/4",
+      "chords": "A1: ||Gb-7   |Abm7b5 Db7 |Gb-7   |Gb-7   |G7   |G7   |Gb-7   |E-7 A7 |D7   |Db7   |Gb-7   |Db7   ||",
+      "supported": true
+    },
+    {
+      "id": 167,
+      "title": "Down Under",
+      "performer": "Freddie Hubbard",
+      "key": "F#-min",
+      "signature": "4/4",
+      "chords": "A1: ||Gb-7   |Abm7b5 Db7 |Gb-7   |Gb-7   |G7   |G7   |Gb-7   |E-7 A7 |D7   |Db7   |Gb-7   |Db7   ||",
+      "supported": true
+    },
+    {
+      "id": 428,
+      "title": "Down Under",
+      "performer": "Wayne Shorter",
+      "key": "F#-min",
+      "signature": "4/4",
+      "chords": "A1: ||Gb-7   |Abm7b5 Db7 |Gb-7   |Gb-7   |G7   |G7   |Gb-7   |E-7 A7 |D7   |Db7   |Gb-7   |Db7   ||",
+      "supported": true
+    },
+    {
+      "id": 315,
+      "title": "E.S.P.",
+      "performer": "Miles Davis",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||E7alt   |E7alt   |Fj7   |Fj7   |E7alt   |E7alt   |Ebj7911#   |Ebj7911#   |D7   |Ebj7911#   |E7   |Fj7 Ebj7 |D-79   |G7   |G-7   |Gb7   ||\nA2: ||E7alt   |E7alt   |Fj7   |Fj7   |E7alt   |E7alt   |Ebj7911#   |Ebj7911#   |D7   |Ebj7911#   |E7   |Fj7 Ebj7 |Db7911#   |G-7   |Db-7 Gb7 |Fj7   ||",
+      "supported": true
+    },
+    {
+      "id": 429,
+      "title": "E.S.P.",
+      "performer": "Wayne Shorter",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||E7alt   |E7alt   |Fj7   |Fj7   |E7alt   |E7alt   |Ebj7911#   |Ebj7911#   |D7   |Ebj7911#   |E7   |Fj7 Eb7 |D-79   |G7   |G-7   |Gb7   ||\nA2: ||E7alt   |E7alt   |Fj7   |Fj7   |E7alt   |E7alt   |Ebj7911#   |Ebj7911#   |D7   |Ebj7911#   |E7   |Fj7 Eb7 |Db7911#   |C7   |Db7 Gb7 |Fj7   ||",
+      "supported": true
+    },
+    {
+      "id": 355,
+      "title": "Early Morning Mood",
+      "performer": "Pepper Adams",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G7   |C7 C#o7 |G7   |G7   |C7   |C7   |G7   |B-7 Bbo |A-7   |D7   |G7 C7 |D7   ||",
+      "supported": true
+    },
+    {
+      "id": 242,
+      "title": "Early Morning Rock",
+      "performer": "Johnny Hodges",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Eb7   |Eb7   |Eb7   |Ab7   |Ab7   |Eb7   |F7   |Bb7   |Ab7   |Eb7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 415,
+      "title": "Easy to Love",
+      "performer": "Steve Lacy",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||A-7   |D-7   |A-7   |D7   |Gj7   |C79   |B-7   |E79b   |A-7   |D79   |Gj7   |B-7 E7 |A-7   |D7   |B-7   |B-7 E79b ||\nA2: ||A-7   |D-7   |A-7   |D7   |Gj7   |C79   |B-7   |E79b   |A-7   |C-7 F7 |Gj7   |Bbo7   |A-7   |D7   |G   |Bm7b5 E79b ||",
+      "supported": true
+    },
+    {
+      "id": 316,
+      "title": "Eighty-One",
+      "performer": "Miles Davis",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fsus7   |Bbsus7   |Fsus7   |Fsus7   |Bbsus7   |Bbsus7   |Fsus7   |Fsus7   |Csus7   |Bbsus7   |Fsus7   |Fsus7   ||",
+      "supported": true
+    },
+    {
+      "id": 430,
+      "title": "Eighty-One",
+      "performer": "Wayne Shorter",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fsus7   |Bbsus7   |Fsus7   |Fsus7   |Bbsus7   |Bbsus7   |Fsus7   |Fsus7   |Csus7   |Bbsus7   |Fsus7   |Fsus7   ||",
+      "supported": true
+    },
+    {
+      "id": 193,
+      "title": "Elora",
+      "performer": "J.J. Johnson",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |F7   |Bbj7 Ebj7 |D-7 Db7 |C-7 G7 |C-7 F7 |Bbj7   |D-7 Db7 ||\nA2: ||C-7   |F7   |Bbj7 Ebj7 |D-7 Db7 |C-7 G7 |C-7 F7 |Bbj7   |F-7 Bb7 ||\nB1: ||Ebj7   |Eb-7 Ab7 |Bb-7   |A-7 D7 |G-7   |C7   |C-7   |F7   ||\nA3: ||C-7   |F7   |Bbj7 Ebj7 |D-7 Db7 |C-7 G7 |C-7 F7 |Bbj7   |D-7 Db7 ||\nI1: ||C-7   ||",
+      "supported": true
+    },
+    {
+      "id": 394,
+      "title": "Elora",
+      "performer": "Sonny Stitt",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |F7   |Bbj7 Ebj7 |D-7 Db-7 |C-7   |F7   |Bbj7   |C-7   ||\nA2: ||C-7   |F7   |Bbj7 Ebj7 |D-7 Db-7 |C-7   |F7   |Bb   |F-7 Bb7 ||\nB1: ||Ebj7   |Eb-7   |D-7   |Ao7 D+7 |G-7   |C7   |C-7   |F7   ||\nA3: ||C-7   |F7   |Bbj7 Ebj7 |D-7 Db-7 |C-7   |F7   |Bbj7   |Bbj7   ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 56,
+      "title": "Embraceable You",
+      "performer": "Charlie Parker",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F6   |Abo   |G-7   |C7   |G-7 G-/F |Gm7b5 C7 |F6   |E7 A7 |D-7   |Bm7b5 E7 |A-7   |Fm7b5 F-7 |E-7 A7 |D-7 G7 |C7   |G-7 C7 ||\nB1: ||F6   |Abo   |G-7   |C7   |G-7 G-7/F |Gm7b5 C7 |F6 D-7 |C-7 F7 |Bbj7   |Em7b5 A79b |D-7   |Bm7b5 Bb-7 |A-7 D7 |G-79b C79b |A-7 D7 |G-7 C7 ||\nI1: ||F6   ||",
+      "supported": false
+    },
+    {
+      "id": 431,
+      "title": "Footprints",
+      "performer": "Wayne Shorter",
+      "key": "C-min",
+      "signature": "6/4",
+      "chords": "A1: ||C-7     |C-7     |C-7     |C-7     |F-7     |F-7     |C-7     |C-7     ||\nB1: ||F#m7b5  F7913  |Em7b5  A7alt  |C-7     |C-7     ||",
+      "supported": false
+    },
+    {
+      "id": 89,
+      "title": "George's Dilemma",
+      "performer": "Clifford Brown",
+      "key": "Db-min",
+      "signature": "4/4",
+      "chords": "A1: ||Db-7   |Dj7   |Db-7   |B7   |Db-7   |Db-7   |Eb7 Ab7 |Db-7   ||\nA2: ||Db-7   |Dj7   |Db-7   |B7   |Db-7   |Db-7   |Eb7 Ab7 |Db-7   ||\nB1: ||Gb-7   |B7   |Ab-7 Aj7 |Ab-7 Go |Gb-7   |B7   |Ej7 Aj7 |Dj7 Eb-7Ab7||\nA3: ||Db-7   |Dj7   |Db-7   |B7   |Db-7   |Db-7   |Eb7 Ab7 |Db-7   ||",
+      "supported": false
+    },
+    {
+      "id": 222,
+      "title": "Giant Steps",
+      "performer": "John Coltrane",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Cbj7 D7 |Gj7 Bb7 |Ebj7   |A-7 D7 |Gj7 Bb7 |Ebj7 Gb7 |Cbj7   |F-7 Bb7 |Ebj7   |A-7 D7 |Gj7   |Db-7 Gb7 |Cbj7   |F-7 Bb7 |Ebj7   |Db-7 Gb7 ||",
+      "supported": true
+    },
+    {
+      "id": 223,
+      "title": "Giant Steps",
+      "performer": "John Coltrane",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bj7 D7 |Gj7 Bb7 |Ebj7   |A-7 D7 |Gj7 Bb7 |Ebj7 F#7 |Bj7   |F-7 Bb7 |Ebj7   |A-7 D7 |Gj7   |C#-7 F#7 |Bj7   |F-7 Bb7 |Ebj7   |C#-7 F#7 ||",
+      "supported": true
+    },
+    {
+      "id": 186,
+      "title": "Gingerbread Boy",
+      "performer": "Herbie Hancock",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |F7   |F7   |F7   |F7   |Bb7   |Bb7   |Bb7   |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 161,
+      "title": "Good Bait",
+      "performer": "Fats Navarro",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb6 G7 |C-7 F7F7/Eb|D-7 G7 |C-7 F7 |Bbj7 Bb7/D |Ebj7 Eo |D-7/FG7C-7F7|Bb6 F7 ||\nA2: ||Bb6 G7 |C-7 F7F7/Eb|D-7 G7 |C-7 F7 |Bbj7 Bb7/D |Ebj7 Eo |D-7/FG7C-7F7|Bbj7 Bb+7 ||\nB1: ||Eb6 C7 |F-7 Bb7Bb7/Ab|G-7 C7 |F-7 Bb7 |Ebj7 Eb7/G |Abj7 Ao |G-7C7F-7Bb7|Eb6 F79 ||\nA3: ||Bb6 G7 |C-7 F7F7/Eb|D-7 G7 |C-7 F7 |Bbj7 Bb7/D |Ebj7 Eo |D-7/FG7C-7F7|Bb6   |Bb6   ||",
+      "supported": false
+    },
+    {
+      "id": 162,
+      "title": "Good Bait",
+      "performer": "Fats Navarro",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7 G-7 |C-7 F7 |Bbj7 G-7 |C-7 F7 |Bbj7 Bb7 |Ebj7 Ab7 |D-7G7C-7F7|Bbj7 F7 ||\nA2: ||Bbj7 G-7 |C-7 F7 |Bbj7 G-7 |C-7 F7 |Bbj7 Bb7 |Ebj7 Ab7 |D-7G7C-7F7|Bbj7 Bb7 ||\nB1: ||Ebj7 C-7 |F-7 Bb7 |Ebj7 C-7 |F-7 Bb7 |Ebj7 Eb7 |Abj7 Db7 |G-7C7F-7Bb7|Ebj7 F7 ||\nA3: ||Bbj7 G-7 |C-7 F7 |Bbj7 G-7 |C-7 F7 |Bbj7 Bb7 |Ebj7 Ab7 |D-7G7C-7F7|Bbj7 F7 ||\nI1: ||Bbj7 G7 ||",
+      "supported": true
+    },
+    {
+      "id": 395,
+      "title": "Good Kick",
+      "performer": "Sonny Stitt",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |F7   |F7 D-7 |G-7 C7 |F7   |F7   |C7   |C7   ||",
+      "supported": true
+    },
+    {
+      "id": 235,
+      "title": "Got No Blues",
+      "performer": "Johnny Dodds",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb C7 |F7 Bb7 |Eb C7 |F7 Bb7 |Eb   |Eb C7 |F7   |Bb7   ||\nB1: ||Eb C7 |F7 Bb7 |C- B-Bb|A D7 |Eb C7 |F7 Bb7 |Eb   |Eb   ||",
+      "supported": false
+    },
+    {
+      "id": 261,
+      "title": "Got No Blues",
+      "performer": "Kid Ory",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb C7 |F7 Bb7 |Eb C7 |F7 Bb7 |Eb   |Eb C7 |F7   |Bb7   ||\nB1: ||Eb C7 |F7 Bb7 |C- B-Bb|A D7 |Eb C7 |F7 Bb7 |Eb   |Eb   ||\nI1: ||Eb   ||",
+      "supported": false
+    },
+    {
+      "id": 294,
+      "title": "Got No Blues",
+      "performer": "Louis Armstrong",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F   |C   |F   |C   |F   |F   |C   |Bb   |F   |C   |F   |C   |F   |C   |F   |F   ||",
+      "supported": true
+    },
+    {
+      "id": 137,
+      "title": "Groovin' High",
+      "performer": "Dizzy Gillespie",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ebj7   |Ebj7   |Am7b5   |D7   |Ebj7   |Ebj7   |Gm7b5   |C7   |F7   |F7   |F-7   |Bb7   |G-7   |F#-7   |F-7   |Bb7   ||\nA2: ||Ebj7   |Ebj7   |Am7b5   |D7   |Ebj7   |Ebj7   |Gm7b5   |C7   |F7   |F7   |F-7   |Bb7   |F-7   |Ab-7 Db7 |Eb6   |F-7 Bb7 ||",
+      "supported": true
+    },
+    {
+      "id": 262,
+      "title": "Gut Bucket Blues",
+      "performer": "Kid Ory",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C   |F   |C   |C   |F   |F   |C   |C   |G7   |F   |C   |C   ||",
+      "supported": true
+    },
+    {
+      "id": 295,
+      "title": "Gut Bucket Blues",
+      "performer": "Louis Armstrong",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C7   |F7   |C7   |C7   |F7   |F7   |C7   |C7   |G7   |F7   |C7   |G7   ||",
+      "supported": true
+    },
+    {
+      "id": 38,
+      "title": "Gutbucket Steepy",
+      "performer": "Branford Marsalis",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Db7   |Gb7   |Db7   |Db7   |Gb7   |Gb7   |Db7 C7 |F-7 Bb7 |Eb-7   |Ab7   |Db7   |Eb-7 Ab7 ||",
+      "supported": true
+    },
+    {
+      "id": 187,
+      "title": "Hand Jive",
+      "performer": "Herbie Hancock",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 15,
+      "title": "Handful of Keys",
+      "performer": "Benny Goodman",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb F-7 |Eb6 Gbo |F- F-7 |F-6 Gbo |F- F-7 |F-6 Bb7 |Eb C-7 |F-7 Bb7 ||\nA2: ||Eb F-7 |Eb6 Gbo |F- F-7 |F-6 Gbo |F- F-7 |F-6 Bb7 |Eb Bbm7b5 |Eb D7 ||\nI1: ",
+      "supported": true
+    },
+    {
+      "id": 142,
+      "title": "Harvard Blues",
+      "performer": "Don Byas",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Db7   |Gb7 Go |Db Db7 |Bb-7 Db7 |Gb7   |Gb7 Go |Db7   |Db7 Ao |Ab7   |Gb7   |Db7   |Db7   ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 143,
+      "title": "Harvard Blues",
+      "performer": "Don Byas",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Db7   |Gb7 Go |Db7   |Db7   |Gb7   |Gb7 Go |Db7   |Bb- Eb7 |Ab7   |Gb7   |Db7   |Db7   ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 236,
+      "title": "Heebie Jeebies",
+      "performer": "Johnny Dodds",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Eb7   |Ab   |Ab   |Eb7 F-7 |Co Eb7 |Ab7 Db6 |Do Ab |Eb7   |Eb7   |Ab   |Ab7   |Db Fo |Ab F7 |Bb7 Eb7 |Ab F7 |Bb7 Eb7 |Ab   |Ab   ||",
+      "supported": true
+    },
+    {
+      "id": 47,
+      "title": "High Fly",
+      "performer": "Cannonball Adderley",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||D-7   |G7   |Cj7 F7 |E-7 A-7 |C-7   |F7   |Bb7   |B7   ||\nA2: ||D-7   |G7   |Cj7 F7 |E-7 A-7 |C-7   |B7   |Dm7b5   |G79b   ||\nB1: ||Cm7b5   |F7   |D-7   |G79b   |Cm7b5   |F7   |E-7 A-7 |Eb-7 Ab-7 ||\nA3: ||D-7   |G7   |Cj7 F7 |E-7 A-7 |C-7   |F7   |Bb6   |B7913   ||",
+      "supported": true
+    },
+    {
+      "id": 287,
+      "title": "High Society",
+      "performer": "Lionel Hampton",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb   |Eb   |Eb   |Eb   |Eb   |Eb Ab |Eb   |Eb   |Bb7   |Bb7 D7 |Eb   |Eb   |F7   |F7   |Bb7   |Bb7   ||\nB1: ||Eb   |Eb   |Eb   |Bb7   |Eb   |Eb Ab |Eb   |Eb7   |Ab   |Ao   |Eb   |C7   |F7   |Bb7   |Eb   |Eb   ||",
+      "supported": true
+    },
+    {
+      "id": 244,
+      "title": "Home Fries",
+      "performer": "Joshua Redman",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Eb7   |Eb7   |Eb7   |Ab7   |Gb7911#   |F7   |Bb7   |Eb7   |Eb7   |Ab7   |Ao   |G-7 C7 |F-7 Bb7 |Eb7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 362,
+      "title": "Honeysuckle Rose",
+      "performer": "Phil Woods",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G-7 C7 |G-7 C7 |G-7 C7 |G-7 C7 |F6 D-7 |G-7 C7 |F6   |A-7 D7 ||\nA2: ||G-7 C7 |G-7 C7 |G-7 C7 |G-7 C7 |F6 D-7 |G-7 C7 |F6   |F6   ||\nB1: ||F7   |C-7 F7 |Bb6   |Bb6   |G7   |G7   |C7   |C7   ||\nA3: ||G-7 C7 |G-7 C7 |G-7 C7 |G-7 C7 |F6 D-7 |G-7 C7 |F6   |A-7 D7 ||",
+      "supported": true
+    },
+    {
+      "id": 138,
+      "title": "Hot House",
+      "performer": "Dizzy Gillespie",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gm7b5   |C+7   |Fm7b5   |Bb+7   |Dm7b5   |G+7   |Cj7   |Cj7   ||\nA2: ||Gm7b5   |C+7   |Fm7b5   |Bb+7   |Dm7b5   |G+7   |Cj7   |Cj7   ||\nB1: ||C-7   |F7   |Bbj7   |Bbj7   |Ab7   |Ab7   |G7   |G7   ||\nA3: ||Gm7b5   |C+7   |Fm7b5   |Bb+7   |Dm7b5   |G+7   |Cj7   |Cj7   ||",
+      "supported": true
+    },
+    {
+      "id": 237,
+      "title": "Hotter than That",
+      "performer": "Johnny Dodds",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb   |Eb   |Eb   |Eb   |Eb   |Eb   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Eb   |Eb   ||\nB1: ||Eb   |Eb   |Eb   |Eb   |Eb7   |Eb7   |Ab   |Ab   |Ab   |Ao   |Eb   |C7   |F7   |Bb7   |Eb   ||",
+      "supported": true
+    },
+    {
+      "id": 39,
+      "title": "Housed from Edward",
+      "performer": "Branford Marsalis",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |A-7 D7 |G-7   |C7   |F7 D7 |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 40,
+      "title": "Housed from Edward",
+      "performer": "Branford Marsalis",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |A-7 D7 |G-7   |C7   |F7 D7 |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 57,
+      "title": "How Deep Is the Ocean",
+      "performer": "Charlie Parker",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |Bo7   |Eb6/Bb   |Am7b5 D7 |G-7   |Am7b5 D79b |G-7 Gb7 |F-7 Bb7 ||\nB1: ||Bb-7   |Eb7   |Eb-7   |Ab7   |B7   |B7   |Bb7   |Dm7b5 G79b ||\nA2: ||C-7   |Bo7   |Eb6/Bb   |Am7b5 D7 |G-7   |Am7b5 D7 |G-7 Gb7 |F-7 Bb7 ||\nC1: ||Bb-7   |Gm7b5 C79b |F-7   |Db7   |Eb/Bb G7/B |C-7 F7 |F-7 Bb7 |Eb69 Dm7b5G7||",
+      "supported": false
+    },
+    {
+      "id": 356,
+      "title": "How High the Moon",
+      "performer": "Pepper Adams",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gj7   |Gj7   |G-7   |C7   |Fj7   |Fj7   |F-7   |Bb7   |Ebj7   |Am7b5 D7 |G-7   |G-7   |G79   |Cj7   |B-7 Bb7 |A-7 D7 ||\nB1: ||Gj7   ||",
+      "supported": true
+    },
+    {
+      "id": 210,
+      "title": "I Can't Get Started",
+      "performer": "Joe Lovano",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Cj7 A-7 |D-7 G7 |E7 Am7b5 |D-7 Gsus7 |Cj7 A-7 |D-7 G7 |E7 A7 |D-7 Gsus7 ||\nA2: ||Cj7 A-7 |D-7 G7 |E7 Am7b5 |D7 Gsus7 |Cj7 A-7 |D-7 G7 |C6 Bb7 |Cj7   ||\nB1: ||E-7 A7 |E-7 A7 |Dj7 Gj7 |Dj7   |D-7 G7 |D-7 G7 |E-7 A7 |D7 Gsus7 ||\nA3: ||Cj7 A-7 |D-7 G7 |E7 A7 |D7 Gsus7 |Cj7 A79b |D-7 G7 |C6   |D-7 G7 ||",
+      "supported": true
+    },
+    {
+      "id": 33,
+      "title": "I Didn't Know What Time It Was",
+      "performer": "Bob Berg",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||E-7 A7 |D-7 Bm7b5 |E-7 A7 |D-7 G7 |G-7 C7 |D-   |Bbj7 A-7 |G-7 F-7 ||\nA2: ||E-7 A7 |D-7 Bm7b5 |E-7 A7 |D-7 G7 |G-7 C7 |D-   |Bbj7 A-7 |G-7 C7 ||\nB1: ||F6 D-7 |Em7b5   |A7   |D-7 C-7F7|Bbj7 A+7 |D-7   |Gsus79 G7913 |G-7 F-7 ||\nA3: ||E-7 A7 |D-7 Bm7b5 |E-7 A7 |D-7 G7 |G-7 C7 |D-   |Bbj7 A-7 |Bb-7 Eb7 |A-7 D7 |G-7 Csus7 |F6   |F6   ||",
+      "supported": false
+    },
+    {
+      "id": 70,
+      "title": "I Fall in Love Too Easily",
+      "performer": "Chet Baker",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F-7 Bb7 |Ebj7 C-7 |Dm7b5 G79b |C-7   |Dm7b5 G79b |C-7   |D7 Ab7911# |Gj7   ||\nB1: ||Am7b5 D79# |G7   |G-7 C7 |F-7 C7 |F-7 Bb79 |Db7911# C7 |F-7 Bb7913 |Eb6   ||\nI1: ",
+      "supported": true
+    },
+    {
+      "id": 7,
+      "title": "I Got It Bad",
+      "performer": "Benny Carter",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Dbj7   |F-7 Bb7 |Eb7   |Eb7   |Eb-7   |F7Bb7Eb7Ab7|Db6 Bb-7 |Eb-7 Ab7 ||\nA2: ||Dbj7   |Bb-7   |Eb7   |Eb7   |Eb-7   |F7Bb7Eb7Ab7|Db6   |G7911#   ||\nB1: ||Gbj7   |F#j7   |Gb-6   |B7   |Dbj7 B7 |F-7 Bb7 |Eb-7   |Ab7   ||\nA3: ||Dbj7   |Bb-7   |Eb7   |Eb7   |Eb-7   |F7Bb7Eb7Ab7|Db6   |Eb-7 Ab7 ||\nB2: ||Gbj7   |Gbj7   |Gb-6   |B7   |Dbj7 B7 |F-7 Bb7 |Eb-7   |Ab7   ||\nA4: ||Dbj7   |Bb-7   |Eb7   |Eb7   |Eb-7   |F7Bb7Eb7Ab7|Eb-7 Ab7 |Dbj7   |Dbj7   |Dbj7   ||",
+      "supported": true
+    },
+    {
+      "id": 130,
+      "title": "I Got Rhythm",
+      "performer": "Dickie Wells",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb6 G-7 |C-7 F7 |Bb6 G-7 |C-7 F7 |Bb6 Bb7 |Eb6 Eo7 |Bb6 F7 |Bb6   ||\nA2: ||Bb6 G-7 |C-7 F7 |Bb6 G-7 |C-7 F7 |Bb6 Bb7 |Eb6 Eo7 |Bb6 F7 |Bb6   ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bb6 G-7 |C-7 F7 |Bb6 G-7 |C-7 F7 |Bb6 Bb7 |Eb6 Eo7 |Bb6 F7 |Bb6   ||",
+      "supported": true
+    },
+    {
+      "id": 245,
+      "title": "I Got You",
+      "performer": "Joshua Redman",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||D79#   |D79#   |D79#   |D79#   |G79#   |G79#   |D79#   |D79#   |A79#   |G79#   |D7   |A+79#   ||",
+      "supported": true
+    },
+    {
+      "id": 147,
+      "title": "I Love You",
+      "performer": "Don Ellis",
+      "key": "F-maj",
+      "signature": "",
+      "chords": "A1: ||Gm7b5   |C79b   |Fj7   |Fj7   |G-7   |C7   |Fj7   |Fj7   ||\nA2: ||Gm7b5   |C79b   |Fj7   |B-7 E7 |Aj7   |B-7 E7 |Aj7   |Aj7   ||\nB1: ||G-7   |C7   |Fj7   |Fj7   |Am7b5   |D79b   |G7   |C7   ||\nA3: ||Gm7b5   |C79b   |Fj7   |Am7b5 D7 |G7   |G-7 C7 |F6   |F6   ||",
+      "supported": false
+    },
+    {
+      "id": 302,
+      "title": "I Mean You",
+      "performer": "Michael Brecker",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F6   |F6   |Db7   |D7   |G-7   |C7   |F6   |G-7 C7 ||\nA2: ||F6   |F6   |Db7   |D7   |G-7   |C7   |F6   |F6   ||\nB1: ||Eb7   |Eb7   |F6   |F6   |Db7   |Db7   |Gb7   |G-7 C7 ||\nA3: ||F6   |F6   |Db7   |D7   |G-7   |C7   |F6   |F6   ||",
+      "supported": true
+    },
+    {
+      "id": 90,
+      "title": "I'll Remember April",
+      "performer": "Clifford Brown",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gj7   |G6   |Gj7   |G6   |G-7   |G-6   |G-7   |G-6   |Am7b5   |D7   |Bm7b5   |E7   |A-7   |D7   |Gj7   |Gj7   ||\nB1: ||C-7   |F7   |Bbj7   |G-7   |C-7   |F7   |Bbj7   |Bb6   |A-7   |D7   |Gj7   |G6   |F#-7   |B7   |Ej7   |A-7 D7 ||\nA2: ||Gj7   |G6   |Gj7   |G6   |G-7   |G-6   |G-7   |G-6   |Am7b5   |D7   |Bm7b5   |E7   |A-7   |D7   |Gj7   |Gj7   ||",
+      "supported": true
+    },
+    {
+      "id": 91,
+      "title": "I'll Remember April",
+      "performer": "Clifford Brown",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gj7   |Gj7   |Gj7   |Gj7   |G-7   |G-7   |G-7   |G-7   |A-7   |D7   |Bm7b5   |E79b   |A-7   |D7   |Gj7   |Gj7   ||\nB1: ||C-7   |F7   |Bbj7   |Bbj7   |C-7   |F7   |Bbj7   |Bbj7   |A-7   |D7   |Gj7   |Gj7   |F#-7   |F#-7   |Ej7   |Ej7   ||\nA2: ||Gj7   |Gj7   |Gj7   |Gj7   |G-7   |G-7   |G-7   |G-7   |A-7   |D7   |Bm7b5   |E7   |A-7   |D7   |Gj7   |Gj7   ||",
+      "supported": true
+    },
+    {
+      "id": 269,
+      "title": "I'll Remember April",
+      "performer": "Lee Konitz",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gj7   |G6   |Gj7   |G6   |G-7   |G-6   |G-7   |G-6   |Am7b5   |D7   |Bm7b5   |E7   |A-7   |D7   |G   |G79b   ||\nB1: ||C-7   |F7   |Bbj7   |G-7   |C-7   |F7   |Bbj7   |Bb6   |A-7   |D7   |Gj7   |G6   |F#-7   |B7   |Ej7   |A-7 D7 ||\nA2: ||Gj7   |G6   |Gj7   |G6   |G-7   |G-6   |G-7   |G-6   |Am7b5   |D7   |Bm7b5   |E7   |A-7   |D7   |G   |G   ||",
+      "supported": true
+    },
+    {
+      "id": 382,
+      "title": "I'll Remember April",
+      "performer": "Sonny Rollins",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gj7   |G6   |Gj7   |G6   |G-7   |G-6   |G-7   |G-6   |Am7b5   |D7   |Bm7b5   |E7   |A-7   |D7   |Gj7   |Gj7   ||\nB1: ||C-7   |F7   |Bbj7   |G-7   |C-7   |F7   |Bbj7   |Bbj7   |A-7   |D7   |Gj7   |Gj7   |F#-7   |B7   |Ej7   |A-7 D7 ||\nA2: ||Gj7   |G6   |Gj7   |G6   |G-7   |G-6   |G-7   |G-6   |Am7b5   |D7   |Bm7b5   |E7   |A-7   |D7   |Gj7   |Gj7   ||",
+      "supported": true
+    },
+    {
+      "id": 26,
+      "title": "I'm Coming Virginia",
+      "performer": "Bix Beiderbecke",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F Abo |F6Bbj7A-7D-7|D7 G7 |C7 F7 |Bb A7 |G7 C7 |F7 G-7 |C7G-7EboC7||\nA2: ||F Abo |F   |A-   |A-   |Bm7b5 E7 |Am7b5 D7 |Gbj7 C7 |F7 F ||\nB1: ||Bb6 G-7 |G-7 D- |D-6   |C D7 |G-7   |G7 C7 |F7 G-7 |F   ||",
+      "supported": true
+    },
+    {
+      "id": 374,
+      "title": "I'm Coming Virginia",
+      "performer": "Sidney Bechet",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||FF7BbBb-|F   |D- A7 |D- F7 |Bb A7Ab7|G7 C7 |F   |F C7 ||\nB1: ||FF7BbBb-|F D-7 |A- E7 |A-   |Fo E7 |C-6/Eb D7 |Bb-/Db C7 |F F7 ||\nC1: ||Bb   |Bb   |Bb-   |C7   |G7   |C7   |F   |F   ||",
+      "supported": false
+    },
+    {
+      "id": 400,
+      "title": "I'm Glad There Is You",
+      "performer": "Stan Getz",
+      "key": "C#-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C#j7   |C#j7   |C#-7   |F#7913   |D#-7   |G#7   |F-7 E7913 |Aj7 D79 ||\nA2: ||C#j7 D#-7 |F-7 Eo7 |D#-7   |G#79   |C#j7 B79 |A#79b   |D#7913   |G#79 C#sus79 ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 106,
+      "title": "I've Got You Under My Skin",
+      "performer": "David Liebman",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F-7   |Bb7   |Ebj7   |C7   |F-7   |Bb7   |Ebj7   |C7   |F-7   |Bb7   |Ebj7   |C7   |F-7   |Bb7   |Ebj7   |C7   ||\nB1: ||F-7   |Bb7   |Ebj7   |C7   |Fm7b5   |Bb79b   |Ebj7   |Ebj7   |D-7   |G7   |Cj7   |Cj7   |F-7   |Bb7   |Ebj7   |Ebj7   ||\nC1: ||F-7   |Bbsus Bb7 |Ebj7   |C79b   |F-7   |Bbsus Bb7 |Ebj7   |G7   ||\nD1: ||C-7   |F-7 Bb7 |Ebj7   |C-7   |F-7   |Bb7   |Ebj7   |Bb-7 Eb7 |Abj7   |Db7   |Ebj7   |Gm7b5 C79b |F-7   |Bb7   |Ebj7   |Ebj7   ||",
+      "supported": true
+    },
+    {
+      "id": 420,
+      "title": "If I Were a Bell",
+      "performer": "Steve Turre",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G79   |Csus7913 C7913 |Fj7   |Fj7   |A-7   |D7   |G7   |G-7 C7913 ||\nB1: ||F6 F7/A |Bb6 C7913 |F6   |E-7 A7 |D-7 D-7/C |Bb-7 E7 |Aj7 Bb7 |Aj7 D7 ||\nA2: ||G79   |Csus7913 C7913 |Fj7   |Fj7   |A-7   |D7   |G7   |G-7 C7 ||\nC1: ||F6 F7/A |Bb Bo |F6/C Bb7913 |A-7 D7 |G-7   |C7913   |F6   |F6   ||",
+      "supported": true
+    },
+    {
+      "id": 437,
+      "title": "If I Were a Bell",
+      "performer": "Woody Shaw",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G7   |G-7 C7 |Fj7   |Fj7   |Am7b5   |D7   |G7   |G-7 C7 ||\nB1: ||F7   |Bb7   |F7   |A+7   |D-7   |B-7 E7 |Aj7 E7 |Aj7 D7 ||\nA2: ||G7   |G-7 C7 |Fj7   |Fj7   |Am7b5   |D7   |G7   |G-7 C7 ||\nB2: ||F7   |Bb7 Bo |F E+7 |Eb7 D7 |G-7   |C7   |F   |D+7   ||",
+      "supported": true
+    },
+    {
+      "id": 438,
+      "title": "Imagination",
+      "performer": "Woody Shaw",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ebj7 Eo7 |F-7 Bb7 |Ebj7 Ab79 |Gm7b5 C7 |F- C+7 |F-7 Bb7 |G7 C7 |F-7 Bb7 ||\nA2: ||Ebj7 Eo7 |F-7   |Ebj7 Abj7 |Gm7b5 C7 |F- C+7 |F-7 Bb7 |Ebj7   |Bb-7 Eb79 ||\nB1: ||Abj7 F-7 |A-7 D7 |G-7   |Em7b5 A79b |D-7 G-7 |C-7 F7 |F7   |Bb+7   ||\nC1: ||Ebj7 Eo7 |F-7 Bb7 |Ebj7 Ab79 |Gm7b5 C7 |F-7 C+7 |F-7 Bb7 |G7 Db7911# |C7   |F- B7911# |Bbsus79 Bb7 |Eb6 Ebsus |Eb6 Ebsus |Eb6 Ebsus |Eb6 Ebsus |Ebsus   |Ebsus   ||",
+      "supported": true
+    },
+    {
+      "id": 224,
+      "title": "Impressions",
+      "performer": "John Coltrane",
+      "key": "D-min",
+      "signature": "4/4",
+      "chords": "A1: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   ||\nA2: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   ||\nB1: ||Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   ||\nA3: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   ||",
+      "supported": true
+    },
+    {
+      "id": 225,
+      "title": "Impressions",
+      "performer": "John Coltrane",
+      "key": "D-min",
+      "signature": "4/4",
+      "chords": "A1: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   ||\nA2: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   ||\nB1: ||Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   ||\nA3: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   ||",
+      "supported": true
+    },
+    {
+      "id": 198,
+      "title": "In 'n Out",
+      "performer": "Joe Henderson",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fsus7913   |Fsus7913   |Fsus7913   |Gbsus7913   |Fsus7913   |Fsus7913   |F7 Eb7 |D79   |Ebj7911#   |Ebj7911#   |Ebj7911#   |Ebj7911#   ||",
+      "supported": true
+    },
+    {
+      "id": 199,
+      "title": "In 'n Out",
+      "performer": "Joe Henderson",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fsus7913   |Fsus7913   |Fsus7913   |Gbsus7913   |Fsus7913   |Fsus7913   |Fsus7913 Ebsus7913 |D79   |Ebj7911#   |Ebj7911#   |Ebj7911#   |Ebj7911#   ||",
+      "supported": true
+    },
+    {
+      "id": 251,
+      "title": "In 'n Out",
+      "performer": "Kenny Dorham",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fsus7913NC  |NC   |NC   |Gbsus7913   |Fsus7913   |Fsus7913   |F7 Eb7 |D79   |Ebj7911#   |Ebj7911#   |Ebj7911#   |Ebj7911#   ||",
+      "supported": false
+    },
+    {
+      "id": 439,
+      "title": "In a Capricornian Way",
+      "performer": "Woody Shaw",
+      "key": "",
+      "signature": "3/4",
+      "chords": "A1: ||D-7  |G-69  |D-7  |E-7  |D-7  |Eb7911#  |D-7  |A7  |Fsus7  |Ebsus7  |Fsus7  |Ebsus7  |Fsus7  |Ebsus7  |Gb-7  |B7  ||\nA2: ||D-7  |G-69  |D-7  |E-7  |D-7  |Eb7911#  |D-7  |A7  |Fsus7  |Ebsus7  |Fsus7  |Ebsus7  |Fsus7  |Ebsus7  |Gb-7  |B7  ||\nB1: ||G-7  |Ab-7  |G-7  |Ebsus7  |Bsus7  |Ebsus7  |Esus7/A  |Db+79# C+79#||\nA3: ||D-7  |G-69  |D-7  |E-7  |D-7  |Eb7911#  |D-7  |A7  |Fsus7  |Ebsus7  |Fsus7  |Ebsus7  |Fsus7  |Ebsus7  |Gb-7  |B7  ||",
+      "supported": false
+    },
+    {
+      "id": 4,
+      "title": "In a Mellow Tone",
+      "performer": "Art Pepper",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |Eb6   |Eb6   |Bb-7   |Eb7   |Abj7   |Abj7   |Ab6   |Db7   |Eb6   |C7   |F7   |F7   |Bb7   |C7   ||\nB1: ||F7   |Bb7   |Eb6   |Eb6   |Bb-7   |Eb7   |Abj7   |Abj7   |Ab7   |Ao7   |Eb6   |C7   |F7   |Bb7   |Eb6   |Eb6   ||",
+      "supported": true
+    },
+    {
+      "id": 80,
+      "title": "In a Sentimental Mood",
+      "performer": "Chris Potter",
+      "key": "D-min",
+      "signature": "4/4",
+      "chords": "A1: ||D- D-j7 |D-7 D-6 |G- G-j7 |G-7 G-6A7|D-   |D7   |G-7 C7 |Fj7 Em7b5A7||\nA2: ||D- D-j7 |D-7 D-6 |G- G-j7 |G-7 G-6A7|D- NC |D7  NC|G-7 C7 |Fj7 Eb-7Ab7||\nB1: ||Dbj7 Bb-7 |Eb-7 Ab7 |Db7 Bb7 |Eb7 Ab7 |Dbj7 Bb-7 |Eb-7 Ab7 |G-7   |C7/G   ||\nI1: ||NC   ||",
+      "supported": false
+    },
+    {
+      "id": 432,
+      "title": "Infant Eyes",
+      "performer": "Wayne Shorter",
+      "key": "Eb-chrom",
+      "signature": "4/4",
+      "chords": "A1: ||G-7   |F-7   |Ebj7   |A79b13   |Gbj7   |Fsus79   |Eb-7   |Bbsus79   |Bb7   ||\nB1: ||Ebj7   |Ej7/D#   |Ebj7911#   |Ej7911#   |Bj7   |Bbsus79   |Ab-7   |Ebsus79   |D+79#   ||\nA2: ||G-7   |F-7   |Ebj7   |A79b13   |Gbj7   |Fsus79   |Eb-7   |Bbsus79   |Bbsus79   ||\nI1: ||G-7   |F-7   ||",
+      "supported": false
+    },
+    {
+      "id": 144,
+      "title": "Infidele (Cry)",
+      "performer": "Don Byas",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7   |Bbj7   |A-7 Abo |G-7 D7/F# |G-7   |G-7   |D-7 Dbo |C-7 Bo7 ||\nB1: ||C-7   |F7   |Bbj7 Ab7 |G7   |Cj7   |C-7   |F7   |C-7 F7 ||",
+      "supported": true
+    },
+    {
+      "id": 401,
+      "title": "Insensatez",
+      "performer": "Stan Getz",
+      "key": "A-min",
+      "signature": "4/4",
+      "chords": "A1: ||A-79   |A-79   |G#o7   |G#o7   |G-6   |G-6   |D7/F#   |D7/F#   ||\nB1: ||Fj7   |Fj7   |Bbj7   |Bbj7   |Bm7b5   |E79b   |A-7   |Ab7913   ||\nC1: ||G-7   |G-7   |F#o7   |F#o7   |Fj7   |Bm7b5 E7 |A-7   |A-7 Ab7 ||\nD1: ||G-79   |C7   |F#-7   |B79b   |Fj7   |E7   |A-7   |A-7   ||\nI1: ||NC   |NC   ||",
+      "supported": true
+    },
+    {
+      "id": 97,
+      "title": "It's Only a Papermoon",
+      "performer": "Coleman Hawkins",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F6 D7 |G-7 C7NC|G-7 C7NC|F6   |F7  NC|Bb6 Gm7b5 |C7   |F6 C7 ||\nA2: ||F6 D7 |G-7 C7 |G-7 C7 |F6   |F7   |Bb6 Gm7b5 |C7   |F6   ||\nB1: ||Bb Bo |F/C D7 |G-7 C7 |F6 F7 |Bb Bo |F/C D7 |Am7b5 D7 |G-7 C7 ||\nA3: ||F6 D7 |G-7 C7 |G-7 C7 |F6   |F7   |Bb6 Gm7b5 |C7   |F6   ||\nI1: ||F6   ||",
+      "supported": false
+    },
+    {
+      "id": 8,
+      "title": "It's a Wonderful World",
+      "performer": "Benny Carter",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Cj7   |E-7 A7 |D-7 G7 |Cj7   ||\nA2: ||Cj7   |E-7 A7 |D-7   |G7   ||\nB1: ||C7   |C7   |F7   |Bb7   ||\nA3: ||Cj7   |E-7 A7 |D-7 G7 |Cj7   ||",
+      "supported": true
+    },
+    {
+      "id": 9,
+      "title": "It's a Wonderful World",
+      "performer": "Benny Carter",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Cj7   |E-7 A7 |D- G7 |Cj7 G7 ||\nA2: ||Cj7   |E-7 A7 |D-7   |G7   ||\nB1: ||C7   |C7   |F7   |Bb7   ||\nA3: ||Cj7   |E-7 A7 |D-7 G7 |Cj7   ||",
+      "supported": true
+    },
+    {
+      "id": 81,
+      "title": "Item 1, D.I.T.",
+      "performer": "Chris Potter",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C   |Ab7   |Db7   |Gb Go |Ab7   |Ab7   |Ab7   |Db Do |Eb7   |Eb7   |Eb7   |B7   |E7   |A Bbo |B7   |G7   ||",
+      "supported": true
+    },
+    {
+      "id": 131,
+      "title": "Jo-Jo",
+      "performer": "Dickie Wells",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |C-7   |F7   |Bb7   |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 148,
+      "title": "Johnny Come Lately",
+      "performer": "Don Ellis",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||G-6   |Eb7 D7 |G-6   |Eb7 D7 |G-6   |Eb7 D7 |G-6   |Am7b5 D7 ||\nA2: ||G-6   |Eb7 D7 |G-6   |Eb7 D7 |G-6   |Eb7 D7 |G-6   |F-7 Bb7 ||\nB1: ||Ebj7 F-7 |G-7 F-7 |Ebj7 F-7 |G-7 F-7 |Ebj7 F-7 |G7 C7 |F7 Bb7 |A79b D+7 ||\nA3: ||G-6   |Eb7 D7 |G-6   |Eb7 D7 |G-6   |Eb7 D7 |G-6   |G-6   ||",
+      "supported": true
+    },
+    {
+      "id": 200,
+      "title": "Johnny Come Lately",
+      "performer": "Joe Henderson",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||G-6   |Eb7 D79b |G-6   |Eb7 D79b |G-6   |Eb7 D79b |G-6   |Eb7 D79b ||\nA2: ||G-6   |Eb7 D79b |G-6   |Eb7 D79b |G-6   |Eb7 D79b |G-6   |F-7 Bb7 ||\nB1: ||Ebj7 F-7 |G- F- |Ebj7 F- |G- F- |Ebj7 F- |G- C7 |F- Bb7 |A79b D79b ||\nA3: ||G-   |Eb7 D79b |G-   |Eb7 D79b |G-   |Eb7 D79b |G-6   |Eb7 D79b ||",
+      "supported": true
+    },
+    {
+      "id": 448,
+      "title": "Johnny Come Lately",
+      "performer": "Wynton Marsalis",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||G-7   |Eb79 D79b |G-7   |Eb79 D79b |G-6   |Eb7 D79# |G-7   |Eb7 D79# ||\nA2: ||G-7   |Eb79 D79b |G-7   |Eb79 D79b |G-6   |Eb7 D79# |G-7   |F-7 Bb7 ||\nB1: ||Eb6 F-7 |G-7 F- |Eb6 F-7 |G-7 F-7 |Eb6 F-7 |G-7 C79b |F-6 Bb7 |A79b D79# ||\nA3: ||G-7   |Eb79 D79b |G-7   |Eb79 D79b |G-6   |Eb7 D79# |G-7   |Eb7 D79b ||",
+      "supported": true
+    },
+    {
+      "id": 92,
+      "title": "Jordu",
+      "performer": "Clifford Brown",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||D7 G7 |C-6   |F7 Bb7 |Ebj7   |D7 G7 |C-6   |Ab7   |Ab7   ||\nA2: ||D7 G7 |C-6   |F7 Bb7 |Ebj7   |D7 G7 |C-6   |Ab7   |Ab7   ||\nB1: ||G7 C7 |F7 Bb7 |Eb7 Ab7 |Dbj7   |F7 Bb7 |Eb7 Ab7 |Db7 Gb7 |Bj7   ||\nA3: ||D7 G7 |C-6   |F7 Bb7 |Ebj7   |D7 G7 |C-6   |Ab7   |Ab7   ||",
+      "supported": true
+    },
+    {
+      "id": 93,
+      "title": "Joy Spring",
+      "performer": "Clifford Brown",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fj7   |G-7 C7 |Fj7   |Bb-7 Eb7 |Eb7 D7 |G-7 C7 |F   |Ab-7 Db7 |Gbj7   |Ab-7 Db7 |Gbj7   |B-7 E7 |Bb-7 A7 |Ab-7 Db7 |Gb   |A-7 D7 ||\nB1: ||Gj7   |G-7 C7 |Fj7   |F-7 Bb7 |Ebj7   |Ab-7 Db7 |Gbj7   |G-7 C7 ||\nA2: ||Fj7   |G-7 C7 |Fj7   |Bb-7 Eb7 |A-7 D7 |G-7 C7 |F   |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 433,
+      "title": "Juju",
+      "performer": "Wayne Shorter",
+      "key": "B-chrom",
+      "signature": "3/4",
+      "chords": "A1: ||Bb+7  |Bb+7  |Bb+7  |Bb+7  |Bb+7  |Bb+7  |Bb+7  |Bb+7  |Bb+7  |Bb+7  |A7  |A7  |Abj7  |Abj7  |E-7  |E-7  |Fj7  |Fj7  |B-7  |B-7  |Fj7  |Fj7  |B-7  |B-7  ||",
+      "supported": false
+    },
+    {
+      "id": 10,
+      "title": "Just Friends",
+      "performer": "Benny Carter",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7   |Bbj7   |Bb-7   |Eb7   |Fj7   |Fj7   |Ab-7   |Db7   |G-7   |C7   |A-7   |D-7   |G7   |G7   |G-7   |C7 B7 ||\nB1: ||Bbj7   |Bbj7   |Bb-7   |Eb7   |Fj7   |Fj7   |Ab-7   |Db7   |G-7   |C7   |Em7b5 A7 |D-7   |G7   |G-7 C7 |F6   |C-7 F7 ||",
+      "supported": true
+    },
+    {
+      "id": 71,
+      "title": "Just Friends",
+      "performer": "Chet Baker",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Cj7   |Cj7   |C-7   |F7   |F7   |F7   |Bb-7   |Eb7   ||\nB1: ||A-7   |D7   |B-7   |E-7   |A7   |A7   |A-7   |D7 Db7 ||\nA2: ||Cj7   |Cj7   |C-7   |F7   |Gj7   |Gj7   |Bb-7   |Eb7   ||\nB2: ||A-7   |D7   |B-7   |E-7   |A7   |A-7 D7 |G6   |D-7 G7 ||",
+      "supported": true
+    },
+    {
+      "id": 275,
+      "title": "Just One of Those Things",
+      "performer": "Lee Morgan",
+      "key": "D-min",
+      "signature": "4/4",
+      "chords": "A1: ||D-7   |D-7   |E-7   |A7   |F7   |F7   |Bbm7b5   |Bb-6   |F/A   |D-7   |G-7   |C7   |Fj7   |F#o7   |G-7   |Em7b5 A79# ||\nA2: ||D-7   |D-7   |E-7   |A7   |F7   |F7   |Bm7b5   |Bb-6   |F/A   |D-7   |G-7   |C7   |Fj7   |F#o7   |F-7   |Bb7   ||\nB1: ||Ebj7   |Eo7   |F-7   |Bb7   |Ebj7   |Ebj7   |D-7   |G7   |Cj7   |A-7   |F#m7b5 Fj7 |F-7   |E-7   |F#o7   |G-7   |Em7b5 A79# ||\nA3: ||D-7   |D-7   |E-7   |A7   |F7   |F7   |Bm7b5   |Bb-6   |A-7   |D7   |G-7   |C7   |Fj7   |Fj7   |Fj7   |Fj7   ||",
+      "supported": true
+    },
+    {
+      "id": 357,
+      "title": "Just One of Those Things",
+      "performer": "Pepper Adams",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||D-7   |D-7   |E-7   |A7   |F7   |F7   |Bm7b5   |Bb-6   |F/A   |Ab7   |G-7   |C7   |F6   |F#o   |G-7   |Em7b5 A79# ||\nA2: ||D-7   |D-7   |E-7   |A7   |F7   |F7   |Bm7b5   |Bb-6   |F/A   |Ab7   |G-7   |C7   |F6   |F#o7   |F-7   |Bb7   ||\nB1: ||Ebj7   |Eo   |F-7   |Bb7   |Eb6   |Eb6   |D-7   |G7   |C6   |C6   |F#m7b5   |F-7   |E-7   |Ebo   |G-7   |Em7b5 A79# ||\nA3: ||D-7   |D-7   |E-7   |A7   |F7   |F7   |Bm7b5   |Bb-6   |F/A   |D7   |G-7   |C7   |Fj7   |Fj7   |Em7b5   |A7   ||",
+      "supported": true
+    },
+    {
+      "id": 58,
+      "title": "K.C. Blues",
+      "performer": "Charlie Parker",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C7   |F7   |C7   |C7   |F7   |F7   |C7   |E-7 A7 |D-7   |G7   |C7 A7 |D-7 G7 ||",
+      "supported": true
+    },
+    {
+      "id": 317,
+      "title": "K.C. Blues",
+      "performer": "Miles Davis",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C7   |F7   |C7   |C7   |F7   |F7   |C7   |E-7 A7 |D-7   |G7   |C7   |D-7 G7 ||",
+      "supported": true
+    },
+    {
+      "id": 368,
+      "title": "King David",
+      "performer": "Roy Eldridge",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |D-7 G7 |C-7   |F7   |Bb7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 454,
+      "title": "King David",
+      "performer": "Zoot Sims",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |D-7 G7 |C-7   |F7   |Bb7   |C-7 F7 ||",
+      "supported": true
+    },
+    {
+      "id": 59,
+      "title": "Ko-Ko",
+      "performer": "Charlie Parker",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "B1: ||C#-7   |F#7   |Bj7   |Bj7   |B-7   |E7   |Aj7   |Aj7   |A-7   |D7   |Gj7   |Gj7   |G-7   |C7   |C-7   |F7   ||\nA3: ||Bb6   |Bb6   |F-7   |Bb7   |Ebj7   |Ebj7   |Ab7   |Ab7   |Bb6   |Bb6   |C7   |C7   |C-7   |F7   |Bb6   |Bb6   ||",
+      "supported": true
+    },
+    {
+      "id": 179,
+      "title": "Lady Bird",
+      "performer": "Hank Mobley",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Cj7   |Cj7   |F-7   |Bb7   |Cj7   |Cj7   |Bb-7   |Eb7   |Abj7   |Abj7   |A-7   |D7   |D-7   |G7   |Cj7 Ebj7 |Abj7 Dbj7 ||",
+      "supported": true
+    },
+    {
+      "id": 252,
+      "title": "Lady Bird",
+      "performer": "Kenny Dorham",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Cj7   |Cj7   |F-7   |Bb7   |Cj7   |Cj7   |Bb-7   |Eb7   |Abj7   |Abj7   |A-7   |D7   |D-7   |G7   |Cj7 Ebj7 |Abj7 Dbj7 ||",
+      "supported": true
+    },
+    {
+      "id": 156,
+      "title": "Les",
+      "performer": "Eric Dolphy",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7alt   |Bb7alt   |F7alt   |F7alt   |Bb7   |Bo7   |F7   |Db-7 Gb7 |G-7 C7 |Ab-7 Db+7 |A-7 D7 |G7alt   |C Db/C |D/C Eb/C ||",
+      "supported": true
+    },
+    {
+      "id": 283,
+      "title": "Lester Leaps In",
+      "performer": "Lester Young",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb   |Bb   |Bb   |Bb   |Bb   |Bb   |Bb   |Bb   ||\nA2: ||Bb   |Bb   |Bb   |Bb   |Bb   |Bb   |Bb   |Bb   ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bb   |Bb   |Bb   |Bb   |Bb   |Bb   |Bb   |Bb   ||",
+      "supported": true
+    },
+    {
+      "id": 416,
+      "title": "Let's Cool One",
+      "performer": "Steve Lacy",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ebj7   |F-7 Bb7 |Ebj7 F-7G-7|C7   |F-7   |Bb7   |Eb C7 |F-7 Bb7 ||\nA2: ||Ebj7   |F-7 Bb7 |Ebj7 F-7G-7|C7   |F-7   |Bb7   |Eb   |Eb   ||\nB1: ||Bb-7   |Eb7   |Abj7   |Abj7   |C-7   |F7   |F-7   |Bb7   ||\nA3: ||Ebj7   |F-7 Bb7 |Ebj7 F-7G-7|C7   |F-7   |Bb7   |Eb   |Eb   ||",
+      "supported": false
+    },
+    {
+      "id": 72,
+      "title": "Let's Get Lost",
+      "performer": "Chet Baker",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Cj7   |F#m7b5   |Cj7   |F#-7 B7 |Em7b5   |A7   |Em7b5   |A7   ||\nB1: ||D-7   |G7   |Cj7   |F#m7b5 B7 |E-7   |A7   |D7   |D-7 G7 ||\nA2: ||Cj7   |F#m7b5   |Cj7   |F#m7b5 B7 |Em7b5   |A7   |Em7b5   |A7   ||\nC1: ||D-7   |G7   |Cj7 F7 |E7 A-7 |D-7   |G7   |Cj7   |D-7 G7 |G7   ||",
+      "supported": true
+    },
+    {
+      "id": 69,
+      "title": "Limehouse Blues",
+      "performer": "Charlie Shavers",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Db79   |Db79   |Db79   |Db79   |Bb79   |Bb79   |Bb79   |Bb79   |Ab   |Ab   |C7   |F-   |Bb7   |Bb7   |Eb7   |Ab7   ||\nB1: ||Db79   |Db79   |Db79   |Db79   |Bb7   |Bb7   |Bb7   |Bb7   |Ab   |F7   |Bb- F7 |Bb-   |Bbm7b5   |Eb7   |Ab   |Ab   ||\nI1: ||Ab   |Ab   ||",
+      "supported": true
+    },
+    {
+      "id": 375,
+      "title": "Limehouse Blues",
+      "performer": "Sidney Bechet",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Db7   |Db7   |Db7   |Db7   |Bb7   |Bb7   |Bb7   |Bb7   |Ab   |Ab   |C7   |F-7   |Bb7   |Bb7   |Eb7   |Ab7   ||\nB1: ||Db7   |Db7   |Db7   |Db7   |Bb7   |Bb7   |Bb7   |Bb7   |Ab   |F7   |Bb-7   |Bb-7   |Bbm7b5   |Eb7   |Ab   |Ab   ||",
+      "supported": true
+    },
+    {
+      "id": 173,
+      "title": "Line for Lyons",
+      "performer": "Gerry Mulligan",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb69 Bb7 |Eb-7 Ab7 |D-7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 ||\nA2: ||Bb69 Bb7 |Eb-7 Ab7 |D-7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7   |Bb7   ||\nB1: ||Ebj7   |Em7b5 A7 |D-7   |G79b   |C-7   |F7   |D-7 G7 |C-7 F7 ||\nA3: ||Bb69 Bb7 |Eb-7 Ab7 |D-7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7   |C-7 F7 ||\nI1: ||Bb6 Bb7 ||",
+      "supported": true
+    },
+    {
+      "id": 211,
+      "title": "Little Willie Leaps in",
+      "performer": "Joe Lovano",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F   |G-7 C7 |A-7 D79b |G-7 C79b |Fj7   |G-7 C7 |A-7   |D79b   |B-7 E7 |A-7 D7 |G-7 C7 |Fj7   |E-7 A7 |D-7 G7 |G-7   |C7   ||\nB1: ||F   |G-7 C7 |A-7 D79b |G-7 C79b |Fj7   |G-7 C7 |A-7   |D79b   |B-7 E7 |A-7 D7 |G-7 C7 |F69   |G-7   |C7   |F69   |F69   ||",
+      "supported": true
+    },
+    {
+      "id": 11,
+      "title": "Long Ago and Far Away",
+      "performer": "Benny Carter",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F6 D-7 |G-7 C7 |Fj7   |G-7 C7 |F6   |G-7 C7 |A-7 D7 |G-7 C7 ||\nB1: ||Ab6   |Bb-7 Eb7 |Abj7   |G7   |Cj7   |A-7  D7|G-7   |C7   ||\nA2: ||F6 D-7 |G-7 C7 |Fj7   |G-7 C7 |F6   |G-7 C7 |A-7 D7 |G-7 C7 ||\nC1: ||C-7   |F7   |Bbj7   |Eb7   |F6 D-7 |G-7 C7 |F6   |G-7 C7 |C7   ||",
+      "supported": true
+    },
+    {
+      "id": 12,
+      "title": "Long Ago and Far Away",
+      "performer": "Benny Carter",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F6 D-7 |G-7 C7 |Fj7 D-7 |G-7 C7 |F6   |G-7 C7 |F6 D7 |G-7 C7 ||\nB1: ||Ab6 F-7 |Bb-7 Eb7 |Abj7   |G7   |Cj7   |A-7   |G-7   |C7   ||\nA2: ||F6 D-7 |G-7 C7 |Fj7 D-7 |G-7 C7 |F6 D-7 |G-7 C7 |F6 D7 |G-7 C7 ||\nC1: ||C-7   |F7   |Bbj7   |Bb-6 Eb7 |F6/A Abo7 |G-7 C7 |F6   |G-7 C7 |F6/A Abo7 |G-7 C7 |F6   |F6   |F6   |F6   ||",
+      "supported": true
+    },
+    {
+      "id": 73,
+      "title": "Long Ago and Far Away",
+      "performer": "Chet Baker",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G6 E-7 |A-7 D7 |Gj7 E-7 |A-7 D7 |G6 E-7 |A-7 D7 |G6 E7 |A-7 D7 ||\nB1: ||Bb6 G-7 |C-7 F7 |Bbj7   |A7   |Dj7   |B-7   |A-7   |D7   ||\nA2: ||G6 E-7 |A-7 D7 |Gj7 E-7 |A-7 D7 |G6 E-7 |A-7 D7 |G6 E7 |A-7 C7 ||\nC1: ||D-7   |G7   |Cj7   |C-7 F7 |G6 Bbo |A-7 D7 |G6   |A-7 D7 ||",
+      "supported": true
+    },
+    {
+      "id": 212,
+      "title": "Lonnie's Lament",
+      "performer": "Joe Lovano",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   ||",
+      "supported": true
+    },
+    {
+      "id": 168,
+      "title": "Maiden Voyage",
+      "performer": "Freddie Hubbard",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||Dsus7   |Dsus7   |Dsus7   |Dsus7   |Fsus7   |Fsus7   |Fsus7   |Fsus7   ||\nA2: ||Dsus7   |Dsus7   |Dsus7   |Dsus7   |Fsus7   |Fsus7   |Fsus7   |Fsus7   ||\nB1: ||Ebsus7   |Ebsus7   |Ebsus7   |Ebsus7   |Dbsus7   |Dbsus7   |Dbsus7   |Dbsus7   ||\nA3: ||Dsus7   |Dsus7   |Dsus7   |Dsus7   |Fsus7   |Fsus7   |Fsus7   |Fsus7   ||",
+      "supported": true
+    },
+    {
+      "id": 171,
+      "title": "Maiden Voyage",
+      "performer": "George Coleman",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||Dsus7   |Dsus7   |Dsus7   |Dsus7   |Fsus7   |Fsus7   |Fsus7   |Fsus7   ||\nA2: ||Dsus7   |Dsus7   |Dsus7   |Dsus7   |Fsus7   |Fsus7   |Fsus7   |Fsus7   ||\nB1: ||Ebsus7   |Ebsus7   |Ebsus7   |Ebsus7   |Dbsus7   |Dbsus7   |Dbsus7   |Dbsus7   ||\nA3: ||Dsus7   |Dsus7   |Dsus7   |Dsus7   |Fsus7   |Fsus7   |Fsus7   |Fsus7   ||",
+      "supported": true
+    },
+    {
+      "id": 27,
+      "title": "Margie",
+      "performer": "Bix Beiderbecke",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb   |Eb   |Eb   |Eb7   |Ab   |Ab   |G7   |G7   |Eb   |Eb   |EbEb7D7Db7|C7   |F-7   |Bb7   |Eb   |Bb7   ||\nI1: ||Eb   ||",
+      "supported": true
+    },
+    {
+      "id": 270,
+      "title": "Marshmallow",
+      "performer": "Lee Konitz",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7   |Bbj7   |F-7   |Bb7   |Ebj7   |Ebj7   |C-7   |F7   |Bbj7   |Bbj7   |C7   |C7   |C-7   |Dm7b5 G7 |C-7   |F+7   ||\nA2: ||Bbj7   |Bbj7   |F-7   |Bb7   |Ebj7   |Ebj7   |Eb-7   |Ab7   |Bbj7   |Bbj7   |C7   |C7   |C-7   |F7   |Bbj7   |Bbj7   ||\nB1: ||C#-7   |F#7   |Bj7   |Bj7   |B-7   |E7   |Aj7   |Aj7   |A-7   |D7   |Gj7   |Gj7   |G-7   |C7   |C-7   |F+7   ||\nA3: ||Bbj7   |Bbj7   |F-7   |Bb7   |Ebj7   |Ebj7   |Eb-7   |Ab7   |Bbj7   |Bbj7   |C7   |C7   |C-7   |F7   |Bbj7   |Bbj7   ||",
+      "supported": true
+    },
+    {
+      "id": 271,
+      "title": "Mean to Me",
+      "performer": "Lee Konitz",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "B1: ||Abj7   |Bb7 Eb7 |Abj7   |Db7 C7 |F-7   |Db7 C7 |F7   |F-7 Bb7 ||\nA3: ||Ebj7 Eo |F-7 Bb7 |Ebj7 Bb-7Eb7|Abj7 Db7 |G-7 C7 |F-7 Bb7 |Ebj7 C-7 |F-7 Bb7 ||",
+      "supported": false
+    },
+    {
+      "id": 288,
+      "title": "Memories of You",
+      "performer": "Lionel Hampton",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb Eo7 |F-7 D7/F# |Eb6 C-7 |F7   |Eb6 C-7 |G-7 C79 |F7 Bb79 |Eb6 F-7Bb79||\nA2: ||Eb6 Eo7 |F-7 D7/F# |Eb6/G C-7 |F7   |Eb6 C-7 |G-7 C79 |F7 Bb79 |Eb6 G7 ||\nB1: ||C-7   |F-7   |C-7   |F79   |C-7   |F79   |G-7 Gb-7 |F-7 Bb7 ||\nA3: ||Eb6 Eo7 |F-7 D7/F# |Eb6/G C-7 |F7   |Eb6 C-7 |G-7 C79 |F7 Bb79 |Eb6 F-7Bb7||",
+      "supported": false
+    },
+    {
+      "id": 303,
+      "title": "Midnight Voyage",
+      "performer": "Michael Brecker",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-6   |Dm7b5 G7 |C-6   |Asus7 A7 |Absus7 Ab7 |G79#   |C-   |G79#   ||\nA2: ||C-6   |Dm7b5 G7 |C-6   |Asus7 A7 |Eb-7 Ab7 |G7   |C-   |C79#   ||\nB1: ||F-7   |G-7   |F-7   |A79#   |Absus7 Ab7 |G7   |C-   |C79#   |F-7   |G-7   |F-7   |A79#   |Eb-7 Ab7 |G7   |C-   |G79#   ||\nA3: ||C-   |Dm7b5 G7 |C-7   |Asus7 A7 |Absus7 Ab7 |G7   |C-   |G7   ||",
+      "supported": true
+    },
+    {
+      "id": 344,
+      "title": "Midnight Voyage",
+      "performer": "Pat Metheny",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |G79b   |C-7   |Asus7   |Ab7   |G79b   |C-7   |C-7   ||\nA2: ||C-7   |G79b   |C-7   |Asus7   |Ab7   |G7   |C-7   |C-7   ||\nB1: ||F-7   |G-7   |F-7   |A7alt   |Ab7   |G79b   |C-7   |C-7   |F-7   |G-7   |F-7   |A7alt   |Ab7   |G79b   |C-7   |C-7   ||\nA3: ||C-7   |G79b   |C-7   |Asus7   |Ab7   |G79b   |C-7   |C-7   ||\nI1: ||NC   |NC   ||",
+      "supported": true
+    },
+    {
+      "id": 318,
+      "title": "Miles Runs the Voodoo Down",
+      "performer": "Miles Davis",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F79#   ||",
+      "supported": true
+    },
+    {
+      "id": 319,
+      "title": "Miles Runs the Voodoo Down",
+      "performer": "Miles Davis",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F79#   ||",
+      "supported": true
+    },
+    {
+      "id": 107,
+      "title": "Milestones",
+      "performer": "David Liebman",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G-6/C   |G-6/C   |G-6/C   |G-6/C   |G-6/C   |G-6/C   |Db7911#   |Db7911#   |G-6/C   |G-6/C   |G-6/C   |G-6/C   |G-6/C   |G-6/C   |C+7   |C+7   |A-7   |A-7   |A-7   |A-7   |A-7   |A-7   |C+7   |C+7   |C+7   |C+7   |C+7   |C+7   |C+7   |C+7   |A-7   |A-7   |G-6/C   |G-6/C   |G-6/C   |G-6/C   |G-6/C   |G-6/C   |F+7911#   |F+7911#   ||",
+      "supported": false
+    },
+    {
+      "id": 123,
+      "title": "Montmartre",
+      "performer": "Dexter Gordon",
+      "key": "Bb-min",
+      "signature": "4/4",
+      "chords": "A1: ||Bb-   |C-7 F7 |Bb-   |Cb7   |Bb-   |C-7   |C-7   |Cb7   ||\nA2: ||Bb-   |C-7 F7 |Bb-   |Cb7   |Bb-   |F7   |C-7 F7 |Bb-   ||\nB1: ||F-7   |Bb7   |E-7 A7 |Eb7 Ab7 |F-7   |Bb7   |C-7   |F7   ||\nA3: ||Bb-   |C-7 F7 |Bb-   |Cb7   |Bb-   |C-7   |C-7 F7 |Bb-   ||",
+      "supported": true
+    },
+    {
+      "id": 226,
+      "title": "Mr. P.C.",
+      "performer": "John Coltrane",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |C-7   |C-7   |C-7   |F-7   |F-7   |C-7   |C-7   |Ab7   |G7   |C-7   |C-7   ||",
+      "supported": true
+    },
+    {
+      "id": 238,
+      "title": "Muskrat Ramble",
+      "performer": "Johnny Dodds",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Ab   |Ab Abo |Eb7   |Eb7   |Ab   |Ab   |Bb7   |Eb7   |Ab   |Ab   |F7   |Bb-   |Bb7 Eb7 |Ab   ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 263,
+      "title": "Muskrat Ramble",
+      "performer": "Kid Ory",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ab   |Ab Abo |Eb7   |Eb7   |Ab   |Ab   |Bb7   |Eb7   |Ab   |Ab   |F7   |Bb-   |Bb7 Eb7 |Ab   ||",
+      "supported": true
+    },
+    {
+      "id": 296,
+      "title": "Muskrat Ramble",
+      "performer": "Louis Armstrong",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Ab   |Ab Abo |Eb7   |Eb7   |Ab   |Ab   |Bb7   |Eb7   |Ab   |Ab G7Gb7|F7   |Bb-   |Bb7 Eb7 |Ab   ||\nI1: ||Bb7   ||",
+      "supported": false
+    },
+    {
+      "id": 98,
+      "title": "My Blue Heaven",
+      "performer": "Coleman Hawkins",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb   |Eb   |Eb D7Db7|C7   |F7   |Bb7   |G-7 Gb7 |F-7 Bb7 ||\nA2: ||Eb   |Eb   |Eb D7Db7|C7   |F7   |Bb7   |Eb   |Eb7  Eb+7||\nB1: ||Ab   |C7   |F-   |F-   |Bb7   |Bb7   |Eb Eo |F-7 Bb7 ||\nA3: ||Eb   |Eb   |Eb D7Db7|C7   |F7   |Bb7   |Eb Ab7 |Eb  NC||",
+      "supported": false
+    },
+    {
+      "id": 227,
+      "title": "My Favorite Things",
+      "performer": "John Coltrane",
+      "key": "E-min",
+      "signature": "3/4",
+      "chords": "A1: ||E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  |E-7  ||\nI1: ||E-7  |E-7 NC||",
+      "supported": false
+    },
+    {
+      "id": 228,
+      "title": "My Favorite Things",
+      "performer": "John Coltrane",
+      "key": "E-maj",
+      "signature": "3/4",
+      "chords": "A1: ||Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  |Ej7  ||\nI1: ||Ej7  |NC  |NC  |NC  ||",
+      "supported": false
+    },
+    {
+      "id": 194,
+      "title": "My Funny Valentine",
+      "performer": "J.J. Johnson",
+      "key": "F-min",
+      "signature": "4/4",
+      "chords": "A1: ||F-   |F-j7   |F-7   |F-6   |Dbj7   |Bb-7   |Gm7b5   |C79b   ||\nA2: ||F-   |F-j7   |F-7   |F-6   |Dbj7   |Bb-7   |Bb-7   |Eb7   ||\nB1: ||Abj7 Bb-7 |C-7 Bb-7 |Abj7 Bb-7 |C-7 Bb-7 |Abj7 C7 |F-7 Eb-7D7|Dbj7   |Gm7b5 C7 ||\nA3: ||F-   |F-j7   |F-7   |F-6   |Dbj7   |Gm7b5 C79b |F-7 E7 |Eb-7 Ab7 |Dbj7   |Bb-79 Eb7 |Ab6   |Gm7b5 C7 ||",
+      "supported": false
+    },
+    {
+      "id": 402,
+      "title": "My Funny Valentine",
+      "performer": "Stan Getz",
+      "key": "F-min",
+      "signature": "4/4",
+      "chords": "A1: ||F-   |F-j7   |F-7   |F-6   |Dbj7   |Bb-7   |Gm7b5   |C79b   ||\nA2: ||F-   |F-j7   |F-7   |F-6   |Dbj7   |Bb-7   |Db-6   |Eb79b   ||\nB1: ||Abj7 Bb-7 |C-7 Bb-7 |Abj7 Bb-7 |C-7 Bb-7 |Abj7 C7 |F- Eb-7D7|Dbj7   |Gm7b5 C79b ||\nC1: ||F-   |Fj7   |F-7   |F-6   |Dbj7   |Gm7b5 C79b |F-   |Eb-7 D7911# |Dbj7   |Bb-7 Eb79b |Ab6   |Ab6   ||",
+      "supported": false
+    },
+    {
+      "id": 239,
+      "title": "My Heart",
+      "performer": "Johnny Dodds",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb   |Bb+7   |Eb   |Do   |Eb7   |Ab7   |F-7   |Bb7   ||\nB1: ||Bb7   |Bb7   |Eb   |C7   |F7   |F7   |Bb7   |Bb7   ||\nI1: ||NC   |NC   ||",
+      "supported": true
+    },
+    {
+      "id": 23,
+      "title": "My Ideal",
+      "performer": "Ben Webster",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7 G7 |C-7   |Ab7 G7 |C7   |C-7 F7 |Am7b5 D7 |G-7 C7 |Gb7 F7 ||\nB1: ||Bbj7 G7 |C-7   |Ab7 G7 |C7   |C-7 Db-7 |Bbj7Ebj7G-7C7|Gb7 F7 |Bb6   ||",
+      "supported": true
+    },
+    {
+      "id": 60,
+      "title": "My Little Suede Shoes",
+      "performer": "Charlie Parker",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F-7 Bb7 |Ebj7   |F-7 Bb7 |Ebj7   |F-7 Bb7 |G-7 C7 |F-7 Bb7 |Ebj7   ||\nA2: ||F-7 Bb7 |Ebj7   |F-7 Bb7 |Ebj7   |F-7 Bb7 |G-7 C7 |F-7 Bb7 |Ebj7   ||\nB1: ||Abj7   |G-7 C7 |F-7 Bb7 |Ebj7   |Abj7   |G-7 C7 |F-7 Bb7 |Ebj7   ||\nA3: ||F-7 Bb7 |Ebj7   |F-7 Bb7 |Ebj7   |F-7 Bb7 |G-7 C7 |F-7 Bb7 |Ebj7   ||",
+      "supported": true
+    },
+    {
+      "id": 304,
+      "title": "Naked Soul",
+      "performer": "Michael Brecker",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||G-   |G-   |G7911#   |D79#11#   |F-7911   |E/G G |Csus7   |C79#   ||\nB1: ||Fsus   |D79#11#   |Bbsus   |Gb/A   |C/Ab   |C7alt   |Fj7   |Ej79# D7alt ||\nC1: ||G-79   |F7/G   |Gj7911#   |D79#11#   |Gb/F   |E/B G7alt |G-7   |A/C   ||\nD1: ||Dbj7   |Eb6   |Db+/C A/B |Bj7/A#   |C/Ab   |Db79#11# C7alt |F-j7   |F-j7   ||",
+      "supported": false
+    },
+    {
+      "id": 229,
+      "title": "Nature Boy",
+      "performer": "John Coltrane",
+      "key": "E-min",
+      "signature": "4/4",
+      "chords": "A1: ||E-7   ||",
+      "supported": true
+    },
+    {
+      "id": 34,
+      "title": "Nature of the Beast",
+      "performer": "Bob Berg",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||Fsus   ||",
+      "supported": true
+    },
+    {
+      "id": 305,
+      "title": "Never Alone",
+      "performer": "Michael Brecker",
+      "key": "Ab",
+      "signature": "4/4",
+      "chords": "A1: ||Ab   |Bb/Ab C/Ab |Gb/Bb Eb/G |C/Ab F-/Ab |Absus  Aj7911#/Ab|Ab79b13 Db-69/AbDb-69/Db|Gbsus7913 Eb-7911E-7911|Dbsus7913  G79#13|C-7911 G7913 |C-7911 G7913 |Eb-j7 Bb79# |Eb-j7 D+79# |G-7911 D+79# |G-7911 G+79# |C-7911 G7913 |C-7911 G7913 |Eb-j7 Bb79# |Eb-j7 D+79#  ||\nI1: ||Ab    ||",
+      "supported": false
+    },
+    {
+      "id": 108,
+      "title": "Nica's Dream",
+      "performer": "David Liebman",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fm7b5   |Bb7   |Ebj7   |Ebj7   |Fm7b5   |Bb7   |Ebj7   |Ebj7   |Am7b5   |Ab-7   |G-7   |Gbo7   |F-7   |Bb7   |Ebj7   |Ebj7   ||\nA2: ||Fm7b5   |Bb7   |Ebj7   |Ebj7   |Fm7b5   |Bb7   |Ebj7   |Ebj7   |Am7b5   |Ab-7   |G-7   |Gbo7   |F-7   |Bb7   |Ebj7   |Db7   ||\nB1: ||Gbj7   |Gbj7   |Ebj7   |Ebj7   |Gbj7   |Gbj7   |Ebj7   |Ebj7   |Am7b5   |Ab-7   |G-7   |Gbo7   |F-7   |Bb7 F-7 |Eb6   |Eb6   ||\nA3: ||Fm7b5   |Bb7   |Ebj7   |Ebj7   |Fm7b5   |Bb7   |Ebj7   |Ebj7   |Am7b5   |Ab-7   |G-7   |Gbo7   |F-7   |Bb7   |Ebj7   |Ebj7   ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 24,
+      "title": "Night and Day",
+      "performer": "Ben Webster",
+      "key": "D-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Em7b5   |A7   |Dj7   |Dj7   |Em7b5   |A7   |Dj7   |Dj7   ||\nB1: ||G#m7b5   |G-7   |F#-7   |Fo   |E-7   |A7   |Dj7   |Dj7   ||\nA2: ||Em7b5   |A7   |Dj7   |Dj7   |Em7b5   |A7   |Dj7   |Dj7   ||\nB2: ||G#m7b5   |G-7   |F#-7   |Fo   |E-7   |A7   |Dj7   |C7   ||\nC1: ||Fj7   |Fj7   |Dj7   |Dj7   |Fj7   |Fj7   |Dj7   |Dj7   ||\nB3: ||G#m7b5   |G-7   |F#-7   |Fo   |E-7   |A7   |D6   |E7 A7 ||",
+      "supported": true
+    },
+    {
+      "id": 455,
+      "title": "Night and Day",
+      "performer": "Zoot Sims",
+      "key": "D-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Em7b5   |A7   |Dj7   |Dj7   |Em7b5   |A7   |Dj7   |Dj7   |G#m7b5   |G-7   |F#-7   |Fo7   |E-7   |A7   |Dj7   |Dj7   ||\nA2: ||Em7b5   |A7   |Dj7   |Dj7   |Em7b5   |A7   |Dj7   |Dj7   |G#m7b5   |G-7   |F#-7   |Fo7   |E-7   |A7   |Dj7   |C7   ||\nB1: ||Fj7   |Fj7   |Dj7   |Dj7   |Fj7   |Fj7   |Dj7   |Dj7   ||\nC1: ||G#m7b5   |G-7   |F#-7   |Fo7   |E-7   |A7   |D6   |E7 A7 ||",
+      "supported": true
+    },
+    {
+      "id": 456,
+      "title": "Night and Day",
+      "performer": "Zoot Sims",
+      "key": "D-maj",
+      "signature": "4/4",
+      "chords": "B1: ||Fj7   |Fj7   |Dj7   |Dj7   |Fj7   |Fj7   |Dj7   |Dj7   ||\nC1: ||G#m7b5   |G-7   |F#-7   |Fo7   |E-7   |A7   |Dj7   |E7 A7 ||",
+      "supported": true
+    },
+    {
+      "id": 109,
+      "title": "No Greater Love",
+      "performer": "David Liebman",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7   |Eb7   |Ab7   |G7   |C7   |C7   |C-7   |F7   ||\nA2: ||Bbj7   |Eb7   |Ab7   |G7   |C7   |C-7 F7 |Bb6   |Bb6   ||\nB1: ||Am7b5 D7 |G-6   |G-6 D7 |G-6   |Am7b5 D7 |G-7   |C7   |F7   ||\nA3: ||Bbj7   |Eb7   |Ab7   |G7   |C7   |C-7 F7 |Bb6   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 35,
+      "title": "No Moe",
+      "performer": "Bob Berg",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb G7 |C-7 F+7 |Bb G7 |C-7 F+7 |F-7 Bb7 |Ebj7 Eo |D-7 G+7 |C-7 F+7 ||\nA2: ||Bb G7 |C-7 F+7 |Bb G7 |C-7 F+7 |F-7 Bb7 |Ebj7 Eo |C-7 F7 |Bb   ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bb G7 |C-7 F+7 |Bb G7 |C-7 F+7 |F-7 Bb7 |Ebj7 Eo |C-7 F7 |Bb   ||",
+      "supported": true
+    },
+    {
+      "id": 16,
+      "title": "Nobody's Sweetheart",
+      "performer": "Benny Goodman",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ab   |Ab   |F7   |F7   |F-7   |F-7   |Bb7   |Bb7   |Eb   |Eb   |C7   |C7   |Ab   |Ab   |Eb7   |Eb7   ||\nB1: ||Ab   |Ab   |F7   |F7   |Bb7   |Bb7   |Bb7   |Bb7   |F-   |F-   |Eo   |Eo   |Ab   |Ab   |Bb-   |Eb7   |Ab   |Ab C7 |F7   |F7   |Bb7   |Eb7   |Ab   |Ab   |Ab   |Ab   ||",
+      "supported": true
+    },
+    {
+      "id": 306,
+      "title": "Nothing Personal",
+      "performer": "Michael Brecker",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |C-7   |C-7   |C-7   |C-7   |G-7   |G-7   |G-7   |G-7   |Eb7   |Eb7   |D7   |D7   |G-7   |G-7   |G-7   |G-7   ||",
+      "supported": true
+    },
+    {
+      "id": 345,
+      "title": "Nothing Personal",
+      "performer": "Pat Metheny",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||G-   |G-   |G-   |G-   |G-   |G-   |G-   |G-   |C-7   |C-7   |C-7   |C-7   |G-   |G-   |G-   |G-   |Eb7   |Eb7   |D7   |D7   |G-   |G-   |G-   |G-   ||",
+      "supported": true
+    },
+    {
+      "id": 230,
+      "title": "Nutty",
+      "performer": "John Coltrane",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7 G79b/B |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7 G79b/B |C-7 F7 |Bbj7   |C-7 F7 ||\nA2: ||Bbj7 G79b/B |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7 G79b/B |C-7 F7 |Bbj7   |F-7 Bb7 ||\nB1: ||Ebj7 C79b |F-7 Bb7 |Ebj7 C7 |F-7 Bb7 |Ebj7 C79b |F-7 Bb7 |Ebj7   |C-7 F7 ||\nA3: ||Bbj7 G79b |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7 G79b |C-7 F7 |Bbj7   |Bbj7   ||",
+      "supported": true
+    },
+    {
+      "id": 231,
+      "title": "Oleo",
+      "performer": "John Coltrane",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C- F7 |F-7 Bb7 |Ebj7 Eb-6 |Bbj7 G7 |C-7 F7 ||\nA2: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |F-7 Bb7 |Ebj7 Eb-6 |Bbj7 G7 |Bbj7   ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |F-7 Bb7 |Ebj7 Eb-6 |Bbj7 G7 |C-7 F7 ||",
+      "supported": true
+    },
+    {
+      "id": 320,
+      "title": "Oleo",
+      "performer": "Miles Davis",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |F-7 Bb7 |Ebj7 Eb-6 |Bbj7 G7 |C-7 F7 ||\nA2: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |F-7 Bb7 |Ebj7 Eb-6 |Bbj7 G7 |Bbj7   ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |F-7 Bb7 |Ebj7 Eb-6 |Bbj7 G7 |Bbj7   ||",
+      "supported": true
+    },
+    {
+      "id": 321,
+      "title": "Oleo",
+      "performer": "Miles Davis",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |F-7 Bb7 |Ebj7 Eb-6 |Bbj7 G7 |C-7 F7 ||\nA2: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |F-7 Bb7 |Ebj7 Eb-6 |Bbj7 G7 |Bbj7   ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |F-7 Bb7 |Ebj7 Eb-6 |Bbj7 G7 |Bbj7   ||",
+      "supported": true
+    },
+    {
+      "id": 365,
+      "title": "Oleo",
+      "performer": "Red Garland",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |F-7 Bb7 |Ebj7 Eb-6 |Bbj7 G7 |C-7 F7 ||\nA2: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7 Bb7 |Ebj7 Eb-6 |Bbj7 F7 |Bj7   ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7 Bb7 |Ebj7 Eb-6 |Bbj7 F7 |Bbj7   ||",
+      "supported": true
+    },
+    {
+      "id": 157,
+      "title": "On Green Dolphin Street",
+      "performer": "Eric Dolphy",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ebj7   |Ebj7   |Eb-7   |Eb-7   |F7/Eb   |F7/Eb E/Eb |Ebj7   |Ebj7   ||\nB1: ||F-7   |Bb7   |Ebj7   |Ebj7   |Ab-7   |D7   |Gbj7   |Gbj7   ||\nA2: ||Ebj7   |Ebj7   |Eb-7   |Eb-7   |F7/Eb   |F7/Eb E/Eb |Ebj7   |Ebj7   ||\nC1: ||F-7 F-/Eb |Dm7b5 G79b |C-7 C-/Bb |Am7b5 D7 |G-7 C7 |F-7 Bb7 |Ebj7   |F-7 Bb7 ||",
+      "supported": true
+    },
+    {
+      "id": 363,
+      "title": "On a Slow Boat to China",
+      "performer": "Phil Woods",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7   |Bo7 G7 |C-7   |Dbo7   |Bbj7   |Am7b5 D79b |Ebj7   |Dm7b5 G7 |C-7   |Em7b5 A79b |Bbj7 Ab7911 |G7   |C7   |C7   |C-7   |F79   ||\nB1: ||Bbj7   |Bo7 G7 |C-7   |Dbo7   |Bbj7   |Am7b5 D79b |Ebj7   |Dm7b5 G7 |C-7   |Ab7911#   |Bbj7   |Dm7b5 G7 |C7   |F7   |Bbj7   |C-7 F7 ||",
+      "supported": false
+    },
+    {
+      "id": 240,
+      "title": "Once in a While",
+      "performer": "Johnny Dodds",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C   |C   |E7   |E7   |A-   |A-   |C7   |C7   |F   |F   |C   |A7   |D7   |D7   |G7   |G7   ||\nB1: ||C   |C   |E7   |E7   |A-   |A-   |C7   |C7   |F   |F   |C   |A7   |D7   |G7   |C   |C   ||",
+      "supported": true
+    },
+    {
+      "id": 297,
+      "title": "Once in a While",
+      "performer": "Louis Armstrong",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C   |C   |E7   |E7   |A-   |A-   |C7   |C7   |F   |F-   |C   |A7   |D7   |D7   |G7   |G7   ||\nA2: ||C   |C   |E7   |E7   |A-   |A-   |C7   |C7   |F   |F-   |C   |A7   |D7   |G7   |C   |C   |C   |C   |C   ||",
+      "supported": true
+    },
+    {
+      "id": 188,
+      "title": "Orbits",
+      "performer": "Herbie Hancock",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 322,
+      "title": "Orbits",
+      "performer": "Miles Davis",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 434,
+      "title": "Orbits",
+      "performer": "Wayne Shorter",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 61,
+      "title": "Ornithology",
+      "performer": "Charlie Parker",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gj7   |Gj7   |G-7 C7 |G-7 C7 |Fj7   |Fj7   |F-7   |Bb7   ||\nB1: ||Eb7   |D7   |G-   |Cm7b5 D7 |B-7   |E7   |A-7   |D7   ||\nA2: ||Gj7   |Gj7   |G-7 C7 |G-7 C7 |Fj7   |Fj7   |F-7   |Bb7   ||\nB2: ||Eb7   |D7   |G   |A-7 D7 |G/B Bb7 |A-7 Ab7 |Gj7   |A-7 D7 ||\nI1: ",
+      "supported": true
+    },
+    {
+      "id": 163,
+      "title": "Our Delight",
+      "performer": "Fats Navarro",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7913   |Eb79#   |Abj7   |F7   |Bb7   |Bb-7 Bo7 |Ab/C Bo7 |Bb-7 Eb7913B7911#||\nA2: ||Bb7913   |Eb79#   |Abj7   |F7   |Bb7   |Bb-7 Bo7 |Ab/C Bo7 |Ebsus7 Abj7 ||\nB1: ||Eb-7   |Ab+79b   |Dbj7   |Dbj7   |Db-7 Gb7 |C-7 F7 |B-7 E7 |Eb7 B7911# ||\nA3: ||Bb7913   |Eb79#   |Abj7   |F7   |Bb7   |Bb-7 Bo7 |Ab/C Bo7 |Ebsus7 Abj7 ||",
+      "supported": false
+    },
+    {
+      "id": 62,
+      "title": "Out of Nowhere",
+      "performer": "Charlie Parker",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gj7   |Gj7   |Bb-7   |Eb7   |Gj7   |Gj7   |B-7   |E7   |A-7   |E7   |A-7   |A-7   |Eb7   |Eb7   |A-7   |D7   ||\nB1: ||Gj7   |Gj7   |Bb-7   |Eb7   |Gj7   |Gj7   |B-7   |E7   |A-7   |E7   |A-7   |C-6   |B-7 Bbo |A-7 D7 |G6   |A-7 D7 ||",
+      "supported": true
+    },
+    {
+      "id": 145,
+      "title": "Out of Nowhere",
+      "performer": "Don Byas",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gj7   |Gj7   |Bb-7   |Eb7   |Gj7   |Gj7   |B-7   |E79b   |A-7   |E79b   |A-7   |A-7   |Eb7   |Eb7   ||\nI1: ||NC   |NC   ||",
+      "supported": true
+    },
+    {
+      "id": 149,
+      "title": "Out of Nowhere",
+      "performer": "Don Ellis",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gj7   |Gj7   |Bb-7   |Eb7   |Gj7   |Gj7   |B-7   |E79b   ||\nB1: ||A-7   |E79b   |A-7   |A-7   |Eb7   |Eb7   |Dsus7   |D79b   ||\nA2: ||Gj7   |Gj7   |Bb-7   |Eb7   |Gj7   |Gj7   |B-7   |E79b   ||\nC1: ||A-7   |E79b   |A-7   |C-6   |B-7 Bbo |A-7 D7 |G   |G   ||",
+      "supported": true
+    },
+    {
+      "id": 110,
+      "title": "Pablo's Story",
+      "performer": "David Liebman",
+      "key": "E-min",
+      "signature": "4/4",
+      "chords": "A1: ||E-7   |E-7   |E-7   |E-7   |D7   |D7   |D7   |D7   ||\nB1: ||C7911#   |C7911#   |C7911#   |C7911#   |B79b   |Am7b5   |B/G   |F7alt   ||\nC1: ||Eb/E   |D/Eb   |Eb/E   |Eb/E   |Db/D   |Db/D   |Db/D   |Db/D   ||\nB2: ||C7911#   |C7911#   |C7911#   |C7911#   |Bb79b   |Am7b5   |B/G   |F7alt   ||",
+      "supported": true
+    },
+    {
+      "id": 259,
+      "title": "Pass It On",
+      "performer": "Kenny Wheeler",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |Eb   |C-7   |Eb   ||\nA2: ||C-7   |Eb   |C-7   |Eb   ||\nB1: ||F-   |Db   |F-   |Gb7   ||\nA3: ||C-7   |Eb   |C-7   |Eb   ||",
+      "supported": true
+    },
+    {
+      "id": 406,
+      "title": "Pass It On",
+      "performer": "Steve Coleman",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |Eb   |C-7   |Eb   ||\nA2: ||C-7   |Eb   |C-7   |Eb   ||\nB1: ||F-   |Db   |F-   |Gb7   ||\nA3: ||C-7   |Eb   |C-7   |Eb   ||",
+      "supported": true
+    },
+    {
+      "id": 422,
+      "title": "Pass It On",
+      "performer": "Von Freeman",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-7NC  |Eb   |C-7   |Eb   ||\nA2: ||C-7   |Eb   |C-7   |Eb   ||\nB1: ||F-   |Db   |F-   |Gb7   ||\nA3: ||C-7   |Eb   |C-7   |Eb   ||",
+      "supported": false
+    },
+    {
+      "id": 339,
+      "title": "Peace",
+      "performer": "Ornette Coleman",
+      "key": "",
+      "signature": "",
+      "chords": "A1: ||NC   ||",
+      "supported": false
+    },
+    {
+      "id": 307,
+      "title": "Peep",
+      "performer": "Michael Brecker",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||Dbj7911#/C   |Dbj7911#/C   |C-j7913   |C-j7913   |C-j7911#   |C-j7911#   |Ab79/C   |Ab79/C   |B/C   |Ab+j7/C   |C-j7913   |C-j7913   |C-j7911#   |C-j7911#   |C-7911   |C-7911   |B+79#   |B+79#   |Bb-7913   |Bb-7913   |F/A   |F/A   |Bb-7911   |Bb-7911   |B+79#   |B+79#   |Bb-7913   |Bb-7913   |Gsus/A   |Gsus/A   |Bb-7911   |Bb-7911   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   |Ebsus79   ||",
+      "supported": false
+    },
+    {
+      "id": 111,
+      "title": "Pendulum",
+      "performer": "David Liebman",
+      "key": "F#-chrom",
+      "signature": "4/4",
+      "chords": "A1: ||F#-   ||",
+      "supported": true
+    },
+    {
+      "id": 99,
+      "title": "Perdido",
+      "performer": "Coleman Hawkins",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |F7   |Bb6   |D-7 G7 |C-7   |F7   |Bb6   |D-7 G7 ||\nA2: ||C-7   |F7   |Bb6   |D-7 G7 |C-7   |F7   |Bb6   |Bb6   ||\nB1: ||D7   |D7   |G79   |G+7   |C7   |C7   |F7   |F7   ||\nA3: ||C-7   |F7   |Bb6   |D-7 G7 |C-7   |F7   |Bb6   |D-7 G7 ||",
+      "supported": true
+    },
+    {
+      "id": 366,
+      "title": "Perdido",
+      "performer": "Rex Stewart",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C-7 F7 |C-7 F7 |Bb   |Bb   |C-7 F7 |C-7 F7 |Bb   |Bo   ||\nA2: ||C-7 F7 |C-7 F7 |Bb   |Bb   |C-7 F7 |C-7 F7 |Bb   |Bb   ||\nB1: ||D7   |D7   |G79   |G+7   |C7   |C7   |F7   |F+7   ||\nA3: ||C-7 F7 |C-7 F7 |Bb   |Bb   |C-7 F7 |C-7 F7 |Bb   |Bb   ||",
+      "supported": true
+    },
+    {
+      "id": 383,
+      "title": "Playin' in the Yard",
+      "performer": "Sonny Rollins",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   ||",
+      "supported": true
+    },
+    {
+      "id": 384,
+      "title": "Playin' in the Yard",
+      "performer": "Sonny Rollins",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |C7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   |G7   |C7   ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 82,
+      "title": "Pop Tune #1",
+      "performer": "Chris Potter",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |G-7   |Bb-7   |Bb-7   |G7   |G7   |Bb-7   |Bb-7   |G-7   |G-7   |Bb-7   |Bb-7   |G-7   |G-7   |Bb-7   |Bb-7   |G-7   |G-7   |Bb-7   |Bb-7   |G-7   |G-7   |Bb-7   |Bb-7   |G-7   |G-7   |Bb-7   |Bb-7   |G-7   |G-7   |Bb-7   |Bb-7   |G-7   |G-7   |Bb-7   |Bb-7   |G-7   |G-7   |Bb-7   |Bb-7   |G-7   |G-7   |Bb-7   |Bb-7   |G-7   |G-7   |Bb-7   |Bb-7   |G-7   |G-7   |Bb-7   |Bb-7   |G-7   |G-7   |Bb-7   |Bb-7   |G-7   ||",
+      "supported": false
+    },
+    {
+      "id": 253,
+      "title": "Prince Albert",
+      "performer": "Kenny Dorham",
+      "key": "F-min",
+      "signature": "4/4",
+      "chords": "A1: ||F-7   |Bb-7   |Eb7   |Abj7   |Dbj7   |D-7 G7 |Cj7   |Cj7   ||\nB1: ||C-7   |F-7   |Bb7   |Ebj7   |Abj7   |Am7b5 D7 |Gj7   |Gj7   ||\nC1: ||Am7b5   |D7   |Gj7   |Gj7   |F#m7b5   |B7   |Ej7   |C7   ||\nD1: ||F-7   |Bb-7   |Eb7   |Abj7   |Dbj7   |Db-7   |C-7   |Bo   |Bb-7   |Eb7   |Abj7   |Gm7b5 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 407,
+      "title": "Processional",
+      "performer": "Steve Coleman",
+      "key": "F-min",
+      "signature": "5/4",
+      "chords": "A1: ||F-    |F-    |F-    |F-    |Db7911#    |Db7911#    |F-    |F-    |Gb7911#    |E7911#    |D7911#    |C7alt    ||",
+      "supported": false
+    },
+    {
+      "id": 201,
+      "title": "Punjab",
+      "performer": "Joe Henderson",
+      "key": "D-chrom",
+      "signature": "4/4",
+      "chords": "A1: ||Dj7   |Dj7 Bb7913 |Bj7   |Abj7   |Fm7b5   |Bb7   |E6911#   |E6911#   |E6911#   |E6911# Eb7 ||\nB1: ||Abj7   |G7913   |Gb7913 Bj7 |F79   |Fsus79   |Fsus79   |Gj7 Aj7 |Bj7 Cj7911# ||",
+      "supported": false
+    },
+    {
+      "id": 254,
+      "title": "Punjab",
+      "performer": "Kenny Dorham",
+      "key": "D-chrom",
+      "signature": "4/4",
+      "chords": "A1: ||Dj7   |Dj7 Bb7 |Bj7   |Abj7   |Fm7b5   |Bb7   |Ej7911#   |Ej7911#   |Ej7911#   |Ej7911# Eb7 ||\nB1: ||Abj7   |G7913   |Gb7913   |Cbj7 F7 |F7   |F7   |Gj7 Aj7 |Bj7 Cj7911# ||",
+      "supported": true
+    },
+    {
+      "id": 440,
+      "title": "Rahsaan's Run",
+      "performer": "Woody Shaw",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||G-7911   |G-7911   |G-7911   |G-7911   |C-7911   |C-7911   |G-7911   |G-7911   |A7   |D7   |G-7911   |G-7911   ||",
+      "supported": true
+    },
+    {
+      "id": 214,
+      "title": "Ralph's Piano Waltz",
+      "performer": "John Abercrombie",
+      "key": "",
+      "signature": "3/4",
+      "chords": "A1: ||G  |G  |Bb  |Bb  |Ebj7911#  |Ebj7911#  |Ebj7911#  |Ebj7911#  |Dbj7  |Dbj7  |Dbj7  |Dbj7  |Dbj7  |Dbj7  |Dbj7  |Dbj7  |A-79  |A-79  |F+j7  |F+j7  ||\nB1: ||A-  |F  |A-  |F  |A-  |F  |A-  |F  ||",
+      "supported": false
+    },
+    {
+      "id": 340,
+      "title": "Ramblin'",
+      "performer": "Ornette Coleman",
+      "key": "",
+      "signature": "",
+      "chords": "A1: ||D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|D7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7|G7||",
+      "supported": false
+    },
+    {
+      "id": 376,
+      "title": "Really the Blues",
+      "performer": "Sidney Bechet",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |F7   |F7   |Bb7 Eb7 |Bb7 F7 ||",
+      "supported": true
+    },
+    {
+      "id": 180,
+      "title": "Remember",
+      "performer": "Hank Mobley",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Db7   |C7   |B7911#   |Bb7   |Bb-7   |Eb79b   |Abj7   |Eb-7 Ab7 ||\nA2: ||Db7   |C7   |B7911#   |Bb7   |Bb-7   |Eb79b   |Abj7   |Eb-7 Ab7 ||\nB1: ||Dbj7   |Dbj7   |Eb-7   |Gb7   |Abj7   |Abj7   |Gm7b5   |C7   ||\nA3: ||Db7   |C7   |B7911#   |Bb7   |Bb-7   |Eb7   |Abj7   |Eb-7 Ab7 ||",
+      "supported": true
+    },
+    {
+      "id": 28,
+      "title": "Riverboat Shuffle",
+      "performer": "Bix Beiderbecke",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ab   |Ab  Ao|Eb7   |Eb7   |Ab   |Ab  Ao|Eb7   |Eb7   |Ab   |Ab7   |Db   |Db7 C7B7|Bb7   |Bb7   |Eb7NC  |NC   ||\nB1: ||Ab   |Ab  Ao|Eb7   |Eb7   |Ab7   |Ab7   |Db   |Db   |Db-   |Db-   |Ab   |F7   |Bb7   |Eb7   |Ab   ||",
+      "supported": false
+    },
+    {
+      "id": 441,
+      "title": "Rosewood",
+      "performer": "Woody Shaw",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||G-79 F-79 |G-79 F-79 |C-79 Bb-79 |Gb79   |G-79 F-79 |G-79 F-79 |C-79 Bb-79 |Gbj79   |Abj79   |Abj79   |Ab-79   |Db79 G7911# |Gbj79   |Gbj79   |B79   |Esus79 E79 ||\nB1: ||C-79 Bb-79 |C-79 Bb-79 |Gbj79 Ej7 |Dj7911#   |C-79 Bb-79 |C-79 Bb-79 |Gbj7 Ej7 |Dj7911#   |Bsus7 Asus7 |Bsus7 Asus7 |Gsus7 Fsus7 |Gsus7 Fsus7 |Bb-7   ||\nC1: ||A-7911   |A-7911   |A-7911 A6 |A6   |A6 Bb79 |Bb79   |Bb6 Ab-7 |Gsus7 Absus7 ||\nA2: ||G-79 F-79 |G-79 F-79 |C-7 Bb-7 |Gbj79   |G-79 F-79 |G-79 F-79 |C-79 Bb-79 |Gbj79   |Abj79   |Abj79   |Ab-79   |Db79 G7911# |Gbj79   |Gbj79   |B79   |E79   |C-79 Bb-79 |C-79 Bb79 |Gbj7 Ej7 |Dj7911#   |C-79 Bb-79 |C-79 Bb-79 |Gbj7 Ej7 |Ej7911#   |Csus7 Absus7 |Absus7   |Csus7 Absus7 |Csus7 Absus7 |Absus7   |Csus7   |Absus7   |Csus7 Absus7 ||\nI1: ",
+      "supported": true
+    },
+    {
+      "id": 29,
+      "title": "Royal Garden Blues",
+      "performer": "Bix Beiderbecke",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb   |Bb   |Bb   |Bb   |Eb   |Eb   |Bb   |G7   |C-7   |F7   |Bb   |Bb   |NC   ||",
+      "supported": true
+    },
+    {
+      "id": 83,
+      "title": "Rumples",
+      "performer": "Chris Potter",
+      "key": "F-min",
+      "signature": "4/4",
+      "chords": "A1: ||F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   ||\nI1: ",
+      "supported": true
+    },
+    {
+      "id": 17,
+      "title": "Runnin' Wild",
+      "performer": "Benny Goodman",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb   |Bb   |Bb7   |Bb7   |Eb   |Eb   |Bb   |Bb   |F7   |C-6 D7 |G-   |Bb-6   |F   |C7   |F7   |F7   ||\nB1: ||Bb   |Bb   |Bb7   |Bb7   |Eb   |Eb   |D7   |D7 G7 |C7   |F7   |Bb   |Bb   |F7   |F7   |Bb   |Bb   ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 289,
+      "title": "Runnin' Wild",
+      "performer": "Lionel Hampton",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb   |Bb   |Bb7   |Bb7   |Eb   |Eb   |Bb   |Bb   |F7   |C-6 D7 |G-   |Bb-6   |F   |C7   |F7   |F7   ||\nB1: ||Bb   |Bb   |Bb7   |Bb7   |Eb   |Eb   |D7   |D7 G7 |C7   |F7   |Bb   |Bb   |F7   |F7   |Bb   |Bb   ||",
+      "supported": true
+    },
+    {
+      "id": 351,
+      "title": "Samba Cantina",
+      "performer": "Paul Desmond",
+      "key": "F-min",
+      "signature": "4/4",
+      "chords": "A1: ||Gm7b5   |C79b   |F-7   |F-7   |Bb-7   |Eb7   |Abj7   |Abj7   |Gm7b5   |C7   |F-7   |F-7   |Dm7b5   |G79b   |C79b   |C79b   ||\nB1: ||Gm7b5   |C79b   |F-7   |F-7   |Bb-7   |Eb7   |Cm7b5   |F79b   |Bb-7   |Gm7b5 C7 |F-7   |Dm7b5 Db7 |C7   |C7   |F-7   |F-7   ||",
+      "supported": true
+    },
+    {
+      "id": 352,
+      "title": "Samba Cantina",
+      "performer": "Paul Desmond",
+      "key": "F-min",
+      "signature": "4/4",
+      "chords": "A1: ||Gm7b5   |C79b   |F-7   |F-7   |Bb-7   |Eb7   |Abj7   |Abj7   |Gm7b5   |C7   |F-7   |F-7   |Dm7b5   |G79b   |C79b   |C79b   ||\nB1: ||Gm7b5   |C79b   |F-7   |F-7   |Bb-7   |Eb7   |Cm7b5   |F79b   |Bb-7   |Gm7b5 C7 |F-7   |Dm7b5 Db7 |C7   |C7   |F-7   |F-7   ||",
+      "supported": true
+    },
+    {
+      "id": 94,
+      "title": "Sandu",
+      "performer": "Clifford Brown",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Ab7   |Eb7   |Eb7   |Ab7   |Ab7   |Eb7   |G-7 C7 |F-7   |Bb7   |Eb7  C-7|F-7 Bb7 ||",
+      "supported": true
+    },
+    {
+      "id": 264,
+      "title": "Savoy Blues",
+      "performer": "Kid Ory",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G7   |C7 C#o |G7/D   |G7/D   |C7   |C7   |G7   |G7   |D7   |D7   |G7   |G7   ||\nI1: ||G7   ||",
+      "supported": true
+    },
+    {
+      "id": 298,
+      "title": "Savoy Blues",
+      "performer": "Louis Armstrong",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G   |C C#o |G/D   |G7   |C   |C   |G   |G   |D7   |D7   |G C7 |G D7 ||",
+      "supported": true
+    },
+    {
+      "id": 63,
+      "title": "Scrapple from the Apple",
+      "performer": "Charlie Parker",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G-7   |C7   |G-7   |C7   |Fj7 F7 |Bbj7 Bo7 |Fj7 Gj7 |A-7 D7 ||",
+      "supported": true
+    },
+    {
+      "id": 174,
+      "title": "Scrapple from the Apple",
+      "performer": "Gerry Mulligan",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||G-7   |C7   |G-7   |C79b   |Fj7   |G-7 C7 |Fj7 G-7 |A-7 D7 ||\nA2: ||G-7   |C7   |G-7   |C79b   |Fj7   |G-7 C7 |Fj7 G-7 |F   ||\nB1: ||A7   |A7   |D7   |D7   |G7   |G7   |C7   |C7   ||\nA3: ||G-7   |C7   |G-7   |C79b   |Fj7   |G-7 C7 |Fj7 G-7C79b|F   ||",
+      "supported": false
+    },
+    {
+      "id": 36,
+      "title": "Second Sight",
+      "performer": "Bob Berg",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb   |Bb   |Bb   |Bb   |Db   |Eb   |Bb   |Bb   ||\nB1: ||Gb7911#   |Ab   |Bb   |Bb   ||",
+      "supported": true
+    },
+    {
+      "id": 112,
+      "title": "Secret Love",
+      "performer": "David Liebman",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ebj7   |F-7/Bb   |Ebj7   |F-7/Bb   |Eb7 Ab7 |G-7 C7 |F-7   |Bb7   |F-7   |Bb7   |F-7   |Bb7   |F-7   |Bb7   |Ebj7   |F-7 Bb7 ||\nA2: ||Ebj7   |F-7/Bb   |Ebj7   |F-7/Bb   |Eb7 Ab7 |G-7 C7 |F-7   |Bb7   |F-7   |Bb7   |F-7   |Bb7   |F-7   |Bb7   |Ebj7   |Dm7b5 G7 ||\nB1: ||C-7   |F7   |Bbj7   |Bbj7   |Bb-7   |Eb7   |Abj7   |Ab-7 Db7 ||\nC1: ||Ebj7   |F-7/Bb   |Fm7b5   |C79#   |F-7   |Bb7   |Ebj7   |Ebj7   ||",
+      "supported": true
+    },
+    {
+      "id": 64,
+      "title": "Segment",
+      "performer": "Charlie Parker",
+      "key": "Bb-min",
+      "signature": "4/4",
+      "chords": "A1: ||Bb-6   |C-7 F79b |Bb-6   |C-7 F79b |Bb-6   |Cm7b5 F79b |Bb-6   |F+7   ||\nA2: ||Bb-6   |C-7 F79b |Bb-6   |C-7 F79b |Bb-6   |C-7 F79b |Bb-6   |Bb-6   ||\nB1: ||F-7   |Bb7   |Eb-   |Eb-   |Eb-   |Ab7   |Db   |F79b   ||\nA3: ||Bb-6   |C-7 F79b |Bb-6   |C-7 F79b |Bb-6   |Cm7b5 F79b |Bb-6   |F+7   ||",
+      "supported": true
+    },
+    {
+      "id": 408,
+      "title": "Segment",
+      "performer": "Steve Coleman",
+      "key": "Bb-min",
+      "signature": "4/4",
+      "chords": "A1: ||Bbsus   |Bbsus   |Bbsus   |Bbsus   |Bbsus   |Bbsus   |Bbsus   |Bbsus   ||\nA2: ||Bbsus   |Bbsus   |Bbsus   |Bbsus   |Bbsus   |Bbsus   |Bbsus   |Bbsus   ||\nB1: ||Bb7   |Bb7   |Eb7   |Eb7   |Ab7   |Ab7   |Db7   |Db7   ||\nA3: ||Bbsus   |Bbsus   |Bbsus   |Bbsus   |Bbsus   |Bbsus   |Bbsus   |Bbsus  ||",
+      "supported": true
+    },
+    {
+      "id": 158,
+      "title": "Serene",
+      "performer": "Eric Dolphy",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ebj7   |Ab7911#   |Db7   |Eb7   |Ab7   |D7alt   |Ebj7   |Db-7 Gb7 |Fm7b5   |Bb7alt B-7E7|Ab7911#   |Ab7911#   ||",
+      "supported": false
+    },
+    {
+      "id": 202,
+      "title": "Serenity",
+      "performer": "Joe Henderson",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Dm7b5NC  |G+7   |Abj7 Gbj7 |E-7 A7 |F-7 Bb7 |Ebj7 Dm7b5G7|C-7 C-7/Bb |Ab-7 Db7 |G+7 Gb7 |F7   |Ej7   |F-7 Bb+7 |Ebj7   |Dm7b5 G+7 ||",
+      "supported": false
+    },
+    {
+      "id": 255,
+      "title": "Serenity",
+      "performer": "Kenny Dorham",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Dm7b5   |G+7   |Abj7 Gbj7 |E-7 A7 |F-7 Bb7 |Ebj7 Dm7b5G7|C-7 C-7/Bb |Ab-7 Db7 |G+7 Gb7 |F7   |Ej7   |F-7 Bb+7 |Ebj7   |Dm7b5 G+7 ||",
+      "supported": false
+    },
+    {
+      "id": 30,
+      "title": "Singin the Blues",
+      "performer": "Bix Beiderbecke",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F-7   |F-7 Bb7 |Eb   |EbAbEbEbo|Bb7   |Bb7   |Eb   |Eb EboEb||\nB1: ||G7  D-7|G7 CoFo|C7   |C7   |C- C-7 |F7   |Bb7   |Bb7  Ebo||\nC1: ||F-7   |F-7 Bb7 |Eb   |Eb FoEbo|Eo   |Eo C7 |F-  C7|F- C7F-|F-7   |Ebo   |Eb   |Eo C7 |F7   |F7 Bb7 |Eb   |Eb   ||",
+      "supported": false
+    },
+    {
+      "id": 132,
+      "title": "Six Cats and a Prince",
+      "performer": "Dickie Wells",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7   |Bbj7   |Bo   |Bo   |C-7   |F7   |Bbj7   |F7   ||\nA2: ||Bbj7   |Bbj7   |Bo   |Bo   |C-7   |F7   |Bbj7   |Bbj7   ||\nB1: ||Bb7   |Bb7   |Eb7   |Eb7   |C7   |C7   |F7   |F7   ||\nA3: ||Bbj7   |Bbj7   |Bo   |Bo   |C-7   |F7   |Bbj7   |Bbj7   ||\nI1: ||Bbj7   ||",
+      "supported": true
+    },
+    {
+      "id": 284,
+      "title": "Six Cats and a Prince",
+      "performer": "Lester Young",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bbj7   |Bbj7   |Bo   |Bo   |C-7   |F7   |Bbj7   |F7   ||\nA2: ||Bbj7   |Bbj7   |Bo   |Bo   |C-7   |F7   |Bbj7   |Bbj7   ||\nB1: ||Bb7   |Bb7   |Eb7   |Eb7   |C7   |C7   |F7   |F7   ||\nA3: ||Bbj7   |Bbj7   |Bo   |Bo   |C-7   |F7   |Bbj7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 417,
+      "title": "Skippy",
+      "performer": "Steve Lacy",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||D7 G7 |C7 F7 |Bb7 A7 |Ab7 Db7 |Gb7 F7 |Bb7 A7 |Ab7   |G7   |Gb7 F7 |E7 Eb7 |Ab7 G7 |Gb7 F7 |Bb7 A7 |Ab7 Db7 |F#7 B7 |E7 A7 ||\nB1: ||D7 G7 |C7 F7 |Bb7 A7 |Ab7 Db7 |Gb7 F7 |Bb7 A7 |Ab7 Db7 |Gb7   |Db7C7B7Bb7|A7Ab7G7Gb7|B7Bb7A7Ab7|G7Gb7F7E7|Bb-7 Eb7 |Bb-7 Eb7 |Bb-7 Eb7 |Ab   ||",
+      "supported": true
+    },
+    {
+      "id": 260,
+      "title": "Slipped again",
+      "performer": "Kenny Wheeler",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |A-7 D7 |G-7   |C7   |F7   |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 409,
+      "title": "Slipped again",
+      "performer": "Steve Coleman",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |A-7 D7 |G-7   |C7   |F7   |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 48,
+      "title": "So What",
+      "performer": "Cannonball Adderley",
+      "key": "D-dor",
+      "signature": "4/4",
+      "chords": "A1: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   ||\nA2: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   ||\nB1: ||Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   ||\nA3: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   ||",
+      "supported": true
+    },
+    {
+      "id": 233,
+      "title": "So What",
+      "performer": "John Coltrane",
+      "key": "D-maj",
+      "signature": "4/4",
+      "chords": "A1: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   ||\nA2: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   ||\nB1: ||Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   |Eb-7   ||\nA3: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   |D-7   ||",
+      "supported": true
+    },
+    {
+      "id": 323,
+      "title": "So What",
+      "performer": "Miles Davis",
+      "key": "D-maj",
+      "signature": "4/4",
+      "chords": "A1: ||D-   |D-   |D-   |D-   |D-   |D-   |D-   |D-   ||\nA2: ||D-   |D-   |D-   |D-   |D-   |D-   |D-   |D-   ||\nB1: ||Eb-   |Eb-   |Eb-   |Eb-   |Eb-   |Eb-   |Eb-   |Eb-   ||\nA3: ||D-   |D-   |D-   |D-   |D-   |D-   |D-   |D-   ||",
+      "supported": true
+    },
+    {
+      "id": 124,
+      "title": "Society Red",
+      "performer": "Dexter Gordon",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |D7   |G-7   |C7   |F7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 169,
+      "title": "Society Red",
+      "performer": "Freddie Hubbard",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |D79b   |G-7   |C7   |A-7 D-7 |Gm7b5 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 113,
+      "title": "Softly as in a Morning Sunrise",
+      "performer": "David Liebman",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-   |C-   |C-   |C-   |C-   |C-   |C-   |C-   ||\nA2: ||C-   |C-   |C-   |C-   |C-   |C-   |C-   |C-   ||\nB1: ||Eb79#   |Eb79#   |C79#   |C79#   |Ab7alt   |Ab7alt   |G7alt   |G7alt   ||\nA3: ||C-   |C-   |C-   |C-   |C-   |C-   |C-   |C-   ||",
+      "supported": true
+    },
+    {
+      "id": 332,
+      "title": "Softly as in a Morning Sunrise",
+      "performer": "Milt Jackson",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |Dm7b5 G7 |C-7   |Dm7b5 G7 |C-7   |Dm7b5 G7 |C-7   |Dm7b5 G7 ||\nA2: ||C-7   |Dm7b5 G7 |C-7   |Dm7b5 G7 |C-7   |Dm7b5 G7 |C-7   |F-7 Bb7 ||\nB1: ||Ebj7   |Gm7b5   |C7   |C79b   |F-   |C7 Ab7911# |D-/G   |G7   ||\nA3: ||C-7   |Dm7b5 G7 |C-7   |Dm7b5 G7 |C-7   |Dm7b5 G7 |C-7   |G79   ||",
+      "supported": true
+    },
+    {
+      "id": 308,
+      "title": "Song for Bilbao",
+      "performer": "Michael Brecker",
+      "key": "C-maj",
+      "signature": "",
+      "chords": "A1: ||C7   |C7   |C7   |C7   |Ab7   |Ab7   |C7   |C7   ||\nA2: ||C7   |C7   |C7   |C7   |Ab7   |Ab7   |C7   |C7   ||\nB1: ||A-7 Bbj7|G-7 Abj7|F-7 G-7|A-7 B-7||\nA3: ||C7   |C7   |C7   |C7   |Ab7   |Ab7   |C7   |C7   ||",
+      "supported": false
+    },
+    {
+      "id": 100,
+      "title": "Sophisticated Lady",
+      "performer": "Coleman Hawkins",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb-7   |Gb7F7E7Eb7|Abj7   |Ab7G7Gb7F7|Bb7   |Bb-7 Eb7 |Abj7   |Ab7 F79b ||\nA2: ||Bb-7   |Gb7F7E7Eb7|Abj7   |Ab7G7Gb7F7|Bb7   |Bb-7 Eb7 |Abj7   |Ab7911# D79b ||\nB1: ||Gj7 E-7 |A-7 D7 |G7 G#o7 |A-7 D7 |Gj7 E-7 |A-7 D7 |G7 C-7 |Eb7 Cm7b5F79b||\nA3: ||Bb-7   |Gb7F7E7Eb7|Abj7   |Ab7G7Gb7F7|Bb7   |Bb-7 Eb7 |Abj7   |Ab7 F79b ||\nB2: ||Gj7 B-7 |A-7F7D7Eb7|G7 G#o7 |A-7G7D7F7|Gj7 E-7 |A-7 D7 |G7 C-7 |Eb7 Cm7b5F79b||\nA4: ||Bb-7   |Gb7F7E7Eb7|Abj7   |Ab7G7Gb7F7|Bb7   |Bb-7 Eb7 |Abj7   |Abj7   ||\nI1: ||Abj7   ||",
+      "supported": false
+    },
+    {
+      "id": 181,
+      "title": "Soul Station",
+      "performer": "Hank Mobley",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Eb7   |Eb7   |Eb7   |Ab7   |Ab7   |Bb7   |Bb7   ||\nB1: ||Eb7   |Bb-7 Eb7 |Ab7   |Ao   |Eb7 C7 |F-7 Bb7 |Eb7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 232,
+      "title": "Soultrane",
+      "performer": "John Coltrane",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ebj7   |Gm7b5 C7 |F-7   |Db7   |Ab-7 Db7Do|Ebj7 G7C7|F7 Bb7 |G-7C7F-7Bb7||\nA2: ||Ebj7   |Gm7b5 C7 |F-7   |Db7   |Ab-7 Db7Do|Ebj7 G7C7|F7 Bb7 |Ebj7 Am7b5D7||\nB1: ||G-7   |Am7b5 D7 |G-7   |C7 B7 |Bbj7 G-7 |Cm7b5 F7 |F-7/Bb Bbo |B7 Bb7E7||\nA3: ||Ebj7   |Gm7b5 C7 |F-7   |Db7   |Ab-7 Db7Do|Ebj7 G7C7|F7 Bb7 |Ebj7   ||",
+      "supported": false
+    },
+    {
+      "id": 170,
+      "title": "Speak No Evil",
+      "performer": "Freddie Hubbard",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |Dbj7   |C-7   |Dbj7   |C-7   |Dbj7   |C-7   |Dbj7 Eb-7 |E-7911 C-7 |D-7911 Bb-7 |A7alt   |Bb-7   |A7alt   |Bb-7   ||\nA2: ||C-7   |Dbj7   |C-7   |Dbj7   |C-7   |Dbj7   |C-7   |Dbj7 Eb-7 |E-7911 C-7 |D-7911 Bb-7 |A7alt   |Bb-7   |A7alt   |Bb-7   ||\nB1: ||Am7b5   |Ab7   |G-7   |Gb7   |F-7   |Bb7   |Ebj79#11#   |Dbj7911#   ||\nA3: ||C-7   |Dbj7   |C-7   |Dbj7   |C-7   |Dbj7   |C-7   |Dbj7 Eb-7 |E-7911 C-7 |D-7911 Bb-7 |A7alt   |Bb-7   |A7alt   |Bb-7   ||",
+      "supported": false
+    },
+    {
+      "id": 435,
+      "title": "Speak No Evil",
+      "performer": "Wayne Shorter",
+      "key": "C-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-7   |Dbj7   |C-7   |Dbj7   |C-7   |Dbj7   |C-7   |Dbj7   |E-7911 A+7 |D-7911 G+7 |Am7b5   |Bb-7   |Am7b5   |Bb-7   ||\nA2: ||C-7   |Dbj7   |C-7   |Dbj7   |C-7   |Dbj7   |C-7   |Dbj7   |E-7911 A+7 |D-7911 G+7 |Am7b5   |Bb-7   |Am7b5   |Bb-7   ||\nB1: ||C-7  Ab7|Ab7   |G-7  Gbm7b5|Gbm7b5   |F-7  Bbm7b5|Bbm7b5   |Eb7  Db7|Db7   ||\nA3: ||C-7   |Dbj7   |C-7   |Dbj7   |C-7   |Dbj7   |C-7   |Dbj7   |E-7911 A+7 |D-7911 G+7 |Am7b5   |Bb-7   |Am7b5   |Bb-7   ||",
+      "supported": true
+    },
+    {
+      "id": 369,
+      "title": "St. Louis Blues",
+      "performer": "Roy Eldridge",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G-   |G-   |D7   |D7   |D7   |D7   |G-   |G- D7 ||\nA2: ||G-   |G-   |D7   |D7   |D7   |D7   |G- A7 |D7   ||\nB1: ||G   |G   |G   |G7   |C7   |C7 D7 |G   |G   |D7   |A7 D7 |G   |D7   ||\nB2: ||G   |G   |G   |G7   |C7   |C7 D7 |G   |G   |D7   |A7 D7 |G   |D7   ||\nB3: ||G   |G   |G   |G7   |C7   |C7 D7 |G   |G   |D7   |A7 D7 |G   |G7   |G7   ||",
+      "supported": true
+    },
+    {
+      "id": 385,
+      "title": "St. Thomas",
+      "performer": "Sonny Rollins",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C69   |E-7 A7 |D-7 G7 |C69   |C69   |E-7 A7 |D-7 G7 |C69   ||\nB1: ||Em7b5   |A79#   |D-7   |G7   |C69 C7 |Fj7 F#o |C/G G7 |C79   ||",
+      "supported": true
+    },
+    {
+      "id": 386,
+      "title": "St. Thomas",
+      "performer": "Sonny Rollins",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C69   |E-7 A7 |D-7 G7 |C69   |C69   |E-7 A7 |D-7 G7 |C69   ||\nB1: ||Em7b5   |A79#   |D-7   |G7   |C69 C7/E |F F#o |C/G G7 |C79   ||",
+      "supported": true
+    },
+    {
+      "id": 125,
+      "title": "Stanley the Steamer",
+      "performer": "Dexter Gordon",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |D-7 G7 |C-7   |F7   |Bb7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 49,
+      "title": "Star Eyes",
+      "performer": "Cannonball Adderley",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ebj7   |F- Bb7 |Ebj7   |Eb- Ab7 |Dbj7   |Go C7 |Fj7   |Fo Bb7 ||\nA2: ||Ebj7   |F- Bb7 |Ebj7   |Eb- Ab7 |Dbj7   |Go C7 |Fj7   |Bb79 Eb7 ||\nB1: ||Abj7   |Abj7   |Ab-   |Db7   |Gbj7   |Gbj7   |F-   |Bb7   ||\nC1: ||Ebj7   |F- Bb7 |Ebj7   |Eb- Ab7 |Dbj7   |Go C7 |Fj7   |Bb79   |Eb7 D7 |C7 F- |Bb7 Ebj7 |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 65,
+      "title": "Star Eyes",
+      "performer": "Charlie Parker",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ebj7   |F-7 Bb7 |Ebj7   |Eb-7 Ab7 |Dbj7   |Gm7b5 C+7 |Fj7   |Fm7b5 Bb7 ||\nA2: ||Ebj7   |F-7 Bb7 |Ebj7   |Eb-7 Ab7 |Dbj7   |Gm7b5 C+7 |Fj7   |Fm7b5 Bb7Eb7||\nB1: ||Abj7   |Abj7   |Ab-7   |Db7   |Gbj7   |Gbj7   |Fm7b5   |Bb7 Bb7913 ||\nA3: ||Ebj7   |F-7 Bb7 |Ebj7   |Eb-7 Ab7 |Dbj7   |Gm7b5 C+7 |Fj7   |Fm7b5 Bb7 |Eb7 D7 |Db7 C7 |F-7 Bb7 |Eb6   ||",
+      "supported": false
+    },
+    {
+      "id": 5,
+      "title": "Stardust",
+      "performer": "Art Pepper",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ab6   |Ab6   |Ab-6   |Ab-6 Db7 |Eb F-7 |G-7 C7 |F-7  Eo7|F-7   |Bb7 Bbo |F-7 Bb7 |Ebj7   |G-7 C-7 |F79   |C-7 F7 |Bb7 Bbsus7 |Bbo7 Bb7Eb+7||\nB1: ||Ab6   |Ab6   |Ab-6   |Ab-6 Db7 |Eb   |G-7 C7 |F-7  Eo|F-7   |Ab-7   |Db7913   |Ebj7 C-7 |G-7 C7 |F-7   |Bb7   |Eb6   |Bb-7 Eb7 ||",
+      "supported": false
+    },
+    {
+      "id": 6,
+      "title": "Stardust",
+      "performer": "Art Pepper",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "B1: ||Ab6   |Ab6   |Ab-6   |Db7   |Ebj7   |G-7 C7 |F-7   |F-7   |Ab-7   |Db7   |Eb C-7 |G-7 C7 |F-7   |Bb7   |Eb7   |Ab7   ||\nC1: ||Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   |Ab7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 66,
+      "title": "Steeplechase",
+      "performer": "Charlie Parker",
+      "key": "Bb-maj",
+      "signature": "",
+      "chords": "A1: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7 Bb7 |Eb6 Eb-7 |Bbj7 G7 |C-7F7Bbj7 ||\nA2: ||Bb G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7 Bb7 |Eb6 Eb-7 |Bbj7 G7 |C-7F7Bbj7 ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7 Bb7 |Eb6 Eb-7 |Bbj7 G7 |C-7F7Bbj7 ||",
+      "supported": false
+    },
+    {
+      "id": 442,
+      "title": "Stepping Stone",
+      "performer": "Woody Shaw",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |F7   |F7   |F7   |F7   |F7   |F7   |F7   |F7   |F7   |F7   |F7   |F7   |F7   |F7   |F7   ||\nB1: ||Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |F-7   ||",
+      "supported": true
+    },
+    {
+      "id": 421,
+      "title": "Steve's Blues",
+      "performer": "Steve Turre",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |A-7 D7 |G-7   |C7   |F7   |C7   ||",
+      "supported": true
+    },
+    {
+      "id": 443,
+      "title": "Steve's Blues",
+      "performer": "Woody Shaw",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |A-7 D7 |G-7   |C7   |F7   |C7   ||",
+      "supported": true
+    },
+    {
+      "id": 95,
+      "title": "Stompin' at the Savoy",
+      "performer": "Clifford Brown",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Dbj7   |Dbj7 Ab7 |Dbj7   |Dbj7 Do |Eb-7   |Ab7   |Db6 Bb-7 |Eb-7 Ab7 ||\nA2: ||Dbj7   |Dbj7 Ab7 |Dbj7   |Dbj7 Do |Eb-7   |Ab7   |Db6   |Db7   ||\nB1: ||Gb7 G7 |Gb7   |B7 C7 |B7   |E7 F7 |E7   |A7   |Ab7   ||\nA3: ||Dbj7   |Dbj7 Ab7 |Dbj7   |Dbj7 Do |Eb-7   |Ab7   |Db6   |Eb-7 Ab7 ||",
+      "supported": true
+    },
+    {
+      "id": 101,
+      "title": "Stompin' at the Savoy",
+      "performer": "Coleman Hawkins",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G D7G|C79   |G   |G G#o |D7   |D7   |G   |A- D7 ||\nA2: ||G D7G|C79   |G   |G G#o |D7   |D7   |G   |G   ||\nB1: ||C   |D7   |C G |G   |E-   |A79   |A-7 D7 |D7   ||\nA3: ||G D7G|C79   |G   |G G#o |D7   |D7   |G CD|A-7 D7 ||",
+      "supported": false
+    },
+    {
+      "id": 364,
+      "title": "Strollin' with Pam",
+      "performer": "Phil Woods",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Ab7   |Eb7   |Eb7   |Ab7   |Ab7   |Eb7   |D-7 G7 |C-7   |F7   |Eb7 C7 |F-7 Bb7 ||",
+      "supported": true
+    },
+    {
+      "id": 377,
+      "title": "Summertime",
+      "performer": "Sidney Bechet",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||G- D7 |G- D7 |G- D7 |G- G7 |C-   |C-   |Am7b5   |D7   ||\nB1: ||G-   |G-   |G-   |C-7 F7 |Bbj7 Eb7 |Am7b5 D7 |G-   |Am7b5 D7 ||",
+      "supported": true
+    },
+    {
+      "id": 13,
+      "title": "Sweet Lorraine",
+      "performer": "Benny Carter",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Gj7F7E7 |A-7 D7Ebo|E-7 D-7G7|C7 B7 |E7 A7 |A-7 D7 |Gj7F7E7 |A7 D7 ||\nA2: ||Gj7F7E7 |A-7 D7Ebo|E-7 D-7G7|C7 B7 |E7 A7 |A-7 D7 |G6 C7Dbo|G6/D G7Db7||\nB1: ||Cj7 Bm7b5E7|A-7Ab7G-7C7|F7 E7 |A-7Ab7G-7C7|F7 E7 |Eb7911# D7 |F7 E7 |Eb7911# D7 ||\nA3: ||Gj7F7E7 |A-7 D7Ebo|E-7 D-7G7|C7 B7 |E7 A7 |A-7 D7 |G6F7E7 |A7 D7 ||",
+      "supported": false
+    },
+    {
+      "id": 246,
+      "title": "Sweet Sorrow",
+      "performer": "Joshua Redman",
+      "key": "G-min",
+      "signature": "6/8",
+      "chords": "A1: ||G-j7   |G-j7   |G-j7   |G-j7   |G-j7   |G-j7   |G-j7   |G-j7   |Eb7 Ab-6/Eb |Eb7 Ab-6/Eb |Eb7 Ab-6/Eb |Eb7 Ab-6/Eb |Eb7 Ab-6/Eb |Eb7 Ab-6/Eb |Eb7 Ab-6/Eb |Eb7 Ab-6/Eb ||\nA2: ||G-j7   |G-j7   |G-j7   |G-j7   |G-j7   |G-j7   |G-j7   |G-j7   |Eb7 Ab-6/Eb |Eb7 Ab-6/Eb |Eb7 Ab-6/Eb |Eb7 Ab-6/Eb |Db7911# C-7 |B+7 Eb/Bb |Am7b5 D79# |G-j7   |G-j7   |G-j7   |G-j7   |G-j7 NC ||",
+      "supported": false
+    },
+    {
+      "id": 150,
+      "title": "Sweet and Lovely",
+      "performer": "Don Ellis",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G-7   |C7   |G-7   |C7   |F7   |Bbj7 Eb7 |Cj7 G7 |C6   ||\nA2: ||G-7   |C7   |G-7   |C7   |F7   |Bbj7 Eb7 |Cj7 G7 |C6   ||\nB1: ||F-7 Bb7 |Cj7   |F-7 Bb7 |Cj7   |Ab-7 Db7 |Ebj7   |Eb-7 Ab7 |D-7 G7 ||\nA3: ||G-7   |C7   |G-7   |C7   |F7   |Bbj7 Eb7 |Cj7 G7 |C6   ||",
+      "supported": true
+    },
+    {
+      "id": 410,
+      "title": "Take the Coltrane",
+      "performer": "Steve Coleman",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |F7   |G7   |C7   |F7   |C7   ||",
+      "supported": true
+    },
+    {
+      "id": 272,
+      "title": "Tautology",
+      "performer": "Lee Konitz",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F   |F7   |A-   |D7   |G-   |C7   |Fj7   |Fj7   ||\nB1: ||Cj7911# Bb7911# |Ab7911# Gbj7911# |Fj7   |D7   |G-   |C7   |Fj7   |Fj7   ||\nC1: ||Bb-7   |Eb7   |Bbo Bb-7 |Ab   |A-7   |D7   |G7   |C7   ||\nA2: ||F   |F7   |A-   |D7   |G-   |C7   |Fj7   |Fj7   ||",
+      "supported": true
+    },
+    {
+      "id": 424,
+      "title": "Tautology",
+      "performer": "Warne Marsh",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F   |F7   |A-   |D7   |G-   |C7   |Fj7   |Fj7   ||\nB1: ||Cj7911# Bb7911# |Ab7911# Gbj7911# |Fj7   |D7   |G-   |C7   |Fj7   |Fj7   ||\nC1: ||Bb-7   |Eb7   |Bbo Bb-7 |Ab   |A-7   |D7   |G7   |C7   ||\nA2: ||F   |F7   |A-   |D7   |G-   |C7   |Fj7   |Fj7   ||",
+      "supported": true
+    },
+    {
+      "id": 195,
+      "title": "Teapot",
+      "performer": "J.J. Johnson",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |C7   |F7   |F7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb-7   |Eb7   |Bb-7   |Eb7   |Ab6   |Ab6   |Bb-7 Eb7 |Ab6 C7 ||\nB1: ||F7   |C7   |F7   |F7   |Bb7   |Bb7   |Bb7   |Bb7   |F-7   |C7   |F-7   |F-7   |C-7   |F7   |Bb-7 Eb7 |Ab6 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 396,
+      "title": "Teapot",
+      "performer": "Sonny Stitt",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7 C7 |F7   |Bb7   |Bb7   |Bb-7 Eb7 |Bb-7 Eb7 |Ab6   |Bb-7Eb7Ab6C7||\nB1: ||F7 C7 |F7   |Bb7   |Bb7   |F-7 C7 |F-7   |C-7 F7 |Bb-7Eb7Ab6C7||",
+      "supported": true
+    },
+    {
+      "id": 247,
+      "title": "Tears in Heaven",
+      "performer": "Joshua Redman",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb F/A |G- G-/F |Eb/G Bb/F |F  F7|Bb F/A |G- G-/F |Eb/G Bb/F |F F#o ||\nB1: ||G-   |D/F#   |F-   |G7   |C-   |Fsus   |Bb F/A |G- G-/F |Eb/G FsusF|Bb Absus7Ab7||\nC1: ||Db Co |Bb- Eb/G |Ab Eb/GC|F- Ab |Db Co |Bb- Eb/G |Ab Go |F7   ||",
+      "supported": false
+    },
+    {
+      "id": 387,
+      "title": "Tenor Madness",
+      "performer": "Sonny Rollins",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |Bb7   |C-7   |F7   |Bb7   |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 388,
+      "title": "The Everywhere Calypso",
+      "performer": "Sonny Rollins",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C   |F   |G7   |C   |A7   |D-7   |G7   |C   ||",
+      "supported": true
+    },
+    {
+      "id": 389,
+      "title": "The Everywhere Calypso",
+      "performer": "Sonny Rollins",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C   |F   |G7   |C   |A7   |D-7   |G7   |C   ||",
+      "supported": true
+    },
+    {
+      "id": 370,
+      "title": "The Gasser",
+      "performer": "Roy Eldridge",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |F7   |F7   |F7   |Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Eb7   |Eb7   |Ab6   |Bb-7 Eb7 |Ab6   |Gm7b5 C7 ||\nB1: ||F7   |F7   |F7   |F7   |Bb7   |Bb7   |Bb7   |Bb7   |F-7   |Gm7b5 C7 |F-7   |Bb-7 Eb7 |Ab6 G7 |Gb7 F7 |Bb7 Eb7 |Ab6   ||",
+      "supported": true
+    },
+    {
+      "id": 371,
+      "title": "The Gasser",
+      "performer": "Roy Eldridge",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |F7   |F7   |F7   |Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Eb7   |Eb7   |Ab6   |Bb-7 Eb7 |Ab6   |Gm7b5 C7 ||\nB1: ||F7   |F7   |F7   |F7   |Bb7   |Bb7   |Bb7   |Bb7   |F-7   |Gm7b5 C7 |F-7   |Bb-7 Eb7 |Ab6 G7 |Gb7 F7 |Bb7 Eb7 |Ab6   ||",
+      "supported": true
+    },
+    {
+      "id": 353,
+      "title": "The Girl from East 9th Street",
+      "performer": "Paul Desmond",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ab   |Db7   |C-7   |C-7 F7 |Bb7   |Eb7   |Eb-7   |Ab7   ||\nB1: ||Db   |Db   |Db-7   |Db-7 Gb7 |B-7   |E7   |A7   |Bb-7 Eb7 ||\nA2: ||Ab7   |Db7   |C-7   |C-7 F7 |Bb-7   |Eb7   |Eb-7   |Ab7   ||\nB2: ||Db7   |Db-7 Gb7 |B   |F7   |Bb-7   |Eb7   |Ab   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 41,
+      "title": "The Nearness of You",
+      "performer": "Branford Marsalis",
+      "key": "D-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Dj7   |A-7 Dsus7 |Gj7   |Go7   |F#-7 B7 |E-7 A7 |F#-7 B7 |E-7 A7 ||\nA2: ||Dj7   |A-7 Dsus7 |Gj7   |Go7   |F#-7 B7 |E-7 A7 |Dj7 C7 |D6   ||\nB1: ||E-7   |A7   |Dj7   |A-7 D7 |Gj7   |F#m7b5 B7 |E7   |E-7 A7 ||\nA3: ||Dj7   |A-7 Dsus7 |Gj7   |Go7   |F#-7 B7 |E-7 A7 |Dj7 B-7 |E-7 A7 ||",
+      "supported": true
+    },
+    {
+      "id": 411,
+      "title": "The Oracle",
+      "performer": "Steve Coleman",
+      "key": "Bb-min",
+      "signature": "3/4",
+      "chords": "A1: ||Bb-   ||",
+      "supported": false
+    },
+    {
+      "id": 412,
+      "title": "The Oracle",
+      "performer": "Steve Coleman",
+      "key": "Bb-min",
+      "signature": "3/4",
+      "chords": "A1: ||Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  |Bb-  ||\nB1: ||Eb-  |C-  |Bj7911#  |Bb-  |Eb-  |Bj7911#  |Eb-  |Bj7911#  |G-7  |F#j7  |Bj7  |Bbj7911#  ||",
+      "supported": false
+    },
+    {
+      "id": 126,
+      "title": "The Rainbow People",
+      "performer": "Dexter Gordon",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb F-7 |G-7 F-7 |G-7 F-7 |F#-7 B7 |F-7   |Bb7   |Ebj7 C7 |F-7 Bb7 ||\nA2: ||Ebj7 F-7 |G-7 F-7 |G-7 F-7 |F#-7 B7 |F-7   |Bb7   |Eb Db7 |B-7 E7 ||\nB1: ||Bb-7   |Eb7   |Am7b5   |Ab7   |G7   |C7   |F7   |Bb7   ||\nA3: ||Ebj7 F-7 |G-7 F-7 |G-7 F-7 |F#-7 B7 |F-7   |Bb7   |Eb C7 |F-7 Bb7 ||",
+      "supported": true
+    },
+    {
+      "id": 175,
+      "title": "The Red Door",
+      "performer": "Gerry Mulligan",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G   |C-7 F7 |G   |C-7 F7 |Bb   |A-7 D7 |G   |A-7 D7 ||\nA2: ||G   |C-7 F7 |G   |C-7 F7 |Bb   |A-6 D7 |G   |G7   ||\nB1: ||C-   |Ab7 G7 |C-   |Ab7 G7 |Eb   |F-7 Bb7 |Eb7   |A-7 D7 ||\nA3: ||G   |C-7 F7 |G   |C-7 F7 |Bb   |A-7 D7 |G   |A-7 D7 ||",
+      "supported": true
+    },
+    {
+      "id": 203,
+      "title": "The Sidewinder",
+      "performer": "Joe Henderson",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Ab7   |Ab7   |Ab7   |Ab7   |Eb7   |Eb7   |Eb7   |Eb7   |Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Eb7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 276,
+      "title": "The Sidewinder",
+      "performer": "Lee Morgan",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Ab7   |Ab7   |Ab7   |Ab7   |Eb7   |Eb7   |Eb7   |Eb7   |Bb7   |Bb7   |Bb7   |Bb7   |Eb7   |Eb7   |Eb7   |Eb7   ||",
+      "supported": true
+    },
+    {
+      "id": 164,
+      "title": "The Skunk",
+      "performer": "Fats Navarro",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Db7   |Gb7   |Db7   |Db7   |Gb7   |Gb7   |Db7   |Bb7   |Eb7   |Ab7   |Db7   |Ab7   ||",
+      "supported": true
+    },
+    {
+      "id": 74,
+      "title": "There Will Never Be Another You",
+      "performer": "Chet Baker",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fj7   |Fj7   |Em7b5   |A7   |D-7   |D-7   |C-7   |F7   ||\nB1: ||Bbj7   |Eb7911#   |Fj7   |D-7   |G7   |G7   |G-7   |C7   ||\nA2: ||Fj7   |Fj7   |Em7b5   |A7   |D-7   |D-7   |C-7   |F7   ||\nC1: ||Bbj7   |Eb7911#   |Fj7   |Bm7b5 E7 |Fj7 Bb7 |A-7 D7 |G-7 C7 |Fj7 C7 ||\nI1: ||NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   |NC   ||",
+      "supported": true
+    },
+    {
+      "id": 75,
+      "title": "There Will Never Be Another You",
+      "performer": "Chet Baker",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fj7   |Fj7   |Em7b5   |A7   |D-7   |D-7   |C-7   |Bb7   ||\nB1: ||Bbj7   |Eb7911#   |Fj7   |D-7   |G7   |G7   |G-7   |C7   ||\nA2: ||Fj7   |Fj7   |Em7b5   |A7   |D-7   |D-7   |C-7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 114,
+      "title": "There Will Never Be Another You",
+      "performer": "David Liebman",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ebj7   |Ebj7   |Dm7b5   |G79b   |C-7   |C-7   |Bb-7   |Eb7   |Abj7   |Fm7b5 Bb7 |Ebj7   |C-7   |F7   |F7   |F-7   |Bb7   ||\nB1: ||Ebj7   |Ebj7   |Dm7b5   |G79b   |C-7   |C-7   |Bb-7   |Eb7   |Abj7   |Fm7b5 Bb7 |Ebj7   |G-7 C7 |Ebj7 D7 |G7 C7 |F-7 Bb7 |Eb6 Bb7 ||",
+      "supported": true
+    },
+    {
+      "id": 176,
+      "title": "This Can't Be Love",
+      "performer": "Gerry Mulligan",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ab6   |Ab6   |Db7   |Db7   |Abj7   |F-7   |Bb-7   |Eb7   ||\nA2: ||Ab6   |Ab6   |Db7   |Db7   |C-7 F-7 |Bb-7 Eb7 |Abj7   |Abj7   ||\nB1: ||G-7   |C7   |F-7   |F-7   |Cm7b5   |F7alt   |Bb7   |Eb7   ||\nA3: ||Abj7   |Abj7   |Db7   |Db7   |C-7 F-7 |Bb-7 Eb7 |Ab6   |Bb-7 Eb7 ||",
+      "supported": true
+    },
+    {
+      "id": 50,
+      "title": "This Here",
+      "performer": "Cannonball Adderley",
+      "key": "F-maj",
+      "signature": "3/4",
+      "chords": "A1: ||F7  |F7  |F7  |F7  |F7  |F7  |F7NC |NC  |Bb7  |Bb7  |Bb7  |Bb7  |F7  |F7  |F7  |F7  |Bb7  |Bb7  |Bb7A7 |A7  |Ab7  |Ab7  |G7  |G7  |Ab7  |Ab7  |G7  |C7  |F7  |F7  |F7  |F7  ||",
+      "supported": false
+    },
+    {
+      "id": 42,
+      "title": "Three Little Words",
+      "performer": "Branford Marsalis",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Cj7   |Cj7   |Cj7   |Eb-7 Ab79 |D-7   |G7   |D-7   |G7   ||\nA2: ||Cj7   |Cj7   |Cj7   |Eb-7 Ab79 |D-7   |G7   |D-7   |G7   ||\nB1: ||G-7   |G-7   |Csus79   |C7   |Fj7   |Fj7   |Bb7 A7 |Ab7 G7 ||\nA3: ||Cj7   |Cj7   |Cj7   |Eb-7 Ab79 |D-7   |G7   |C6   |D-7 G7 ||",
+      "supported": true
+    },
+    {
+      "id": 67,
+      "title": "Thriving on a Riff",
+      "performer": "Charlie Parker",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7 Bb7 |Eb7 Ab7 |D-7 G7 |C-7 F7 ||\nA2: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7 Bb7 |Eb7 Ab7 |C-7 F7 |Bbj7   ||\nB1: ||D7   |D7   |G7   |G7   |C7   |C7   |F7   |F7   ||\nA3: ||Bbj7 G7 |C-7 F7 |Bbj7 G7 |C-7 F7 |Bbj7 Bb7 |Eb7 Ab7 |C-7 F7 |Bbj7   ||",
+      "supported": true
+    },
+    {
+      "id": 18,
+      "title": "Tiger Rag",
+      "performer": "Benny Goodman",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ab   |Ab   |Ab   |Ab   |Ab   |Ab   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Ab   |Ab   ||\nB1: ||Ab   |Ab   |Ab   |Ab   |Ab7   |Ab7   |Db   |Db   |Db   |Db-   |Ab   |F7   |Bb7   |Eb7   |Ab   |Ab   |Ab   |Ab   ||",
+      "supported": true
+    },
+    {
+      "id": 19,
+      "title": "Tiger Rag",
+      "performer": "Benny Goodman",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Ab   |Ab   |Ab   |Ab   |Ab   |Ab   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Eb7   |Ab   |Ab   ||\nB1: ||Ab   |Ab   |Ab   |Ab   |Ab7   |Ab7   |Db   |Db   |Db   |Db-   |Ab   |F7   |Bb7   |Eb7   |Ab   |Ab   |Db   |Db-   |Ab   |F7   |Bb7   |Eb7   |Ab   |Ab   |Ab   ||",
+      "supported": true
+    },
+    {
+      "id": 248,
+      "title": "Tiny's Blues",
+      "performer": "Kai Winding",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |F7   |F7   |F7   |Bb7   |Bb7   |F7   |A-7 D7 |G7   |C7   |F7   |C7   ||",
+      "supported": true
+    },
+    {
+      "id": 84,
+      "title": "Togo",
+      "performer": "Chris Potter",
+      "key": "F-min",
+      "signature": "4/4",
+      "chords": "A1: ||G-7   ||",
+      "supported": true
+    },
+    {
+      "id": 204,
+      "title": "Totem Pole",
+      "performer": "Joe Henderson",
+      "key": "Eb-min",
+      "signature": "4/4",
+      "chords": "A1: ||Eb-79   |Eb-79   |F7   |F7   |E7   |E7   |Eb-79   |Eb- Bb7 ||\nA2: ||Eb-79   |Eb-79   |F7   |F7   |E7   |E7   |Eb-79   |Eb-79   ||\nB1: ||Bb-7   |Eb7   |Abj7   |Abj7   |Ab-7   |Db7   |Gbj7   |Bb+79   ||\nA3: ||Eb-79   |Eb-79   |F7   |F7   |E7   |E7   |Eb-79   |Bb7   ||",
+      "supported": true
+    },
+    {
+      "id": 277,
+      "title": "Totem Pole",
+      "performer": "Lee Morgan",
+      "key": "Eb-min",
+      "signature": "4/4",
+      "chords": "A1: ||Eb-79   |Eb-79   |F7   |F7   |E7   |E7   |Eb-79   |Eb-79 Bb7 ||\nA2: ||Eb-79   |Eb-79   |F7   |F7   |E7   |E7   |Eb-79   |Eb-79   ||\nB1: ||Bb-7   |Eb7   |Abj7   |Abj7   |Ab-7   |Db7   |Gbj7   |Bb+79   ||\nA3: ||Eb-79   |Eb-79   |F7   |F7   |E7   |E7   |Eb-79   |Eb-79 Bb7 ||",
+      "supported": true
+    },
+    {
+      "id": 234,
+      "title": "Trane's Blues",
+      "performer": "John Coltrane",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7NC  |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |D-7 G7 |C-7   |F7   |Bb7   |C-7 F7 ||",
+      "supported": false
+    },
+    {
+      "id": 324,
+      "title": "Trane's Blues",
+      "performer": "Miles Davis",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |D-7 G7 |C-7   |F7   |Bb7   |C-7 F7 ||\nA2: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |D-7 G7 |C-7   |F7   |Bb7   |C-7 F7 ||",
+      "supported": true
+    },
+    {
+      "id": 325,
+      "title": "Tune Up",
+      "performer": "Miles Davis",
+      "key": "D-maj",
+      "signature": "4/4",
+      "chords": "A1: ||E-7   |A7   |Dj7   |Dj7   |D-7   |G7   |Cj7   |Cj7   |C-7   |F7   |Bbj7   |Ebj7   |E-7   |F7   |Bbj7   |E-7 A79# ||\nA2: ||E-7   |A7   |Dj7   |Dj7   |D-7   |G7   |Cj7   |Cj7   |C-7   |F7   |Bbj7   |Ebj7   |E-7   |A7   |Dj7   |E-7 A79# ||",
+      "supported": true
+    },
+    {
+      "id": 76,
+      "title": "Two's Blues",
+      "performer": "Chet Baker",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||G-7   |G-7   |G-7   |G-7   |C-7   |C-7   |G-7   |G-7   |Eb7alt   |D7   |G-7   |D7 C-7 ||",
+      "supported": true
+    },
+    {
+      "id": 43,
+      "title": "U.M.M.G.",
+      "performer": "Branford Marsalis",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fm7b5   |Bb79b   |Eb-7   |Ab7   |Dbo7 Db6 |Dbj7   |Db-7   |Gb7   ||\nA2: ||Fm7b5   |Bb79b   |Eb-7   |Ab7   |Dbo7 Db6 |Dbj7   |Ab-7 Db7 |Ab-7 Db7 ||\nB1: ||Gm7b5   |C79b   |Fj7   |Fj7   |Abm7b5   |Db79b   |Gb-   |Ab7   ||\nA3: ||Fm7b5   |Bb79b   |Eb-7   |Ab7   |Dbo7   |Db6   |Dbo7   |Db6   ||",
+      "supported": true
+    },
+    {
+      "id": 205,
+      "title": "U.M.M.G.",
+      "performer": "Joe Henderson",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fm7b5   |Bb7   |Eb-7   |Ab7   |Dbo7 Db6 |Dbj7   |Db-7   |Gb7   ||\nA2: ||Fm7b5   |Bb7   |Eb-7   |Ab7   |Dbo7 Db6 |Dbj7   |Ab-7 Db7 |Ab-7 Db7 ||\nB1: ||Gm7b5   |C79b   |Fj7   |Fj7   |Abm7b5   |Db79b   |Gb-   |Ab7   ||\nA3: ||Fm7b5   |Bb79b   |Eb-7   |Ab7   |Dbo7   |Db6   |Dbo   |Db6   ||",
+      "supported": true
+    },
+    {
+      "id": 449,
+      "title": "U.M.M.G.",
+      "performer": "Wynton Marsalis",
+      "key": "Db-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Fm7b5   |Bb79b   |Eb-7   |Ab7   |Dbo7 Db6 |Dbj7   |Db-7   |Gb7   ||\nA2: ||Fm7b5   |Bb79b   |Eb-7   |Ab7   |Dbo7 Db6 |Dbj7   |Ab-7 Db7 |Ab-7 Db7 ||\nB1: ||Gm7b5   |C79b   |Fj7   |Fj7   |Abm7b5   |Db79b   |Gb-7   |Ab7   ||\nA3: ||Fm7b5   |Bb79b   |Eb-7   |Ab7   |Dbo7   |Db6   |Dbo   |Db6   ||",
+      "supported": true
+    },
+    {
+      "id": 146,
+      "title": "Un Amour Pleurait",
+      "performer": "Don Byas",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F/C Dbo |D- G-7 |C7 G-7C7|Fj7   |Fj7 A7 |D-7 Dbo |C7 G-7C7|Fj7   ||\nA2: ||F/C Dbo |D-7 G-7 |C7 G-7C7|Fj7   |A7   |D-7 Dbo |C7   |F F7 ||\nB1: ||Bb   |Eb C-7 |F7 C-7F7|Bb   |Bb Do |Ebj7 Ab7 |Bb F |BbFG7C7||\nC1: ||C/F Dbo |D-7 G-7 |C7   |Fj7   |A7   |D-7   |C7 G-7C7|Fj7   |Fj7  NC||",
+      "supported": false
+    },
+    {
+      "id": 372,
+      "title": "Undecided",
+      "performer": "Roy Eldridge",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb6   |Bb6   |Eb79   |Eb79   |C7   |C-7 F7 |Bb6 G7 |C-7 F7 ||\nA2: ||Bb6   |Bb6   |Eb79   |Eb79   |C7   |C-7 F7 |Bb6   |Bb6   ||\nB1: ||F-7 Bb7 |Bb7   |Eb6   |Eb6   |G-7 C7 |C7   |F7   |F7   ||\nA3: ||Bb6   |Bb6   |Eb79   |Eb79   |C7   |C-7 F7 |Bb6   |Bb6   ||",
+      "supported": true
+    },
+    {
+      "id": 326,
+      "title": "Vierd Blues",
+      "performer": "Miles Davis",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |G79b   |C-   |F7   |Bb7 G79b |C-7 F7 ||",
+      "supported": true
+    },
+    {
+      "id": 390,
+      "title": "Vierd Blues",
+      "performer": "Sonny Rollins",
+      "key": "Bb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bb7   |Eb7   |Bb7   |Bb7   |Eb7   |Eb7   |Bb7   |D-7 G7 |C7   |F7   |Bb7   |F7   ||",
+      "supported": true
+    },
+    {
+      "id": 196,
+      "title": "Walkin'",
+      "performer": "J.J. Johnson",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |F7   |G-7   |C7   |F7   |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 327,
+      "title": "Walkin'",
+      "performer": "Miles Davis",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F7   |A-7 D7 |G-7   |C7   |F7   |G-7 C7 ||",
+      "supported": true
+    },
+    {
+      "id": 177,
+      "title": "Walking Shoes",
+      "performer": "Gerry Mulligan",
+      "key": "G-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G   |C7   |G   |F7 E-7 |A-7   |C#-7 F#7 |G Go |A-7 D7 ||\nA2: ||G   |C7   |G   |F7 E-7 |A-7   |C#-7 F#7 |G Go |A-7 D7 ||\nB1: ||F#-7   |B7   |E-   |F#-7 B7 |E-   |A7   |A-7   |D7   ||\nA3: ||G   |C7   |G   |F7 E7 |Eb7 D7 |A-7 D7 |G   |A-7 D7 |G   |G   |G   ||",
+      "supported": true
+    },
+    {
+      "id": 333,
+      "title": "What's New",
+      "performer": "Milt Jackson",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "B1: ||F6   |Eb-7 Ab7 |Dbj7   |Gm7b5 C7 |F-7 Dm7b5 |Gm7b5 C7 |F-6   |Dm7b5 G7 ||\nA3: ||C6   |Bb-7 Eb7 |Abj7   |Dm7b5 G7 |C-7 Am7b5 |Dm7b5 G7 |C6 A-7 ||",
+      "supported": true
+    },
+    {
+      "id": 25,
+      "title": "Where or When",
+      "performer": "Ben Webster",
+      "key": "Ab-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Abj7   |Abj7   |Abo7   |Abj7   |Dbj7   |Dbj7   |Dbj7   |Bb-7 Ebsus79 |D7 F7 |Bb7 Eb7 ||\nA2: ||Abj7   |Abj7   |Abo7   |Abj7   |Dbj7   |Dbj7   |Dbj7   |Bb-7 Ebsus79 |G-7   |C7   ||\nB1: ||F-7   |Bb7   |G-7   |C7   |F-7   |Bb7   |Bb7 E7911# |Eb7   ||\nA3: ||Abj7   |D-7 G7 |Db7911# C7 |F-7   |Bb-7   |C-7 F7 |Bb-7   |F7   |Bb-7   |Eb7   |Ab69   |Ab69   ||\nI1: ||NC   ||",
+      "supported": true
+    },
+    {
+      "id": 20,
+      "title": "Whispering",
+      "performer": "Benny Goodman",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb   |Eb   |D7   |D7   |Eb   |Eb   |C+7   |C7   |F7   |F7   |Bb7   |Bb7   |Eb   |Eb   |Bb7   |Bb+7   ||\nA2: ||Eb   |Eb   |D7   |D7   |Eb   |Eb   |C+7   |C7   |F7   |F7   |Bb7   |Bb7   |F-7   |Bb7   |Eb   |F-7 Bb7 ||\nI1: ||Eb   |Eb   ||",
+      "supported": true
+    },
+    {
+      "id": 290,
+      "title": "Whispering",
+      "performer": "Lionel Hampton",
+      "key": "Eb-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Eb   |D7   |Eb   |C+7 C7 |F7   |Bb7   |Eb   |Bb7   ||\nA2: ||Eb   |D7   |Eb   |C+7 C7 |F7   |Bb7   |F-7 Bb7 |Eb   ||\nI1: ||Eb   ||",
+      "supported": true
+    },
+    {
+      "id": 265,
+      "title": "Who's it",
+      "performer": "Kid Ory",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C   |A7   |D7   |D7   |G7   |G7   |C   |G7   |C   |C   |G   |G   |A-   |D7   |G7   |G7   ||\nB1: ||C   |A7   |D7   |D7   |D-6   |E7   |A-   |C7   |F   |F   |C   |A7   |D-7   |G7   |C   |C   |C   |C   ||",
+      "supported": true
+    },
+    {
+      "id": 213,
+      "title": "Work",
+      "performer": "Joe Lovano",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||C#7   |C#7   |F#7   |F#7   |F7 E7 |Eb7   |D7   |D7   ||\nA2: ||C#7   |C#7   |F#7   |F#7   |F7 E7 |Eb7   |D7   |D7   ||\nB1: ||D-7 G7 |G7alt   |C7   |C7   |C-7   |C-7   |E7 A7Ab7|D7   ||\nA3: ||C#7   |C#7   |F#7   |F#7   |F7 E7 |Eb7   |D7   |D7   ||",
+      "supported": false
+    },
+    {
+      "id": 418,
+      "title": "Work",
+      "performer": "Steve Lacy",
+      "key": "",
+      "signature": "4/4",
+      "chords": "A1: ||Db7   |Db7   |Gb7   |Gb7   |F7 E7 |Eb7   |D7   |D7   ||\nA2: ||Db7   |Db7   |Gb7   |Gb7   |F7 E7 |Eb7   |D7   |D7   ||\nB1: ||D-7 G7 |G7   |C7   |C7   |C-7   |F7   |E7 A7913b |Ab7alt   ||\nA3: ||Db7   |Db7   |Gb7   |Gb7   |F7 E7 |Eb7   |D7   |D7   ||",
+      "supported": true
+    },
+    {
+      "id": 51,
+      "title": "Work Song",
+      "performer": "Cannonball Adderley",
+      "key": "F-min",
+      "signature": "4/4",
+      "chords": "A1: ||F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |G7   |C7   |F-7   |F-7   |F-7   |F-7   |F7   |Bb7   |G7 C7 |F-7   ||",
+      "supported": true
+    },
+    {
+      "id": 335,
+      "title": "Work Song",
+      "performer": "Nat Adderley",
+      "key": "F-min",
+      "signature": "4/4",
+      "chords": "A1: ||F-7   |F-7   |F-7   |F-7   |F-7   |F-7   |G7   |C7   |F-7   |F-7   |F-7   |F-7   |F7   |Bb7   |G7 C7 |F-7   ||",
+      "supported": true
+    },
+    {
+      "id": 273,
+      "title": "Wow",
+      "performer": "Lee Konitz",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G-7   |C7   |F6   |A- Abj7 |Gj7   |Gb-7   |F6   |F#o   ||\nB1: ||G-7   |C7   |F6   |A-7 Abj7 |Gj7   |Gb-7   |Fj7   |Fj7   ||\nI1: ||C-   ||",
+      "supported": true
+    },
+    {
+      "id": 425,
+      "title": "Wow",
+      "performer": "Warne Marsh",
+      "key": "F-maj",
+      "signature": "4/4",
+      "chords": "A1: ||G-   |C7   |F   |A- Abj7 |Gj7   |E79b   |A-   |D- D7 ||\nA2: ||G-   |C79b   |F   |A- Abj7 |Gj7   |C7   |F C |F   |A- Abj7 ||",
+      "supported": true
+    },
+    {
+      "id": 68,
+      "title": "Yardbird Suite",
+      "performer": "Charlie Parker",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||C6   |F-7 Bb7 |C7 Bb7 |A7   |D7   |G7   |E-7 A7 |D-7 G7 ||\nA2: ||C6   |F-7 Bb7 |C7 Bb7 |A7   |D7   |G7   |C6   |F#m7b5 B79b ||\nB1: ||E-7   |F#m7b5 B79b |E-7   |A7   |D-7   |Em7b5 A7 |D7   |D-7 G7 ||\nA3: ||C6   |F-7 Bb7 |C7 Bb7 |A7   |D7   |G7   |C6   |D-7 G7 ||",
+      "supported": true
+    },
+    {
+      "id": 197,
+      "title": "Yesterdays",
+      "performer": "J.J. Johnson",
+      "key": "D-min",
+      "signature": "4/4",
+      "chords": "A1: ||D-   |Em7b5 A79b |D-   |Em7b5 A79b |D- D-/C# |D-/C   |Bm7b5   |E7   ||\nB1: ||A+7   |D7   |G7   |C7   |C-7 F7 |Bbj7   |Em7b5   |A79b   ||",
+      "supported": true
+    },
+    {
+      "id": 151,
+      "title": "You Stepped Out of a Dream",
+      "performer": "Don Ellis",
+      "key": "D-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Dj7   |Dj7   |Ebj7   |Ebj7   |F7   |F7   |Bbj7   |Bbj7   |A-7   |D7   |Gj7   |Gj7   |B-7   |E7   |F-7 Bb7 |E-7 A7 ||\nB1: ||Dj7   |Dj7   |Ebj7   |Ebj7   |F7   |F7   |Ab7   |G7   |Em7b5   |A7   |F-7   |Bb7   |E-7   |A7   |Dj7   |Dj7   ||",
+      "supported": true
+    },
+    {
+      "id": 152,
+      "title": "You Stepped Out of a Dream",
+      "performer": "Don Ellis",
+      "key": "D-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Dj7   |Dj7   |Ebj7   |Ebj7   |F7   |F7   |Bbj7   |Bbj7   |A-7   |D7   |Gj7   |Gj7   |B-7   |E7   |F-7 Bb7 |E-7 A7 ||\nB1: ||Dj7   |Dj7   |Ebj7   |Ebj7   |F7   |F7   |Ab7   |G7    |Em7b5   |A7   |F#-7   |B7   |E-7   |A7   |Dj7   |Dj7 NC ||",
+      "supported": true
+    },
+    {
+      "id": 37,
+      "title": "You and the Night and the Music",
+      "performer": "Bob Berg",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||C-69   |Dm7b5 G7 |Gm7b5 C79b |F-6   |Dm7b5   |G79b   |Cj7   |Dm7b5 G7 ||\nA2: ||C-69   |Dm7b5 G7 |Gm7b5 C79b |F-6   |Dm7b5   |G79b   |Cj7   |C7   ||\nB1: ||Ab7   |Am7b5 D79b |G7   |G7   |Ab7   |Am7b5 D79b |G7 Ab7 |G7 Db7911# ||\nA3: ||C-69   |Dm7b5 G7 |Gm7b5 C79b |F-6   |Dm7b5 G79b |C-7 Am7b5 |Ab7 G7 |C-69   ||",
+      "supported": true
+    },
+    {
+      "id": 77,
+      "title": "You'd Be So Nice to Come Home to",
+      "performer": "Chet Baker",
+      "key": "G-min",
+      "signature": "4/4",
+      "chords": "A1: ||G-7   |A7 D7 |G-7   |G-7   |F-7   |Bb7   |Ebj7   |Ebj7   |Am7b5   |D7   |Gbo7   |G-7   |Em7b5   |A7   |Am7b5   |D7   ||",
+      "supported": true
+    },
+    {
+      "id": 358,
+      "title": "You'd Be So Nice to Come Home to",
+      "performer": "Pepper Adams",
+      "key": "C-maj",
+      "signature": "4/4",
+      "chords": "A1: ||A-6   ||",
+      "supported": true
+    },
+    {
+      "id": 450,
+      "title": "You're My Everything",
+      "performer": "Wynton Marsalis",
+      "key": "B-maj",
+      "signature": "4/4",
+      "chords": "A1: ||Bj7   |Bj7   |F-7 Bb7 |Eb-7 Ab7 |Db-7   |Db-7   |Gb7   |E-   |Eb-7   |D-7 G79 |D-7   |Bb-7 Eb7 |Ab-7   |Db79   |Db-7   |Gb7   ||\nB1: ||Bj7   |Bj7   |F-7 Bb7 |Eb-7 Ab7 |Db-7   |Db-7   |Bbm7b5   |Eb7   |Ab-7 G7913 |Gb-7 B7 |Ej7   |A79   |Eb-7 D-7 |Db-7 Gb7 |Gj7   |Gj7   ||",
+      "supported": true
+    }
+  ]
+}
