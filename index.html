@@ -16,8 +16,10 @@
       <aside class="setup panel">
         <div class="panel-title"><span class="step-no">01</span><h2>練習をつくる</h2></div>
         <label class="field-label" for="song-search">曲を探す <span>ワイマール収録曲</span></label>
+        <div class="segments collection-switch" role="group" aria-label="曲のコレクション"><button id="standard-songs" class="active" aria-pressed="true">スタンダード30曲</button><button id="all-songs" aria-pressed="false">全資料</button></div>
         <input type="search" id="song-search" placeholder="曲名・演奏者で検索" autocomplete="off">
         <label class="sr-only" for="song-select">曲の選択</label><select id="song-select"><option value="">手入力の練習用進行</option></select>
+        <p id="song-results" class="hint" role="status">曲データを読み込み中…</p>
         <p id="source-note" class="hint">自作の練習用進行です。曲データを選ぶと、その演奏のコード進行を読み込みます。</p>
         <div class="field-heading"><label for="chords" class="field-label">コード進行</label><button id="import-open" class="text-button">ファイルを取り込む ↗</button></div>
         <textarea id="chords" rows="4" spellcheck="false" aria-describedby="chord-help">Dm7 | G7 | Cmaj7 | A7</textarea>
