@@ -26,7 +26,8 @@ export function parseChord(text) {
   if (/^o7/.test(quality)) intervals.push(9);
   else if (/6|69/.test(quality) && !/b6/.test(quality)) intervals.push(9);
   else if (/\^/.test(quality)) intervals.push(11);
-  else if (/[791]|13/.test(quality)) intervals.push(10);
+  else if (quality === 'h' || (quality !== 'add9' && /[791]|13/.test(quality))) intervals.push(10);
+  if (quality === 'add9') intervals.push(2);
   return {symbol,root,quality,intervals,pcs:intervals.map(i=>mod(root+i)),bass:m[4] ? pitchClass(m[4]) : root};
 }
 export function parseProgression(input) {

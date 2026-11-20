@@ -9,3 +9,11 @@
 
 .score{overflow:clip}.transport{position:sticky;top:0;z-index:3;border-bottom:1px solid var(--line);box-shadow:0 2px 5px #292b2608}#start-bar:disabled{background:#f0ede6;color:#a3a094;cursor:not-allowed}
 .tab-score{max-height:520px;overflow-y:auto;align-content:start;scrollbar-width:thin;scrollbar-color:#c7bba8 transparent}
+.playback-range{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding:12px 24px;border-bottom:1px solid var(--line);font-size:10px}
+.playback-range label{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.playback-range input{width:65px;padding:6px;font-size:11px}
+.playback-range select{width:auto;padding:6px;font-size:11px}
+.playback-range .secondary{font-size:10px;padding:7px 9px}
+#playback-summary{color:var(--olive);font-variant-numeric:tabular-nums}
+.playback-range .hint{flex-basis:100%;margin:0}
+.measure.in-playback-range .measure-num{color:var(--olive);font-weight:700}

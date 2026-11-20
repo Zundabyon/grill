@@ -1,4 +1,8 @@
 import {SampleBass} from './sampler.js';
+export function normalizeTempo(value,fallback=90){
+  const bpm=Number(value);
+  return Math.round(Math.min(240,Math.max(30,Number.isFinite(bpm)&&bpm>0?bpm:fallback)));
+}
 export class Player {
   constructor(onBeat,onStop) {this.onBeat=onBeat;this.onStop=onStop;this.active=false;this.timer=null;this.voices=new Set();}
   async play(notes,options) {
@@ -16,7 +20,9 @@ export class Player {
   }
   schedule(){
     while(this.active && !this.finishing && this.nextTime<this.ctx.currentTime+.12){
-      const i=this.index,opts=this.options(),time=this.nextTime,step=60/opts.bpm;
+      const i=this.index,opts=this.options(),time=this.nextTime;
+      this.bpm=normalizeTempo(opts.bpm,this.bpm||90);
+      const step=60/this.bpm;
       if(i>=this.notes.length){if(!opts.loop){this.finishing=true;clearInterval(this.timer);this.finishTimer=setTimeout(()=>this.stop(),Math.max(0,(time-this.ctx.currentTime)*1000));return;}this.index=0;continue;}
       if(i<0 || opts.click)this.click(time,i%4===0);
       if(i>=0 && opts.bass && !this.notes[i].rest)this.bass(time,this.notes[i].midi,step*.94,i%4===0?1:.94);
