@@ -1,9 +1,10 @@
-import {TUNING,STRINGS,mod,noteName,pitchClass,parseProgression,transposeBars,generateLine,explainNote} from './music.js';
+import {TUNING,STRINGS,mod,noteName,chordNoteName,pitchClass,parseProgression,transposeBars,generateLine,explainNote} from './music.js';
 import {musicXMLToProgression} from './import.js';
 import {Player,normalizeTempo} from './audio.js';
+import {blueBossaMelody} from './melody.js';
 import {standardSongs,filterSongs} from './catalog.js';
 const $=id=>document.getElementById(id);
-const state={songs:[],standards:[],collection:'standards',bars:[],notes:[],model:[],selected:0,mode:'model',level:'easy',seed:1,offset:0,title:'今日のウォーキング',source:'自作の練習用進行',provenance:null,storageKey:'grill.practices.v1'};
+const state={songs:[],standards:[],collection:'standards',bars:[],notes:[],model:[],selected:0,mode:'model',level:'easy',seed:1,offset:0,title:'今日のウォーキング',source:'自作の練習用進行',provenance:null,songId:null,storageKey:'grill.practices.v1'};
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function error(e){$('error').textContent=e.message||String(e);$('error').hidden=false;}
 let toastTimer;
@@ -24,7 +25,7 @@ const player=new Player(i=>{
   }
   $('play-state').textContent=`${state.offset+Math.floor(i/4)+1} : ${i%4+1}`;
 },()=>{$('play').textContent='▶';$('play').setAttribute('aria-label','再生');$('play-state').textContent='READY';document.querySelectorAll('.playing').forEach(e=>e.classList.remove('playing'));});
-function audioOptions(){lastTempo=normalizeTempo($('bpm').value,lastTempo);return {bpm:lastTempo,loop:$('loop').checked,bass:$('bass').checked,click:$('click').checked,countIn:$('count-in').checked};}
+function audioOptions(){lastTempo=normalizeTempo($('bpm').value,lastTempo);return {bpm:lastTempo,loop:$('loop').checked,bass:$('bass').checked,click:$('click').checked,countIn:$('count-in').checked,piano:$('piano').checked,drums:$('drums').checked,bassVolume:Number($('bass-volume').value)/100,pianoVolume:Number($('piano-volume').value)/100,melody:$('melody').checked&&!$('melody').disabled,melodyVolume:Number($('melody-volume').value)/100,drumsVolume:Number($('drums-volume').value)/100};}
 function playbackRange(){
   const first=state.offset+1,last=state.offset+state.bars.length;
   const value=Number($('playback-start').value);
@@ -65,7 +66,11 @@ function generate({keepSeed=false,confirmed=false}={}) {
     return true;
   }catch(e){state.inputError=true;error(e);return false;}
 }
+function currentMelody(){return blueBossaMelody(state.bars,state.offset,state.applied?.key||'C',state.songId);}
 function render(){
+  const available=currentMelody().length>0;
+  $('melody').disabled=!available;$('melody-volume').disabled=!available;
+  $('melody-help').textContent=available?'Blue Bossaのテーマ（提供譜面の16小節・弱起なし）を再生します。':'メロディはBlue BossaのJHT収録版に対応。曲一覧から選んでください。';
   $('practice-title').textContent=state.title;
   const levels={easy:'簡単',normal:'普通',hard:'難しめ'};
   $('score-subtitle').textContent=`${state.applied.full?'1曲まるごと · ':''}${state.offset+1}–${state.offset+state.bars.length}小節 / KEY ${state.applied.key} / ${levels[state.applied.level]} / ${state.applied.min}–${state.applied.max}フレット`;
@@ -73,7 +78,7 @@ function render(){
   $('edit-badge').hidden=!changed;$('restore').hidden=!changed;
   $('score').innerHTML=state.bars.map((bar,b)=>{
     const cs=bar.map((c,i)=>i===0||bar[i-1].symbol!==c.symbol?`<span style="grid-column:${i+1}/span ${(()=>{let n=1;while(i+n<4&&bar[i+n].symbol===c.symbol)n++;return n;})()}">${escape(c.symbol)}</span>`:'').join('');
-    return `<div class="measure"><div class="measure-head"><span class="measure-num">${String(state.offset+b+1).padStart(2,'0')}</span></div><div class="measure-chords">${cs}</div><div class="tab-staff">${state.notes.slice(b*4,b*4+4).map((n,j)=>{const i=b*4+j,info=explainNote(n,i,state.notes,state.bars);return `<button class="tab-note ${i===state.selected?'selected':''} ${n.midi!==state.model[i]?.midi||n.string!==state.model[i]?.string?'edited':''}" data-note="${i}" aria-label="${state.offset+b+1}小節 ${j+1}拍 ${n.rest?'休符':STRINGS[n.string]+'弦 '+n.fret+'フレット '+noteName(n.midi)+' '+info.role}" aria-pressed="${i===state.selected}"><span class="fret-number" style="--string:${n.rest?1:n.string}">${n.rest?'−':n.fret}</span></button>`;}).join('')}</div><div class="beat-numbers"><span>1</span><span>2</span><span>3</span><span>4</span></div>${b%4===0?'<div class="string-labels"><span>G</span><span>D</span><span>A</span><span>E</span></div>':''}</div>`;
+    return `<div class="measure"><div class="measure-head"><span class="measure-num">${String(state.offset+b+1).padStart(2,'0')}</span></div><div class="measure-chords">${cs}</div><div class="tab-staff">${state.notes.slice(b*4,b*4+4).map((n,j)=>{const i=b*4+j,info=explainNote(n,i,state.notes,state.bars);return `<button class="tab-note ${i===state.selected?'selected':''} ${n.midi!==state.model[i]?.midi||n.string!==state.model[i]?.string?'edited':''}" data-note="${i}" aria-label="${state.offset+b+1}小節 ${j+1}拍 ${n.rest?'休符':STRINGS[n.string]+'弦 '+n.fret+'フレット '+chordNoteName(n.midi,state.bars[b][j])+' '+info.role}" aria-pressed="${i===state.selected}"><span class="fret-number" style="--string:${n.rest?1:n.string}">${n.rest?'−':n.fret}</span></button>`;}).join('')}</div><div class="beat-numbers"><span>1</span><span>2</span><span>3</span><span>4</span></div>${b%4===0?'<div class="string-labels"><span>G</span><span>D</span><span>A</span><span>E</span></div>':''}</div>`;
   }).join('');
   renderFretboard();
   renderPlaybackRange();
@@ -83,12 +88,12 @@ function renderFretboard(){
   const chord=state.bars.flat()[state.selected],info=explainNote(n,state.selected,state.notes,state.bars),{min,max}=state.applied;
   const count=max-min+1;
   $('selected-position').textContent=`${state.offset+Math.floor(state.selected/4)+1}小節 · ${state.selected%4+1}拍${n.rest?'':` / ${STRINGS[n.string]}弦 ${n.fret}フレット`}`;
-  $('selected-note').innerHTML=n.rest?'−<span>REST</span>':`${escape(noteName(n.midi))}<span>${n.midi===state.model[state.selected]?.midi?'MODEL':'YOUR NOTE'}</span>`;
+  $('selected-note').innerHTML=n.rest?'−<span>REST</span>':`${escape(chordNoteName(n.midi,chord))}<span>${n.midi===state.model[state.selected]?.midi?'MODEL':'YOUR NOTE'}</span>`;
   $('note-role').textContent=info.role;$('note-reason').textContent=info.text;
   $('edit-help').textContent=state.mode==='edit'?'指板の好きな位置をクリック。選んだ音を聴いて、前後のつながりを試しましょう。':'「自分で変える」に切り替えると、指板をクリックして音を変更できます。';
   $('fretboard').classList.toggle('editable',state.mode==='edit');
   $('fretboard').style.gridTemplateColumns=`30px repeat(${count},minmax(34px,1fr))`;
-  $('fretboard').innerHTML='<div class="fret-head"></div>'+Array.from({length:count},(_,i)=>`<div class="fret-head">${i+min===0?'OPEN':i+min}</div>`).join('')+TUNING.map((open,s)=>`<div class="string-name">${STRINGS[s]}</div>`+Array.from({length:count},(_,i)=>{const fret=i+min,midi=open+fret,current=!n.rest&&n.string===s&&n.fret===fret;return `<button ${state.mode==='edit'&&!chord.rest?'':'disabled'} data-string="${s}" data-fret="${fret}" class="fret-cell ${chord.pcs.includes(mod(midi))?'chord-tone':''} ${current?'current':''}" style="--thickness:${1+s*.45}px" aria-label="${STRINGS[s]}弦 ${fret}フレット ${noteName(midi)}"><span>${escape(noteName(midi))}</span></button>`;}).join('')).join('');
+  $('fretboard').innerHTML='<div class="fret-head"></div>'+Array.from({length:count},(_,i)=>`<div class="fret-head">${i+min===0?'OPEN':i+min}</div>`).join('')+TUNING.map((open,s)=>`<div class="string-name">${STRINGS[s]}</div>`+Array.from({length:count},(_,i)=>{const fret=i+min,midi=open+fret,current=!n.rest&&n.string===s&&n.fret===fret;return `<button ${state.mode==='edit'&&!chord.rest?'':'disabled'} data-string="${s}" data-fret="${fret}" class="fret-cell ${chord.pcs.includes(mod(midi))?'chord-tone':''} ${current?'current':''}" style="--thickness:${1+s*.45}px" aria-label="${STRINGS[s]}弦 ${fret}フレット ${chordNoteName(midi,chord)}"><span>${escape(chordNoteName(midi,chord))}</span></button>`;}).join('')).join('');
 }
 function setMode(mode){state.mode=mode;for(const m of ['model','edit']){$(m+'-mode').classList.toggle('active',m===mode);$(m+'-mode').setAttribute('aria-pressed',String(m===mode));}renderFretboard();}
 function setLevel(level){state.level=level;document.querySelectorAll('[data-level]').forEach(b=>{b.classList.toggle('active',b.dataset.level===level);b.setAttribute('aria-pressed',String(b.dataset.level===level));});$('difficulty-hint').textContent={easy:'近いポジションを中心に、構成音とつなぎを練習。',normal:'移動の制約をゆるめ、つなぎ方の選択肢を増やします。',hard:'広い動きも候補に。テンポはゆっくりでも大丈夫。'}[level];}
@@ -99,7 +104,7 @@ function showSaved(){
   const list=saved();$('saved-count').textContent=list.length;
   $('saved-list').innerHTML=list.length?list.map(s=>`<div class="saved-row"><div>${escape(s.title)}<small>${escape(s.date)} · ${escape(s.bpm)} BPM · ${escape(s.notes.length/4)}小節</small></div><button class="secondary" data-load="${escape(s.id)}">開く</button><button class="text-button" data-export="${escape(s.id)}">書き出す</button><button class="text-button" data-delete="${escape(s.id)}">削除</button></div>`).join(''):'<p class="hint">まだ保存した練習がありません。「練習を保存」で、お手本と自分のアレンジを残せます。</p>';
 }
-function snapshot(){return {version:1,id:crypto.randomUUID(),title:state.title,date:new Date().toLocaleString('ja-JP'),source:state.source,provenance:state.provenance,chords:$('chords').value,sourceKey:$('source-key').value,targetKey:$('target-key').value,level:state.level,min:$('min-fret').value,max:$('max-fret').value,start:state.offset+1,count:$('bar-count').value,bpm:$('bpm').value,notes:state.notes,model:state.model,bars:state.bars,applied:state.applied};}
+function snapshot(){return {version:1,id:crypto.randomUUID(),title:state.title,date:new Date().toLocaleString('ja-JP'),source:state.source,provenance:state.provenance,songId:state.songId,chords:$('chords').value,sourceKey:$('source-key').value,targetKey:$('target-key').value,level:state.level,min:$('min-fret').value,max:$('max-fret').value,start:state.offset+1,count:$('bar-count').value,bpm:$('bpm').value,notes:state.notes,model:state.model,bars:state.bars,applied:state.applied};}
 function loadPractice(s){
   if(s.version!==1||!Array.isArray(s.notes)||!Array.isArray(s.model)||!Array.isArray(s.bars)||s.notes.length!==s.bars.length*4||s.model.length!==s.notes.length||s.notes.length>512)throw new Error('Grillの保存データを確認してください。');
   const parsed=parseProgression(s.bars.map(bar=>bar.map(c=>c.symbol).join(' ')).join(' | '));
@@ -109,7 +114,7 @@ function loadPractice(s){
   if(![...$('source-key').options].some(o=>o.value===s.sourceKey)||![...$('target-key').options].some(o=>o.value===s.targetKey))throw new Error('保存データのキーが不正です。');
   if(!confirmReplace())return false;
   player.stop();state.title=String(s.title);state.source=String(s.source||'取り込んだ練習');state.provenance=s.provenance||null;state.notes=clone(s.notes);state.model=clone(s.model);state.bars=parsed;state.applied={min,max,level:s.level,key:s.targetKey,full:s.count==='all'};state.offset=s.start-1;state.selected=0;state.dirty=false;
-  $('chords').value=s.chords;$('source-key').value=s.sourceKey;$('target-key').value=s.targetKey;$('min-fret').value=min;$('max-fret').value=max;$('start-bar').value=s.start;$('bar-count').value=s.count;syncLengthMode();$('song-select').value='';state.songId='';$('source-note').textContent=state.source;setLevel(s.level);updateTempo(s.bpm);state.inputError=false;$('error').hidden=true;render();renderPlaybackRange({reset:true});return true;
+  $('chords').value=s.chords;$('source-key').value=s.sourceKey;$('target-key').value=s.targetKey;$('min-fret').value=min;$('max-fret').value=max;$('start-bar').value=s.start;$('bar-count').value=s.count;syncLengthMode();$('song-select').value='';state.songId=s.songId||null;$('source-note').textContent=state.source;setLevel(s.level);updateTempo(s.bpm);state.inputError=false;$('error').hidden=true;render();renderPlaybackRange({reset:true});return true;
 }
 function renderSongs(query=''){
   const selected=$('song-select').value;
@@ -135,13 +140,19 @@ $('play').onclick=async()=>{
   try{
     updateTempo($('bpm').value);
     renderPlaybackRange();const range=playbackRange();playbackOffset=range.from;
-    const startup=player.play(clone(state.notes.slice(range.from,range.to)),audioOptions);
+    const bars=state.bars.slice(range.from/4,range.to/4);
+    const melody=blueBossaMelody(bars,state.offset+range.from/4,state.applied.key,state.songId);
+    const startup=player.play(clone(state.notes.slice(range.from,range.to)),audioOptions,clone(bars),melody);
     button.textContent='…';button.setAttribute('aria-label','音源を準備中');$('play-state').textContent='音源を準備中';
     const started=await startup;
     if(started){button.textContent='■';button.setAttribute('aria-label','停止');$('play-state').textContent='PLAYING';}
   }catch(e){player.stop();error(new Error('ベース音源を再生できませんでした。再読み込みしてお試しください。'));}
   finally{button.disabled=false;}
 };
+for(const name of ['bass','piano','drums','melody']){
+  $(name).addEventListener('change',()=>player.updateMix(audioOptions()));
+  $(name+'-volume').addEventListener('input',()=>{player.updateMix(audioOptions());$(name+'-volume-value').textContent=$(name+'-volume').value+'%';});
+}
 $('bpm').onchange=e=>updateTempo(e.target.value);$('tempo-slider').oninput=e=>updateTempo(e.target.value);
 for(const id of ['playback-start','playback-length'])$(id).onchange=()=>{player.stop();renderPlaybackRange();};
 $('playback-selected').onclick=()=>{player.stop();$('playback-start').value=state.offset+Math.floor(state.selected/4)+1;renderPlaybackRange();};
@@ -153,6 +164,19 @@ for(const [id,collection] of [['standard-songs','standards'],['all-songs','all']
 $('song-select').onchange=()=>{if(!confirmReplace()){$('song-select').value=state.songId||'';return;}state.songId=$('song-select').value;state.dirty=true;const s=state.songs.find(s=>String(s.id)===$('song-select').value);if(!s)return;player.stop();state.title=s.title;state.provenance=s.provenance||null;state.source=s.provenance?`${s.provenance.dataset} / ${s.provenance.license} / 非商用の練習用`:`Weimar Jazz Database / ${s.performer} / 資料ID ${s.id}`;$('source-note').textContent=state.source;$('chords').value=s.chords;$('start-bar').value=1;$('bar-count').value='all';syncLengthMode();const key=s.key.split('-')[0];const equivalent={ 'C#':'Db','D#':'Eb','F#':'Gb','G#':'Ab','A#':'Bb','Cb':'B' };$('source-key').value=equivalent[key]||key||'C';$('target-key').value=$('source-key').value;if(!s.supported){error(new Error('この資料には初版未対応の拍子・コード表記があります。進行を編集するか別の曲を選んでください。'));return;}generate({confirmed:true});};
 $('chords').oninput=()=>{state.dirty=true;player.stop();state.title='手入力の練習';state.source=state.provenance?`${state.provenance.dataset}から編集 / ${state.provenance.license}`:'手入力のコード進行';$('song-select').value='';state.songId='';$('source-note').textContent=state.source;};
 for(const id of ['source-key','target-key','min-fret','max-fret','start-bar','bar-count'])$(id).addEventListener('change',()=>{state.dirty=true;player.stop();});
+$('tips-open').onclick=()=>{
+  player.stop();
+  $('tips-dialog').showModal();
+  $('tips-dialog').scrollTop=0;
+  $('tips-open').setAttribute('aria-expanded','true');
+};
+$('tips-dialog').addEventListener('close',()=>$('tips-open').setAttribute('aria-expanded','false'));
+$('tips-dialog').addEventListener('click',e=>{
+  if(e.target!==$('tips-dialog'))return;
+  const r=e.target.getBoundingClientRect();
+  if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();
+});
+$('tips-done').onclick=()=>$('tips-dialog').close();
 $('import-open').onclick=()=>$('import-dialog').showModal();
 document.querySelectorAll('.dialog-close').forEach(b=>b.onclick=()=>b.closest('dialog').close());
 $('import-file').onchange=async e=>{

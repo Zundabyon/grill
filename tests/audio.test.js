@@ -13,7 +13,7 @@ test('stop during sample loading prevents delayed playback from starting',async(
   let release;
   const loading=new Promise(resolve=>{release=resolve;});
   const player=new Player(()=>{},()=>{});
-  player.ctx={resume:async()=>{},currentTime:0};
+  player.ctx={resume:async()=>{},currentTime:0,createGain:()=>({connect(){},gain:{setTargetAtTime(){}}})};
   player.sampler={prepare:()=>loading,stop:()=>{}};
   const starting=player.play([{midi:28}],()=>({countIn:false}));
   await Promise.resolve();
@@ -23,7 +23,7 @@ test('stop during sample loading prevents delayed playback from starting',async(
 
 test('failed sample load is retryable without starting the transport',async()=>{
   const player=new Player(()=>{},()=>{});
-  player.ctx={resume:async()=>{},currentTime:0};
+  player.ctx={resume:async()=>{},currentTime:0,createGain:()=>({connect(){},gain:{setTargetAtTime(){}}})};
   player.sampler={prepare:async()=>{throw new Error('load failed');},stop:()=>{}};
   await assert.rejects(player.play([{midi:28}],()=>({countIn:false})),/load failed/);
   assert.equal(player.active,false);
