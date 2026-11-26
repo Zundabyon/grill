@@ -1,6 +1,7 @@
 import {TUNING,STRINGS,mod,noteName,chordNoteName,pitchClass,parseProgression,transposeBars,generateLine,explainNote} from './music.js';
 import {musicXMLToProgression} from './import.js';
 import {Player,normalizeTempo} from './audio.js';
+import {suggestFingering,handShape,FINGER_NAMES,FINGER_SHORT} from './fingering.js';
 import {blueBossaMelody} from './melody.js';
 import {standardSongs,filterSongs} from './catalog.js';
 const $=id=>document.getElementById(id);
@@ -19,6 +20,7 @@ const player=new Player(i=>{
   document.querySelectorAll('.tab-note.playing').forEach(e=>e.classList.remove('playing'));
   if(i<0){$('play-state').textContent=`COUNT ${i+5} / 4`;return;}
   i+=playbackOffset;
+  if($('follow-fingering').checked)selectNote(i);
   const playing=document.querySelector(`[data-note="${i}"]`);
   playing?.classList.add('playing');
   if(playing){
@@ -41,15 +43,20 @@ function renderPlaybackRange({reset=false}={}){
   $('playback-start').min=first;$('playback-start').max=last;
   if(reset){$('playback-start').value=first;$('playback-length').value='all';}
   const range=playbackRange();$('playback-start').value=range.start;
+  state.guideRange=range;
   $('playback-summary').textContent=`${range.start}–${state.offset+range.to/4}小節を再生`;
   document.querySelectorAll('.measure').forEach((e,b)=>e.classList.toggle('in-playback-range',b*4>=range.from&&b*4<range.to));
+  const options={style:state.applied?.handStyle||'compact',difficulty:state.applied?.level||'easy',loop:$('loop').checked};
+  state.fingerGuide=suggestFingering(state.notes,options);
+  state.rangeFingerGuide=range.from===0&&range.to===state.notes.length?state.fingerGuide:suggestFingering(state.notes.slice(range.from,range.to),options);
+  renderFretboard();
 }
 function readSettings(){
   const full=$('bar-count').value==='all';
   const min=Number($('min-fret').value),max=Number($('max-fret').value),start=full?1:Number($('start-bar').value);
   if(!Number.isInteger(start)||start<1)throw new Error('開始小節は1以上の整数にしてください。');
   if($('min-fret').value===''||$('max-fret').value==='')throw new Error('フレット範囲を入力してください。');
-  return {min,max,start,full,difficulty:state.level,seed:state.seed};
+  return {min,max,start,full,difficulty:state.level,seed:state.seed,handStyle:$('hand-style').value};
 }
 function syncLengthMode(){const full=$('bar-count').value==='all';$('start-bar').disabled=full;if(full)$('start-bar').value=1;}
 function generate({keepSeed=false,confirmed=false}={}) {
@@ -63,7 +70,7 @@ function generate({keepSeed=false,confirmed=false}={}) {
     if(!keepSeed)state.seed++;
     const notes=generateLine(selected,{...settings,seed:state.seed});
     player.stop();state.bars=selected;state.notes=notes;state.model=clone(notes);state.selected=0;state.offset=settings.start-1;
-    state.applied={min:settings.min,max:settings.max,level:state.level,key:$('target-key').value,full:settings.full};state.dirty=false;
+    state.applied={min:settings.min,max:settings.max,level:state.level,key:$('target-key').value,full:settings.full,handStyle:settings.handStyle};state.dirty=false;
     state.inputError=false;$('error').hidden=true;render();renderPlaybackRange({reset:true});$('score').scrollTop=0;
     return true;
   }catch(e){state.inputError=true;error(e);return false;}
@@ -82,20 +89,55 @@ function render(){
     const cs=bar.map((c,i)=>i===0||bar[i-1].symbol!==c.symbol?`<span style="grid-column:${i+1}/span ${(()=>{let n=1;while(i+n<4&&bar[i+n].symbol===c.symbol)n++;return n;})()}">${escape(c.symbol)}</span>`:'').join('');
     return `<div class="measure"><div class="measure-head"><span class="measure-num">${String(state.offset+b+1).padStart(2,'0')}</span></div><div class="measure-chords">${cs}</div><div class="tab-staff"><div class="string-labels" aria-hidden="true">${STRINGS.map((name,s)=>`<span>${s+1}弦 ${name}${s===0?' 細':s===3?' 太':''}</span>`).join('')}</div>${state.notes.slice(b*4,b*4+4).map((n,j)=>{const i=b*4+j,info=explainNote(n,i,state.notes,state.bars);return `<button class="tab-note ${i===state.selected?'selected':''} ${n.midi!==state.model[i]?.midi||n.string!==state.model[i]?.string?'edited':''}" data-note="${i}" aria-label="${state.offset+b+1}小節 ${j+1}拍 ${n.rest?'休符':stringLabel(n.string)+' '+n.fret+'フレット '+chordNoteName(n.midi,state.bars[b][j])+' '+info.role}" aria-pressed="${i===state.selected}"><span class="fret-number" style="--string:${n.rest?1:n.string}">${n.rest?'−':n.fret}</span></button>`;}).join('')}</div><div class="beat-numbers"><span>1</span><span>2</span><span>3</span><span>4</span></div></div>`;
   }).join('');
-  renderFretboard();
   renderPlaybackRange();
+}
+function guideAt(index){
+  const range=state.guideRange||playbackRange();
+  return index>=range.from&&index<range.to?state.rangeFingerGuide?.[index-range.from]:state.fingerGuide?.[index];
+}
+function nextNoteIndex(index){
+  const range=state.guideRange||playbackRange(),inside=index>=range.from&&index<range.to;
+  const end=inside?range.to:state.notes.length,start=inside?range.from:0;
+  return index+1<end?index+1:$('loop').checked?start:null;
+}
+function selectNote(index){
+  if(index<0||index>=state.notes.length)return;
+  state.selected=index;
+  document.querySelectorAll('[data-note]').forEach(n=>{
+    const selected=Number(n.dataset.note)===index;
+    n.classList.toggle('selected',selected);n.setAttribute('aria-pressed',String(selected));
+  });
+  renderFretboard();
 }
 function renderFretboard(){
   const n=state.notes[state.selected];if(!n)return;
   const chord=state.bars.flat()[state.selected],info=explainNote(n,state.selected,state.notes,state.bars),{min,max}=state.applied;
+  const guide=guideAt(state.selected),nextIndex=nextNoteIndex(state.selected),next=nextIndex===null?null:state.notes[nextIndex],nextGuide=nextIndex===null?null:guideAt(nextIndex);
+  const shape=handShape(state.applied.handStyle),position=guide?.position;
   const count=max-min+1;
   $('selected-position').textContent=`${state.offset+Math.floor(state.selected/4)+1}小節 · ${state.selected%4+1}拍${n.rest?'':` / ${stringLabel(n.string)} ${n.fret}フレット`}`;
+  $('finger-current').textContent=n.rest?'休符':n.fret===0?'開放弦：押さえない':`左手の目安：${FINGER_NAMES[guide?.finger]||'—'}`;
+  $('finger-position').textContent=n.rest?'左手を休めて、次の音を確認しましょう。':n.fret===0?'弦を押さえずに弾きます。':`手の位置の目安：${shape.map((f,i)=>`${FINGER_SHORT[f]} ${position+i}F`).join(' ／ ')}${guide?.shift?` · 前の音から${Math.abs(guide.shift)}フレット${guide.shift>0?'高い方':'低い方'}へ移動`:''}`;
+  $('finger-next-note').textContent=!next?'区間の最後の音です。':next.rest?'次は休符です。':`次：${state.offset+Math.floor(nextIndex/4)+1}小節 ${nextIndex%4+1}拍 · ${stringLabel(next.string)} ${next.fret}F · ${FINGER_NAMES[nextGuide?.finger]||'—'}`;
+  $('finger-warning').textContent=guide?.warning||'';$('finger-warning').hidden=!guide?.warning;
+  const range=playbackRange(),inside=state.selected>=range.from&&state.selected<range.to;
+  $('finger-prev').disabled=state.selected===(inside?range.from:0);
+  $('finger-next').disabled=nextIndex===null;
   $('selected-note').innerHTML=n.rest?'−<span>REST</span>':`${escape(chordNoteName(n.midi,chord))}<span>${n.midi===state.model[state.selected]?.midi?'MODEL':'YOUR NOTE'}</span>`;
   $('note-role').textContent=info.role;$('note-reason').textContent=info.text;
   $('edit-help').textContent=state.mode==='edit'?'指板の好きな位置をクリック。選んだ音を聴いて、前後のつながりを試しましょう。':'「自分で変える」に切り替えると、指板をクリックして音を変更できます。';
   $('fretboard').classList.toggle('editable',state.mode==='edit');
   $('fretboard').style.gridTemplateColumns=`84px repeat(${count},minmax(34px,1fr))`;
-  $('fretboard').innerHTML='<div class="fret-head"></div>'+Array.from({length:count},(_,i)=>`<div class="fret-head">${i+min===0?'OPEN':i+min}</div>`).join('')+TUNING.map((open,s)=>`<div class="string-name"><span>${stringLabel(s)}</span>${s===0?'<small>一番細い弦</small>':s===3?'<small>一番太い弦</small>':''}</div>`+Array.from({length:count},(_,i)=>{const fret=i+min,midi=open+fret,current=!n.rest&&n.string===s&&n.fret===fret;return `<button ${state.mode==='edit'&&!chord.rest?'':'disabled'} data-string="${s}" data-fret="${fret}" class="fret-cell ${chord.pcs.includes(mod(midi))?'chord-tone':''} ${current?'current':''}" style="--thickness:${1+s*.45}px" aria-label="${stringLabel(s)} ${fret}フレット ${chordNoteName(midi,chord)}"><span>${escape(chordNoteName(midi,chord))}</span></button>`;}).join('')).join('');
+  $('fretboard').innerHTML='<div class="fret-head"></div>'+Array.from({length:count},(_,i)=>{
+    const fret=i+min,inHand=!n.rest&&n.fret>0&&fret>=position&&fret<position+shape.length;
+    return `<div class="fret-head ${inHand?'hand-position':''}">${fret===0?'OPEN':fret}</div>`;
+  }).join('')+TUNING.map((open,s)=>`<div class="string-name"><span>${stringLabel(s)}</span>${s===0?'<small>一番細い弦</small>':s===3?'<small>一番太い弦</small>':''}</div>`+Array.from({length:count},(_,i)=>{
+    const fret=i+min,midi=open+fret,current=!n.rest&&n.string===s&&n.fret===fret;
+    const upcoming=next&&!next.rest&&next.string===s&&next.fret===fret;
+    const finger=!n.rest&&n.fret>0&&s===n.string&&fret>=position&&fret<position+shape.length?shape[fret-position]:null;
+    const label=current&&guide?` · ${FINGER_NAMES[guide.finger]||''}（目安）`:upcoming?' · 次の音':'';
+    return `<button ${state.mode==='edit'&&!chord.rest?'':'disabled'} data-string="${s}" data-fret="${fret}" class="fret-cell ${chord.pcs.includes(mod(midi))?'chord-tone':''} ${finger?'finger-shape':''} ${upcoming?'next-note':''} ${current?'current':''}" style="--thickness:${1+s*.45}px" aria-label="${stringLabel(s)} ${fret}フレット ${chordNoteName(midi,chord)}${label}"><span>${current?escape(chordNoteName(midi,chord))+(n.fret>0?`<sup>${FINGER_SHORT[guide?.finger]||''}</sup>`:''):finger?FINGER_SHORT[finger]:escape(chordNoteName(midi,chord))}</span></button>`;
+  }).join('')).join('');
 }
 function setMode(mode){state.mode=mode;for(const m of ['model','edit']){$(m+'-mode').classList.toggle('active',m===mode);$(m+'-mode').setAttribute('aria-pressed',String(m===mode));}renderFretboard();}
 function setLevel(level){state.level=level;document.querySelectorAll('[data-level]').forEach(b=>{b.classList.toggle('active',b.dataset.level===level);b.setAttribute('aria-pressed',String(b.dataset.level===level));});$('difficulty-hint').textContent={easy:'近いポジションを中心に、構成音とつなぎを練習。',normal:'移動の制約をゆるめ、つなぎ方の選択肢を増やします。',hard:'広い動きも候補に。テンポはゆっくりでも大丈夫。'}[level];}
@@ -115,8 +157,8 @@ function loadPractice(s){
   if(!Number.isInteger(min)||!Number.isInteger(max)||min<0||max>20||max<min||!['easy','normal','hard'].includes(s.level)||!Number.isInteger(s.start)||s.start<1)throw new Error('保存データの設定が不正です。');
   if(![...$('source-key').options].some(o=>o.value===s.sourceKey)||![...$('target-key').options].some(o=>o.value===s.targetKey))throw new Error('保存データのキーが不正です。');
   if(!confirmReplace())return false;
-  player.stop();state.title=String(s.title);state.source=String(s.source||'取り込んだ練習');state.provenance=s.provenance||null;state.notes=clone(s.notes);state.model=clone(s.model);state.bars=parsed;state.applied={min,max,level:s.level,key:s.targetKey,full:s.count==='all'};state.offset=s.start-1;state.selected=0;state.dirty=false;
-  $('chords').value=s.chords;$('source-key').value=s.sourceKey;$('target-key').value=s.targetKey;$('min-fret').value=min;$('max-fret').value=max;$('start-bar').value=s.start;$('bar-count').value=s.count;syncLengthMode();$('song-select').value='';state.songId=s.songId||null;$('source-note').textContent=state.source;setLevel(s.level);updateTempo(s.bpm);state.inputError=false;$('error').hidden=true;render();renderPlaybackRange({reset:true});return true;
+  player.stop();state.title=String(s.title);state.source=String(s.source||'取り込んだ練習');state.provenance=s.provenance||null;state.notes=clone(s.notes);state.model=clone(s.model);state.bars=parsed;state.applied={min,max,level:s.level,key:s.targetKey,full:s.count==='all',handStyle:s.applied?.handStyle==='four'?'four':'compact'};state.offset=s.start-1;state.selected=0;state.dirty=false;
+  $('hand-style').value=state.applied.handStyle;$('chords').value=s.chords;$('source-key').value=s.sourceKey;$('target-key').value=s.targetKey;$('min-fret').value=min;$('max-fret').value=max;$('start-bar').value=s.start;$('bar-count').value=s.count;syncLengthMode();$('song-select').value='';state.songId=s.songId||null;$('source-note').textContent=state.source;setLevel(s.level);updateTempo(s.bpm);state.inputError=false;$('error').hidden=true;render();renderPlaybackRange({reset:true});return true;
 }
 function renderSongs(query=''){
   const selected=$('song-select').value;
@@ -133,7 +175,10 @@ $('source-key').value='C';$('target-key').value='C';
 $('generate').onclick=()=>generate();$('regenerate').onclick=()=>generate();
 document.querySelectorAll('[data-level]').forEach(b=>b.onclick=()=>{state.dirty=true;setLevel(b.dataset.level);const defaults={easy:5,normal:9,hard:12};$('max-fret').value=defaults[state.level];if(Number($('min-fret').value)>defaults[state.level])$('min-fret').value=0;});
 $('model-mode').onclick=()=>setMode('model');$('edit-mode').onclick=()=>setMode('edit');
-$('score').onclick=e=>{const b=e.target.closest('[data-note]');if(!b)return;state.selected=Number(b.dataset.note);document.querySelectorAll('[data-note]').forEach(n=>{const selected=Number(n.dataset.note)===state.selected;n.classList.toggle('selected',selected);n.setAttribute('aria-pressed',String(selected));});renderFretboard();};
+$('score').onclick=e=>{const b=e.target.closest('[data-note]');if(b)selectNote(Number(b.dataset.note));};
+$('finger-prev').onclick=()=>{player.stop();selectNote(state.selected-1);};
+$('finger-next').onclick=()=>{const next=nextNoteIndex(state.selected);if(next!==null){player.stop();selectNote(next);}};
+$('loop').addEventListener('change',()=>renderPlaybackRange());
 $('fretboard').onclick=async e=>{const cell=e.target.closest('[data-fret]');if(!cell||state.mode!=='edit'||cell.disabled)return;player.stop();const string=Number(cell.dataset.string),fret=Number(cell.dataset.fret),midi=TUNING[string]+fret;state.notes[state.selected]={...state.notes[state.selected],rest:false,string,fret,midi};render();try{await player.preview(midi);}catch{toast('音声を再生できませんでした。ブラウザの音声設定を確認してください。');}};
 $('restore').onclick=()=>{if(!confirmReplace())return;player.stop();state.notes=clone(state.model);render();toast('お手本に戻しました');};
 $('play').onclick=async()=>{
@@ -165,7 +210,7 @@ $('song-search').oninput=e=>renderSongs(e.target.value);
 for(const [id,collection] of [['standard-songs','standards'],['all-songs','all']])$(id).onclick=()=>{state.collection=collection;for(const [button,value] of [['standard-songs','standards'],['all-songs','all']]){$(button).classList.toggle('active',value===collection);$(button).setAttribute('aria-pressed',String(value===collection));}renderSongs($('song-search').value);};
 $('song-select').onchange=()=>{if(!confirmReplace()){$('song-select').value=state.songId||'';return;}state.songId=$('song-select').value;state.dirty=true;const s=state.songs.find(s=>String(s.id)===$('song-select').value);if(!s)return;player.stop();state.title=s.title;state.provenance=s.provenance||null;state.source=s.provenance?`${s.provenance.dataset} / ${s.provenance.license} / 非商用の練習用`:`Weimar Jazz Database / ${s.performer} / 資料ID ${s.id}`;$('source-note').textContent=state.source;$('chords').value=s.chords;$('start-bar').value=1;$('bar-count').value='all';syncLengthMode();const key=s.key.split('-')[0];const equivalent={ 'C#':'Db','D#':'Eb','F#':'Gb','G#':'Ab','A#':'Bb','Cb':'B' };$('source-key').value=equivalent[key]||key||'C';$('target-key').value=$('source-key').value;if(!s.supported){error(new Error('この資料には初版未対応の拍子・コード表記があります。進行を編集するか別の曲を選んでください。'));return;}generate({confirmed:true});};
 $('chords').oninput=()=>{state.dirty=true;player.stop();state.title='手入力の練習';state.source=state.provenance?`${state.provenance.dataset}から編集 / ${state.provenance.license}`:'手入力のコード進行';$('song-select').value='';state.songId='';$('source-note').textContent=state.source;};
-for(const id of ['source-key','target-key','min-fret','max-fret','start-bar','bar-count'])$(id).addEventListener('change',()=>{state.dirty=true;player.stop();});
+for(const id of ['source-key','target-key','min-fret','max-fret','start-bar','bar-count','hand-style'])$(id).addEventListener('change',()=>{state.dirty=true;player.stop();});
 $('tips-open').onclick=()=>{
   player.stop();
   $('tips-dialog').showModal();

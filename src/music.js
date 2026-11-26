@@ -1,3 +1,4 @@
+import {fingeringOptions,movementCost} from './fingering.js';
 export const TUNING = [43, 38, 33, 28]; // TAB order: G D A E, sounding MIDI
 export const STRINGS = ['G', 'D', 'A', 'E'];
 const SHARP = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
@@ -58,38 +59,51 @@ export function positions(min=0,max=5) {
 }
 function random(seed) { return () => { seed = (Math.imul(seed,1664525)+1013904223)>>>0; return seed/4294967296; }; }
 const distance = (a,b) => Math.min(mod(a-b),mod(b-a));
-// Teaching model: roots on changes, chord tones on strong beats, neighbor approaches.
-// Beam search scores the complete cyclic phrase, including the final-to-first transition.
-export function generateLine(bars,{min=0,max=5,difficulty='easy',seed=1}={}) {
-  const choices = positions(min,max), rand=random(seed);
-  const flat=bars.flat();
-  if (!flat.length) throw new Error('練習する小節を選んでください。');
-  const strong= difficulty === 'easy' ? 3.5 : difficulty === 'normal' ? 1.7 : .7;
-  const candidates=flat.map((c,i)=> {
-    if(c.rest) return [{rest:true,midi:null,string:null,fret:null}];
-    const change=i===0 || flat[i-1].symbol !== c.symbol || i%4===0;
+// Choose notes, strings and a left-hand position together. A small beam keeps
+// whole-song generation bounded; costs are preferences, not playability guarantees.
+export function generateLine(bars,{min=0,max=5,difficulty='easy',seed=1,handStyle='compact'}={}) {
+  const choices=positions(min,max),rand=random(seed),flat=bars.flat();
+  if(!flat.length)throw new Error('練習する小節を選んでください。');
+  const candidates=flat.map((chord,i)=>{
+    if(chord.rest)return [{rest:true,midi:null,string:null,fret:null,finger:null,position:null,bar:Math.floor(i/4),beat:i%4,local:0}];
+    const change=i===0||i%4===0||flat[i-1].symbol!==chord.symbol;
     const next=flat[(i+1)%flat.length];
-    const approach=!next.rest && (i%4===3 || next.symbol!==c.symbol);
-    let pool=choices.filter(p=> change ? mod(p.midi)===c.bass : approach ? ((distance(mod(p.midi),next.bass)>0 && distance(mod(p.midi),next.bass)<=2) || c.pcs.includes(mod(p.midi))) : c.pcs.includes(mod(p.midi)));
-    if (!pool.length) throw new Error(`「${c.symbol}」の音をこの範囲で押さえられません。フレット範囲を広げてください。`);
-    return pool.map(p=>({...p,local:(change?0:approach ? distance(mod(p.midi),next.bass)===1 ? -3 : distance(mod(p.midi),next.bass)===2 ? -1 : 1 : 0)+rand()* (difficulty==='easy'?2:4)}));
+    const approach=!next.rest&&(i%4===3||next.symbol!==chord.symbol);
+    const pool=choices.filter(p=>change?mod(p.midi)===chord.bass:chord.pcs.includes(mod(p.midi))||(approach&&distance(p.midi,next.bass)>0&&distance(p.midi,next.bass)<=2));
+    if(!pool.length)throw new Error(`「${chord.symbol}」の音をこの範囲で押さえられません。フレット範囲を広げてください。`);
+    return pool.flatMap(p=>{
+      const interval=mod(p.midi-chord.root),neighbor=approach?distance(p.midi,next.bass):0;
+      const color=!change&&chord.pcs.includes(mod(p.midi))?([3,4,10,11].includes(interval)?-.8:interval===0?.6:0):0;
+      const local=color+(approach?(neighbor===1?-1.6:neighbor===2?-.7:.3):0)+Math.max(0,p.midi-48)*.2+rand()*({easy:.35,normal:.8,hard:1.5}[difficulty]||.35);
+      return fingeringOptions(p,handStyle).map(n=>({...n,bar:Math.floor(i/4),beat:i%4,local}));
+    });
   });
-  let beam=[{notes:[],score:0,last:null}];
-  for (let i=0;i<flat.length;i++) {
-    const paths=[];
-    for (const path of beam) for (const p of candidates[i]) {
-      const prev=path.last;
-      let transition = p.rest || !prev ? 0 : Math.abs(p.fret-prev.fret)*strong + Math.abs(p.string-prev.string)*1.7 + Math.abs(p.midi-prev.midi)*.28 + (p.midi===prev.midi ? 15:0);
-      const score=path.score+transition+(p.local||0)+(p.rest?0:Math.max(0,p.midi-48)*.25);
-      paths.push({notes:[...path.notes,{...p,bar:Math.floor(i/4),beat:i%4}],score,last:p.rest?null:p});
+  const connection=(previous,next,index)=>{
+    if(!previous||previous.rest||next.rest)return 0;
+    const chord=flat[index],target=flat[(index+1)%flat.length];
+    const boundary=index%4===3||target.symbol!==chord.symbol;
+    // An octave-displaced neighbor is not a stepwise approach in sounding pitch.
+    return boundary&&!chord.pcs.includes(mod(previous.midi))&&Math.abs(previous.midi-next.midi)>2?18:0;
+  };
+  let beam=[{note:null,previous:null,first:null,score:0}];
+  for(let i=0;i<flat.length;i++){
+    const paths=new Map();
+    for(const path of beam)for(const option of candidates[i]){
+      const note=option.fret===0?{...option,position:path.note?.position||null}:option;
+      const score=path.score+note.local+movementCost(path.note,note,difficulty)+(i?connection(path.note,note,i-1):0);
+      const key=note.rest?'rest':`${note.string}:${note.fret}:${note.position}`;
+      if(!paths.has(key)||score<paths.get(key).score)paths.set(key,{note,previous:path,first:path.first||note,score});
     }
-    paths.sort((a,b)=>a.score-b.score); beam=paths.slice(0,32);
+    beam=[...paths.values()].sort((a,b)=>a.score-b.score).slice(0,48);
   }
-  beam.sort((a,b)=>{
-    const wrap=p=>{const first=p.notes[0],last=p.notes.at(-1);return first.rest||last.rest?0:Math.abs(first.fret-last.fret)*strong+Math.abs(first.midi-last.midi)*.4;};
-    return a.score+wrap(a)-b.score-wrap(b);
-  });
-  return beam[0].notes.map(({local,...n})=>n);
+  const total=p=>p.score+movementCost(p.note,p.first,difficulty)+connection(p.note,p.first,flat.length-1);
+  beam.sort((a,b)=>total(a)-total(b));
+  const notes=[];
+  for(let path=beam[0];path?.note;path=path.previous){
+    const {local,finger,position,...note}=path.note;
+    notes.push(note);
+  }
+  return notes.reverse();
 }
 // Degree and spelling follow chord function, independently of sounding octave.
 export function chordTone(chord, midi) {
