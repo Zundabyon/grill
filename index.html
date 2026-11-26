@@ -47,7 +47,8 @@
             <div class="mixer-part"><label><input id="melody" aria-describedby="melody-help" type="checkbox" checked disabled>メロディ</label><input id="melody-volume" aria-label="メロディ音量" type="range" min="0" max="100" value="45" disabled><output id="melody-volume-value" for="melody-volume">45%</output></div>
           </div><p id="melody-help" class="band-hint"></p><p class="band-hint">ベースをオフにすると、ピアノとドラムをバックに練習できます。</p>
           <p class="sound-credit">エレキベース録音音源 · <a href="./assets/bass-electric/NOTICE.md" target="_blank">Karoryfer / tonejs-instruments · CC BY 3.0</a></p>
-          <div id="score" class="tab-score" aria-label="ベースTAB譜"></div>
+          <div class="string-guide" id="string-guide"><b>TABは上から、細い弦 → 太い弦</b><span>1弦 G（ソ）：一番細い弦 ／ 4弦 E（ミ）：一番太い弦</span><span>上から G（ソ）・D（レ）・A（ラ）・E（ミ）の順です</span><span>数字は押さえるフレット。0は何も押さえずに弾きます。</span></div>
+          <div id="score" class="tab-score" aria-label="ベースTAB譜" aria-describedby="string-guide"></div>
           <div class="score-footer"><span><i class="legend-dot"></i> 音を選ぶと、押さえる場所と理由がわかります</span><button id="restore" class="text-button" hidden>お手本に戻す</button></div>
 
         </section>
