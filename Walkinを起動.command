@@ -5,7 +5,7 @@ if ! command -v node >/dev/null 2>&1; then
   read -r "?Enterキーで閉じます。"
   exit 1
 fi
-echo "Grillを起動します。このターミナルを開いている間、練習できます。"
+echo "Walkin'を起動します。このターミナルを開いている間、練習できます。"
 echo "終了するときは Control + C を押してください。"
 node scripts/serve.mjs --open
 if [[ $? -ne 0 ]]; then

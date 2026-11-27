@@ -15,7 +15,7 @@ const server = createServer(async (req, res) => {
 });
 server.listen(Number(process.env.PORT || 5173), '127.0.0.1', () => {
   const url=`http://127.0.0.1:${server.address().port}`;
-  console.log(`Grill: ${url}`);
+  console.log(`Walkin': ${url}`);
   if(process.argv.includes('--open') && process.platform==='darwin') {
     const browser=spawn('open',[url],{stdio:'ignore'});
     browser.on('error',()=>console.log('ブラウザで上のURLを開いてください。'));
