@@ -240,6 +240,8 @@ $('import-file').onchange=async e=>{
 };
 function applyImport(data){if(!confirmReplace())return false;player.stop();state.title=String(data.title||'取り込んだ練習');state.provenance=data.provenance||null;state.source=state.provenance?`${state.provenance.dataset} / ${state.provenance.license}`:'端末内で取り込んだコード進行';$('chords').value=data.chords;$('source-note').textContent=state.source;$('start-bar').value=1;$('bar-count').value='all';syncLengthMode();$('song-select').value='';state.songId='';const key=data.key||'C';const equivalent={'C#':'Db','D#':'Eb','F#':'Gb','G#':'Ab','A#':'Bb','Cb':'B'};$('source-key').value=equivalent[key]||key;$('target-key').value=$('source-key').value;return generate({confirmed:true});}
 window.addEventListener('keydown',e=>{if(e.code==='Space'&&!['INPUT','TEXTAREA','SELECT','BUTTON'].includes(document.activeElement.tagName)&&!document.querySelector('dialog[open]')){e.preventDefault();$('play').click();}});
+document.querySelector('.brand').onclick=e=>{if(!confirmReplace())e.preventDefault();else player.stop();};
+window.addEventListener('pagehide',()=>player.stop());
 document.addEventListener('visibilitychange',()=>{if(document.hidden)player.stop();});
 $('saved-count').textContent=saved().length;
 $('bar-count').addEventListener('change',syncLengthMode);
