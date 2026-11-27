@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Walkin' — 音符のオタマジャクシ</title>
+  <g transform="translate(29 37) scale(1.8)">
+    <path fill="#bd7a27" d="M3-8C4-16 9-17 12-17L11-14C6-14 7-10 6-5C10-1 7 5 1 7C-5 9-10 6-10 2C-10-3-4-8 3-8Z"/>
+    <g fill="#fff4db"><circle cx="-3" cy=".5" r="1.8"/><circle cx="2" cy=".5" r="1.8"/></g>
+    <g fill="#303d33"><circle cx="-2.6" cy=".8" r=".7"/><circle cx="2.4" cy=".8" r=".7"/></g>
+    <path d="M-2.5 4Q-.5 5.5 1.5 4" fill="none" stroke="#303d33" stroke-width=".65" stroke-linecap="round"/>
+  </g>
+</svg>

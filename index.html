@@ -5,15 +5,27 @@
   <meta name="theme-color" content="#f5f1e9">
   <meta name="description" content="Walkin' -ウォーキングベースの練習帳-。お手本から、あなたのラインへ。ウォーキングベースを自分でつなげるための練習室。">
   <title>Walkin' -ウォーキングベースの練習帳-</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23b54b32'/%3E%3Cpath d='M16 22h32M16 32h32M16 42h32M24 14v36M40 14v36' stroke='%23fff8ed' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="./assets/brand/favicon.svg">
   <link rel="stylesheet" href="./src/style.css"><script type="module" src="./src/app.js"></script>
 </head>
 <body>
   <div id="file-open-hint" class="file-open-hint" hidden role="alert"><strong>Walkin'を起動してから開いてください。</strong>このフォルダの「Walkinを起動.command」をダブルクリックすると、練習用のURLが開きます。HTMLを直接開いた状態では、再生や曲の読み込みは動きません。</div>
   <script>if(location.protocol==='file:')document.getElementById('file-open-hint').hidden=false;</script>
-  <header class="topbar"><a class="brand" href="./" aria-label="Walkin' ホーム"><span class="brand-mark">▦</span>Walkin<span class="brand-dot">'</span></a><span class="top-caption">ウォーキングベースの練習帳</span><span class="tuning-badge"><i></i>4 STRING · E A D G</span><button id="tips-open" class="tips-toggle" aria-label="ウォーキングベースの基本とTipsを開く" aria-haspopup="dialog" aria-controls="tips-dialog" aria-expanded="false"><span class="hamburger" aria-hidden="true"><i></i><i></i><i></i></span><span>Tips</span></button></header>
+  <header class="topbar"><a class="brand" href="./" aria-label="Walkin' ホーム"><img class="brand-mascot" src="./assets/brand/walkin-mark.svg" alt="" width="38" height="38"><span class="brand-wordmark">walkin’</span></a><span class="top-caption">ウォーキングベースの練習帳</span><span class="tuning-badge"><i></i>4 STRING · E A D G</span><button id="tips-open" class="tips-toggle" aria-label="ウォーキングベースの基本とTipsを開く" aria-haspopup="dialog" aria-controls="tips-dialog" aria-expanded="false"><span class="hamburger" aria-hidden="true"><i></i><i></i><i></i></span><span>Tips</span></button></header>
   <main>
-    <section class="intro"><div><p class="eyebrow">YOUR DAILY PRACTICE ROOM</p><h1>お手本から、<em>あなたのラインへ。</em></h1><p class="intro-text">聴く。弾く。ひとつ変えてみる。次のコードへの道を、自分のものに。</p></div><div class="intro-aside"><span class="staff-icon">♩</span><span>ONE NOTE AT A TIME<br><b>今日は、1曲通して。</b></span></div></section>
+    <section class="intro"><div><p class="eyebrow">YOUR DAILY PRACTICE ROOM</p><h1>お手本から、<em>あなたのラインへ。</em></h1><p class="intro-text">聴く。弾く。ひとつ変えてみる。次のコードへの道を、自分のものに。</p></div><div class="intro-aside"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" class="intro-logo" role="img" aria-labelledby="walkin-logo-title">
+  <title id="walkin-logo-title">Walkin' — 4本の弦と4匹の音符</title>
+  <defs><g id="swimmer">
+    <path fill="#bd7a27" d="M3-8C4-16 9-17 12-17L11-14C6-14 7-10 6-5C10-1 7 5 1 7C-5 9-10 6-10 2C-10-3-4-8 3-8Z"/>
+    <g fill="#fff4db"><circle cx="-3" cy=".5" r="1.8"/><circle cx="2" cy=".5" r="1.8"/></g>
+    <g fill="#303d33"><circle cx="-2.6" cy=".8" r=".7"/><circle cx="2.4" cy=".8" r=".7"/></g>
+    <path d="M-2.5 4Q-.5 5.5 1.5 4" fill="none" stroke="#303d33" stroke-width=".65" stroke-linecap="round"/>
+  </g></defs>
+  <path d="M105 44H292M105 58H292M105 72H292M105 86H292" fill="none" stroke="#303d33" stroke-opacity=".16"/>
+  <use href="#swimmer" x="126" y="86"/><use href="#swimmer" x="173" y="72"/><use href="#swimmer" x="220" y="58"/><use href="#swimmer" x="267" y="44"/>
+  <text x="200" y="152" text-anchor="middle" fill="#303d33" font-family="DM Sans,Arial,sans-serif" font-size="65" font-weight="800" letter-spacing="-3">walkin’</text>
+</svg>
+</div></section>
     <div class="workspace">
       <aside class="setup panel">
         <div class="panel-title"><span class="step-no">01</span><h2>練習をつくる</h2></div>
@@ -64,7 +76,7 @@
         <section class="practice-bottom"><div class="practice-tip"><span>✳</span><p><b>ひとつ変えると、聴こえ方が変わる。</b><br>お手本は答えのひとつ。好きなつながりを探してみましょう。</p></div><div class="save-actions"><button id="save" class="secondary">練習を保存</button><button id="library-open" class="secondary">保存した練習 <span id="saved-count">0</span></button></div></section>
       </div>
     </div>
-    <footer><span class="footer-brand">Walkin'</span><p>Contains information from the <a href="https://jazzomat.hfm-weimar.de/" target="_blank" rel="noreferrer">Weimar Jazz Database</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noreferrer">ODbL 1.0</a> / <a href="https://opendatacommons.org/licenses/dbcl/1-0/" target="_blank" rel="noreferrer">DbCL 1.0</a><br><a href="./data/weimar.json" download>収録コードデータ</a> · <a href="./data/NOTICE.md" target="_blank">出典・加工内容</a> · 保存先はこのブラウザ内<br>追加3曲：<a href="./data/JHT-NOTICE.md" target="_blank">Jazz Harmony Treebank · CC BY-NC-SA 4.0（非商用）</a> · <a href="./data/jht-standards.json" download>追加曲データ</a></p><span class="footer-note">PRACTICE. LISTEN. MAKE IT YOURS.</span></footer>
+    <footer><span class="footer-brand"><img src="./assets/brand/walkin-mark.svg" alt="" width="26" height="26">walkin’</span><p>Contains information from the <a href="https://jazzomat.hfm-weimar.de/" target="_blank" rel="noreferrer">Weimar Jazz Database</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noreferrer">ODbL 1.0</a> / <a href="https://opendatacommons.org/licenses/dbcl/1-0/" target="_blank" rel="noreferrer">DbCL 1.0</a><br><a href="./data/weimar.json" download>収録コードデータ</a> · <a href="./data/NOTICE.md" target="_blank">出典・加工内容</a> · 保存先はこのブラウザ内<br>追加3曲：<a href="./data/JHT-NOTICE.md" target="_blank">Jazz Harmony Treebank · CC BY-NC-SA 4.0（非商用）</a> · <a href="./data/jht-standards.json" download>追加曲データ</a></p><span class="footer-note">PRACTICE. LISTEN. MAKE IT YOURS.</span></footer>
   </main>
   <dialog id="tips-dialog" class="tips-drawer" aria-labelledby="tips-title">
     <div class="dialog-heading"><div><p class="eyebrow">WALKING BASS / FIELD NOTES</p><h2 id="tips-title">ウォーキングベースの基本とTips</h2></div><button class="dialog-close" aria-label="Tipsを閉じる" autofocus>×</button></div>
